@@ -95,4 +95,5 @@ if __name__ == "__main__":
     ind_char = "\t"
     data = sys.stdin.read()
     data = conv_bracket(data, '<', '>')
+    data = data.replace("POS POS ", "")
     print_tree(to_tree(data))
