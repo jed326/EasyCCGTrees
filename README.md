@@ -1,2 +1,2 @@
 # EasyCCGTrees
-ETE Usage is documented in ETE_Trees directory.
+Instructions on how to use ETE can be found in the ETE_Trees directory.
