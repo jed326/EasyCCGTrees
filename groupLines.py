@@ -2,12 +2,15 @@ import subprocess
 import pathlib
 import collections
 import argparse
-from to_tree import to_tree, print_tree
+from EasyCCGTrees.to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
 import os
 
-EASYCCG_HOME = pathlib.Path(os.environ["EASYCCG_HOME"])
+EASYCCG_HOME = pathlib.Path(os.environ.get("EASYCCG_HOME", "/opt/easyccg"))
+if "EASYCCG_HOME" not in os.environ:
+    print("Didn't find EASYCCG_HOME variable, using /opt/easyccg as default")
+
 OUT_PATH = pathlib.Path("/tmp/")
 
 def run_easyCCG(input_path):
@@ -38,35 +41,34 @@ def label(text):
     proc = subprocess.run(["java", "-jar", str(EASYCCG_HOME/"easyccg.jar"), "-f", "/tmp/_labeltmp",
         "--model", str(EASYCCG_HOME/"model_questions")], capture_output = True)
 
-    return proc.stdout.decode("utf-8").split("\n")[1].rstrip()
+    return proc.stdout.decode("utf-8").split("\n")[1::2]
 
-def group(file_path):
+def group(file_path, eq_fn = tree_equals):
     #list of list of trees
     categories = []
 
     with open(file_path) as input_file:
-        labelled = label(input_file.read()).split("\n")#[1::2]
+        labelled = label(input_file.read())
 
-    print(labelled)
-    labelled = labelled[:20]
+    #labelled = labelled[:20]
+    #print(labelled)
 
     trees = {label: to_tree(label) for label in labelled}
     #trees = list(map(labelled, to_tree))
     #print("\n".join(labelled[:10]))
-    print(trees)
 
     for line, tree in trees.items():
         for category in categories:
-            if tree_equals(tree, trees[category[0]]):
-                category.append(line)
+            firstTree = next(iter(trees.values()))
+            if eq_fn(tree, firstTree):
+                category[line] = tree
                 break
         else:
-            print("?")
-            categories.append([line])
+            categories.append({line: tree})
     with open("_grouped_out.txt", "w") as grouped_file:
         for category in categories:
             grouped_file.write("\n".join(str(parse) for parse in category.keys()))
-            grouped_file.write("\n")
+            grouped_file.write("\n"*2)
 
     
 
