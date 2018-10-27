@@ -4,7 +4,7 @@
 EASYCCG_HOME="./easyccg"
 input_file="QALD-questions.txt"
 output_file="output.txt"
-to_tree_command="python3.7 to_tree.py"
+to_tree_command="python3 to_tree.py"
 
 cat ${input_file}| while read line; do
 	line_num=`echo $line | cut -d' ' -f1`
