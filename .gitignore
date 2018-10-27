@@ -1,5 +1,6 @@
 .DS_Store
 .idea/*
+easyccg/model_questions
 *.tmp
 *.pyc
 *.class
