@@ -5,6 +5,7 @@ import argparse
 from EasyCCGTrees.to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
+import os
 
 
 EASYCCG_HOME = pathlib.Path(os.environ.get("EASYCCG_HOME", "/opt/easyccg"))
@@ -25,7 +26,18 @@ def remove_IDs():
                 if count % 2 == 1:
                     print(line.rstrip(), file = newfile)
 
-def tree_equals(tree1, tree2, tolerance = 0, limit = 0):
+def firstWord(tree):
+
+    if tree.children:
+        return firstWord(tree.children[0])
+
+    else:
+        return tree.name
+
+def naive_equals(tree1, tree2):
+    return firstWord(tree1) == firstWord(tree2)
+
+def tree_equals(tree1, tree2, tolerance = 0, limit = 1):
     if tolerance > limit:
         return True
     if not tree1.children and not tree2.children:
@@ -58,7 +70,7 @@ def group(file_path, eq_fn = tree_equals):
     #trees = list(map(labelled, to_tree))
     #print("\n".join(labelled[:10]))
 
-    for parse in labelled:
+    for line, tree in trees.items():
         for category in categories:
             firstTree = next(iter(trees.values()))
             if eq_fn(tree, firstTree):
@@ -71,7 +83,7 @@ def group(file_path, eq_fn = tree_equals):
             grouped_file.write("\n".join(str(parse) for parse in category.keys()))
             grouped_file.write("\n"*2)
 
-
+    print(len(categories))
 
     # for question in labelled.split("\n"):
 
@@ -108,5 +120,5 @@ def _test():
 
 
 if __name__ == "__main__":
-    _test()
-#    group("QALD-questions.txt-stripped.txt")
+    #_test()
+    group("QALD-questions.txt-stripped.txt", naive_equals)
