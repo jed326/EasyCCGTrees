@@ -3,13 +3,29 @@
 # settings
 EASYCCG_HOME="./easyccg"
 input_file="QALD-questions.txt"
-output_file="output.txt"
-to_tree_command="python3 to_tree.py"
+to_tree_command="python to_tree.py"
 
-cat ${input_file}| while read line; do
-	line_num=`echo $line | cut -d' ' -f1`
-	question=`echo $line | cut -d' ' -f2-`
-	ans=$(printf "${question}" | java -jar ${EASYCCG_HOME}/easyccg.jar --model ${EASYCCG_HOME}/model_questions -s -r S[q] S[qem] S[wq] | eval ${to_tree_command})
-	printf "%s, %s:\n%s\n" $line_num "$question" "$ans"
-	printf "%s, %s:\n%s\n" $line_num "$question" "$ans" >> $output_file
+while getopts "hi:" o; do
+	case $o in
+		i)
+			ignore_line=${OPTARG}
+			;;
+		h)
+			echo "usage: ./convert [-i 1]"
+			exit
+			;;
+		*)
+			echo "usage: ./convert [-i 1]"
+			exit
+			;;
+	esac
+done
+
+tree_string=`cat ${input_file} | java -jar ${EASYCCG_HOME}/easyccg.jar --model ${EASYCCG_HOME}/model_questions -s -r S[q] S[qem] S[wq]`
+
+echo "${tree_string}"| while read id_line;read parse_line
+do
+	tree=`echo "$parse_line" | eval ${to_tree_command}`
+	line_num=`echo $id_line | cut -d'=' -f2`
+	printf "%s, %s:\n%s\n" $line_num "$tree"
 done
