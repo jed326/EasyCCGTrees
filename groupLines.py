@@ -5,12 +5,11 @@ import argparse
 from EasyCCGTrees.to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
-import os
+
 
 EASYCCG_HOME = pathlib.Path(os.environ.get("EASYCCG_HOME", "/opt/easyccg"))
 if "EASYCCG_HOME" not in os.environ:
     print("Didn't find EASYCCG_HOME variable, using /opt/easyccg as default")
-
 OUT_PATH = pathlib.Path("/tmp/")
 
 def run_easyCCG(input_path):
@@ -26,14 +25,16 @@ def remove_IDs():
                 if count % 2 == 1:
                     print(line.rstrip(), file = newfile)
 
-def tree_equals(tree1, tree2, tolerance = 0):
+def tree_equals(tree1, tree2, tolerance = 0, limit = 0):
+    if tolerance > limit:
+        return True
     if not tree1.children and not tree2.children:
         return True
     elif len(tree1.children) != len(tree2.children):
         return False
     else:
         return tree1.name == tree2.name and \
-            all(tree_equals(child1, child2) for (child1, child2) in zip(tree1.children, tree2.children))
+            all(tree_equals(child1, child2, tolerance + 1, limit) for (child1, child2) in zip(tree1.children, tree2.children))
 
 def label(text):
     with open(OUT_PATH/"_labeltmp","w") as tmpfile:
@@ -57,7 +58,7 @@ def group(file_path, eq_fn = tree_equals):
     #trees = list(map(labelled, to_tree))
     #print("\n".join(labelled[:10]))
 
-    for line, tree in trees.items():
+    for parse in labelled:
         for category in categories:
             firstTree = next(iter(trees.values()))
             if eq_fn(tree, firstTree):
@@ -70,7 +71,7 @@ def group(file_path, eq_fn = tree_equals):
             grouped_file.write("\n".join(str(parse) for parse in category.keys()))
             grouped_file.write("\n"*2)
 
-    
+
 
     # for question in labelled.split("\n"):
 
@@ -88,23 +89,24 @@ def _test():
     # print(type(second))
 
     # print(label("Which presidents were born in 1945?"))
-    test1 = to_tree(label("What presidents were born in 1945"))
-    test2 = to_tree(label("Which presidents were born in 1946"))
-    test3 = to_tree(label("Which presidents were not born in 1945"))
-
+    test1 = to_tree(label("What presidents were born in 1945?"))
+    # test2 = to_tree(label("Which presidents were born in 1946"))
+    # test3 = to_tree(label("Which presidents were not born in 1945"))
+    #
     test4 = to_tree(label("How tall is John Windsor"))
-    test5 = to_tree(label("How tall is Kate Upton"))
+    # test5 = to_tree(label("How tall is Kate Upton"))
 
-    print(label("How tall is John Windsor"))
-    print_tree(test4)
+    # print(label("How tall is John Windsor"))
+    # print_tree(test4)
 
     print_tree(test1)
+    print_tree(test4)
 
-    print(tree_equals(test1,test2))
-    print(tree_equals(test1,test3))
-    print(tree_equals(test4,test5))
+    print(tree_equals(test1,test4, 0, 0))
+    # print(tree_equals(test1,test3))
+    # print(tree_equals(test4,test5))
 
 
 if __name__ == "__main__":
-    #_test()
-    group("QALD-questions.txt-stripped.txt")
+    _test()
+#    group("QALD-questions.txt-stripped.txt")
