@@ -2,7 +2,7 @@ import subprocess
 import pathlib
 import collections
 import argparse
-from EasyCCGTrees.to_tree import to_tree, print_tree
+from to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
 import os

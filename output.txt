@@ -1249,3 +1249,32 @@
                                                                              │          ┌<L N/N California, N/N>
                                                                              └<T N 1 2> ┤
                                                                                         └<L N USA? N>
+1, Which presidents were born in 1945?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N presidents N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> were <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L S[pss]\NP born S[pss]\NP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │                      ┌<L <<S\NP>\<S\NP>>/NP in <<S\NP>\<S\NP>>/NP>
+                                                     └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                            └<T NP 0 1> ┐
+                                                                                        └<L N 1945? N>
+2, Who are the presidents of the United States?:
+               ┌<L S[wq]/<S[q]/NP> Who S[wq]/<S[q]/NP>>
+ <T S[wq] 0 2> ┤
+               │                ┌<L <S[q]/NP>/NP are <S[q]/NP>/NP>
+               └<T S[q]/NP 0 2> ┤
+                                │                               ┌<L NP[nb]/N the NP[nb]/N>
+                                │               ┌<T NP[nb] 0 2> ┤
+                                │               │               └<L N presidents N>
+                                └<T NP[nb] 0 2> ┤
+                                                │              ┌<L <NP\NP>/NP of <NP\NP>/NP>
+                                                └<T NP\NP 0 2> ┤
+                                                               │               ┌<L NP[nb]/N the NP[nb]/N>
+                                                               └<T NP[nb] 0 2> ┤
+                                                                               │          ┌<L N/N United N/N>
+                                                                               └<T N 1 2> ┤
+                                                                                          └<L N States? N>
