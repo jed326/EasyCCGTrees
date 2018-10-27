@@ -5,8 +5,9 @@ import argparse
 from EasyCCGTrees.to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
+import os
 
-EASYCCG_HOME = pathlib.Path("/opt/easyccg/")
+EASYCCG_HOME = pathlib.Path(os.environ["EASYCCG_HOME"])
 OUT_PATH = pathlib.Path("/tmp/")
 
 def run_easyCCG(input_path):
@@ -44,25 +45,30 @@ def group(file_path):
     categories = []
 
     with open(file_path) as input_file:
-        labelled = label(input_file.read()).split("\n")[1::2]
+        labelled = label(input_file.read()).split("\n")#[1::2]
 
+    print(labelled)
     labelled = labelled[:20]
-    trees = list(map(labelled, to_tree))
-    #print("\n".join(labelled[:10]))
 
-    for parse in labelled:
+    trees = {label: to_tree(label) for label in labelled}
+    #trees = list(map(labelled, to_tree))
+    #print("\n".join(labelled[:10]))
+    print(trees)
+
+    for line, tree in trees.items():
         for category in categories:
-            if tree_equals(to_tree(parse), category[0]):
-                category.append(parse)
+            if tree_equals(tree, trees[category[0]]):
+                category.append(line)
                 break
         else:
-            categories.append([parse])
+            print("?")
+            categories.append([line])
     with open("_grouped_out.txt", "w") as grouped_file:
         for category in categories:
-            grouped_file.write("\n".join(str(parse) for parse in category))
+            grouped_file.write("\n".join(str(parse) for parse in category.keys()))
             grouped_file.write("\n")
 
-
+    
 
     # for question in labelled.split("\n"):
 
@@ -88,7 +94,7 @@ def _test():
     test5 = to_tree(label("How tall is Kate Upton"))
 
     print(label("How tall is John Windsor"))
-    # print_tree(test4)
+    print_tree(test4)
 
     print_tree(test1)
 
@@ -98,5 +104,5 @@ def _test():
 
 
 if __name__ == "__main__":
-    _test()
-#    group("QALD-questions.txt-stripped.txt")
+    #_test()
+    group("QALD-questions.txt-stripped.txt")
