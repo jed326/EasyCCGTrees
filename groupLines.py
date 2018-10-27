@@ -62,7 +62,7 @@ def group(file_path):
             grouped_file.write("\n".join(str(parse) for parse in category))
             grouped_file.write("\n")
 
-    
+
 
     # for question in labelled.split("\n"):
 
@@ -88,7 +88,7 @@ def _test():
     test5 = to_tree(label("How tall is Kate Upton"))
 
     print(label("How tall is John Windsor"))
-    print_tree(test4)
+    # print_tree(test4)
 
     print_tree(test1)
 

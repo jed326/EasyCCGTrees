@@ -1,0 +1,1251 @@
+1, Which presidents were born in 1945?:
+
+2, Who are the presidents of the United States?:
+
+3, Who developed the video game World of Warcraft?:
+
+4, List all episodes of the first season of the HBO television series The Sopranos!:
+
+5, Which people have as their given name Jimmy?:
+
+6, Who created English Wikipedia?:
+
+7, Which software has been developed by organizations founded in California?:
+
+8, Which actors were born in Germany?:
+
+9, Which country does the Airedale Terrier come from?:
+
+10, Who was Tom Hanks married to?:
+
+11, When was DBpedia released?:
+
+12, Which people were born in Heraklion?:
+
+13, Give me all films produced by Hal Roach.:
+
+14, Which software has been published by Mean Hamster Software?:
+
+15, What languages are spoken in Estonia?:
+
+16, Who is called Dana?:
+
+17, Which music albums contain the song Last Christmas?:
+
+18, Which books were written by Danielle Steel?:
+
+19, Which companies are located in California, USA?:
+
+20, Which genre does DBpedia belong to?:
+
+21, In which programming language is GIMP written?:
+
+22, Who produced films starring Natalie Portman?:
+
+23, Give me all movies with Tom Cruise!:
+
+24, In which films did Julia Roberts as well as Richard Gere play?:
+
+25, Who wrote the book The pillars of the Earth?:
+
+26, Give me all soccer clubs in the Premier League.:
+
+27, Which organizations were founded in 1950?:
+
+28, What is the highest mountain?:
+
+29, Give me the official websites of actors of the television show Charmed.:
+
+30, Where did Abraham Lincoln die?:
+
+31, In which country does the Nile start?:
+
+32, Which classis does the Millepede belong to?:
+
+33, How tall is Claudia Schiffer?:
+
+34, Which museum exhibits The Scream by Munch?:
+
+35, What is the revenue of IBM?:
+
+36, In which country is the Limerick Lake?:
+
+37, Which television shows were created by Walt Disney?:
+
+38, In which films directed by Garry Marshall was Julia Roberts starring?:
+
+39, Which bridges are of the same type as the Manhattan Bridge?:
+
+40, Who is the author of WikiLeaks?:
+
+41, What is the area code of Berlin?:
+
+42, When was the Battle of Gettysburg?:
+
+43, What is the highest mountain in Germany?:
+
+44, Give me all soccer clubs in Spain.:
+
+45, What are the official languages of the Philippines?:
+
+46, Who is the mayor of New York City?:
+
+47, Which telecommunications organizations are located in Belgium?:
+
+48, What is the profession of Frank Herbert?:
+
+49, Give me the homepage of Forbes.:
+
+50, Which companies are in the computer software industry?:
+
+51, What did Bruce Carver die from?:
+
+52, Who is the Formula 1 race driver with the most races?:
+
+53, Who is the youngest player in the Premier League?:
+
+54, Give me all members of Prodigy.:
+
+55, What is the longest river?:
+
+56, Give me all cars that are produced in Germany.:
+
+57, Give me all people that were born in Vienna and died in Berlin.:
+
+58, Who was the successor of John F. Kennedy?:
+
+59, How tall is Michael Jordan?:
+
+60, What is the capital of Canada?:
+
+61, Who is the governor of Texas?:
+
+62, Who was the father of Queen Elizabeth II?:
+
+63, Give me all movies directed by Francis Ford Coppola.:
+
+64, Give me all actors starring in movies directed by and starring William Shatner.:
+
+65, Who is the mayor of Berlin?:
+
+66, What is the birth name of Angela Merkel?:
+
+67, Give me all Australian nonprofit organizations.:
+
+68, In which military conflicts did Lawrence of Arabia participate?:
+
+69, Who developed Skype?:
+
+70, How many inhabitants does Maribor have?:
+
+71, Give me all companies in Munich.:
+
+72, List all boardgames by GMT.:
+
+73, Who founded Intel?:
+
+74, Who is the husband of Amanda Palmer?:
+
+75, Which cities does the Weser flow through?:
+
+76, Which countries are connected by the Rhine?:
+
+77, Which professional surfers were born on the Philippines?:
+
+78, In which UK city are the headquarters of the MI6?:
+
+79, Which other weapons did the designer of the Uzi develop?:
+
+80, What is the second highest mountain on Earth?:
+
+81, What is the ruling party in Lisbon?:
+
+82, What are the nicknames of San Francisco?:
+
+83, When were the Hells Angels founded?:
+
+84, Give me the Apollo 14 astronauts.:
+
+85, What is the time zone of Salt Lake City?:
+
+86, Give me all professional skateboarders from Sweden.:
+
+87, Give me a list of all lakes in Denmark.:
+
+88, Give me all Argentine films.:
+
+89, Which ships were called after Benjamin Franklin?:
+
+90, Who are the parents of the wife of Juan Carlos I?:
+
+91, When was Alberta admitted as province?:
+
+92, List the children of Margaret Thatcher.:
+
+93, To which countries does the Himalayan mountain system extend?:
+
+94, Which books by Kerouac were published by Viking Press?:
+
+95, How high is the Mount Everest?:
+
+96, How many people live in the capital of Australia?:
+
+97, What is the largest city in Australia?:
+
+98, Who composed the music for Harold and Maude?:
+
+99, Which films starring Clint Eastwood did he direct himself?:
+
+100, Give me a list of all trumpet players that were bandleaders.:
+
+101, Where is the residence of the prime minister of Spain?:
+
+102, What is the founding year of the brewery that produces Pilsner Urquell?:
+
+103, Who wrote the lyrics for the Polish national anthem?:
+
+104, Give me all B-sides of the Ramones.:
+
+105, Who painted The Storm on the Sea of Galilee?:
+
+106, Which country does the creator of Miffy come from?:
+
+107, For which label did Elvis record his first album?:
+
+108, In which country does the Nile start?:
+
+109, Which classis does the Millepede belong to?:
+
+110, How tall is Claudia Schiffer?:
+
+111, Who created Goofy?:
+
+112, Which museum exhibits The Scream by Munch?:
+
+113, Give me the birthdays of all actors of the television show Charmed.:
+
+114, How many employees does IBM have?:
+
+115, Which states border Illinois?:
+
+116, In which country is the Limerick Lake?:
+
+117, Which television shows were created by Walt Disney?:
+
+118, In which films directed by Garry Marshall was Julia Roberts starring?:
+
+119, Which bridges are of the same type as the Manhattan Bridge?:
+
+120, Which awards did WikiLeaks win?:
+
+121, What is the currency of the Czech Republic?:
+
+122, What is the area code of Berlin?:
+
+123, Through which countries does the Yenisei river flow?:
+
+124, When did Finland join the EU?:
+
+125, When was the Battle of Gettysburg?:
+
+126, Which river does the Brooklyn Bridge cross?:
+
+127, What is the highest mountain in Australia?:
+
+128, Give me all soccer clubs in Spain.:
+
+129, What are the official languages of the Philippines?:
+
+130, Who is the mayor of New York City?:
+
+131, Who designed the Brooklyn Bridge?:
+
+132, Which telecommunications organizations are located in Belgium?:
+
+133, Give me the homepage of Forbes.:
+
+134, Give me all companies in the advertising industry.:
+
+135, What did Bruce Carver die from?:
+
+136, Which presidents were born in 1945?:
+
+137, Who was the wife of U.S. president Lincoln?:
+
+138, Who developed the video game World of Warcraft?:
+
+139, What is the official website of Tom Cruise?:
+
+140, List all episodes of the first season of the HBO television series The Sopranos!:
+
+141, Give me all people with first name Jimmy.:
+
+142, Where did Abraham Lincoln die?:
+
+143, Who created Wikipedia?:
+
+144, Which software has been developed by organizations founded in California?:
+
+145, Which actors were born in Germany?:
+
+146, Give me all films produced by Hal Roach.:
+
+147, Give me all video games published by Mean Hamster Software.:
+
+148, Which languages are spoken in Estonia?:
+
+149, Which music albums contain the song Last Christmas?:
+
+150, Give me all books written by Danielle Steel.:
+
+151, Which airports are located in California, USA?:
+
+152, Give me all Canadian Grunge record labels.:
+
+153, In which programming language is GIMP written?:
+
+154, Who produced films starring Natalie Portman?:
+
+155, Give me all movies with Tom Cruise.:
+
+156, In which films did Julia Roberts as well as Richard Gere play?:
+
+157, Who wrote the book The pillars of the Earth?:
+
+158, Give me all soccer clubs in the Premier League.:
+
+159, Which organizations were founded in 1950?:
+
+160, What is the highest mountain?:
+
+161, From which region is the Refosco dal Peduncolo Rosso?:
+
+162, Give me all Avant-garde jazz record labels.:
+
+163, Give me all books written by David Foster Wallace.:
+
+164, Give me all cars that are produced in Netherlands.:
+
+165, Give me all companies in Jena.:
+
+166, Give me all inflows of the Lake Houston.:
+
+167, Give me all members of The Who.:
+
+168, Give me all professional skateboarders from Sweden.:
+
+169, Give me all soccer clubs in Qatar.:
+
+170, Give me all video games published by Black Isle Studios.:
+
+171, Give me the children of David Foster.:
+
+172, Give me the homepage of Metropolitan Home.:
+
+173, How big is the Mammoth Pool Reservoir?:
+
+174, How deep is Steinsee?:
+
+175, How high is the Doe Hill Mountain?:
+
+176, How high is the Volcano Mountain?:
+
+177, How high is the Landegode Lighthouse?:
+
+178, How many employees does Staedtler have?:
+
+179, How many inhabitants does Nagamangala have?:
+
+180, How many pages does The Man with the Red Tattoo have?:
+
+181, How many people live in the capital of Togo?:
+
+182, How many students does the Texas Tech University have?:
+
+183, How much did Vanilla Sky cost?:
+
+184, How tall is John Windsor?:
+
+185, How tall is Kate Upton?:
+
+186, In which country is Solaize located?:
+
+187, In which country is the Tasman Lake?:
+
+188, In which country is the Tiefer See?:
+
+189, In which programming language is QuickTime written?:
+
+190, Show me everyone who was born on Boxing Day.:
+
+191, What are the official languages of Tunisia?:
+
+192, What is the area code of Aegina?:
+
+193, What is the capital of Venezuela?:
+
+194, What is the currency of Rhodesia?:
+
+195, What is the eye color of Liza Kennedy?:
+
+196, What is the hair color of Marlon Teixeira?:
+
+197, What is the official color of the Carleton University?:
+
+198, What is the ruling party in Lo Espejo?:
+
+199, When did Jules Bergman die?:
+
+200, When did Red Sonja's creator die?:
+
+201, When is Gibraltar Diamond Jubilee Flotilla?:
+
+202, When was Sevcon founded?:
+
+203, When was Albert Schweitzer born?:
+
+204, When was the Cobble Hill Tunnel built?:
+
+205, When was the Riverdale Monument built?:
+
+206, When was the Operation Purple Haze?:
+
+207, Where did Queen Emma of Hawaii die?:
+
+208, Where is the Sandhammaren located?:
+
+209, Which airports are located in Chios?:
+
+210, Which artist made the album Old School Prankstas?:
+
+211, Which books were published by DAW Books?:
+
+212, Which bridges cross the Prut?:
+
+213, Which instruments does Courtney Love play?:
+
+214, Which languages are spoken in Romania?:
+
+215, Which museum exhibits The Skater?:
+
+216, Which music albums contain the song Into Your Arms?:
+
+217, Which organizations were founded in 1918?:
+
+218, Which presidents were born in 1891?:
+
+219, Which professional surfers were born in Australia?:
+
+220, Who created Retrocrush?:
+
+221, Who created Miss Marple?:
+
+222, Who created the comic Old Man Logan?:
+
+223, Who designed the Langebro?:
+
+224, Who developed Quake engine?:
+
+225, Who developed the video game Duke Nukem 3D?:
+
+226, Who founded Sony?:
+
+227, Who is the editor of Semana?:
+
+228, Who is the founder of DC Comics?:
+
+229, Who is the heaviest player of the ASK Riga?:
+
+230, Who is the manager of Gazelle FC?:
+
+231, Who is the mayor of Virar?:
+
+232, Who is the mayor of the capital of New Caledonia?:
+
+233, Who is the owner of Mazda?:
+
+234, Who is the tallest player of Udinese Calcio?:
+
+235, Who is the youngest Snooker player?:
+
+236, Who painted Unfinished portrait of General Bonaparte?:
+
+237, Who produces Red Bull?:
+
+238, Who were the parents of Maria of Antioch?:
+
+239, Who wrote the book Leave It to Psmith?:
+
+1, Which presidents were born in 1945?:
+
+2, Who are the presidents of the United States?:
+
+3, Who developed the video game World of Warcraft?:
+
+4, List all episodes of the first season of the HBO television series The Sopranos!:
+
+5, Which people have as their given name Jimmy?:
+
+6, Who created English Wikipedia?:
+
+7, Which software has been developed by organizations founded in California?:
+
+8, Which actors were born in Germany?:
+
+9, Which country does the Airedale Terrier come from?:
+
+10, Who was Tom Hanks married to?:
+
+11, When was DBpedia released?:
+
+12, Which people were born in Heraklion?:
+
+13, Give me all films produced by Hal Roach.:
+
+14, Which software has been published by Mean Hamster Software?:
+
+15, What languages are spoken in Estonia?:
+
+16, Who is called Dana?:
+
+17, Which music albums contain the song Last Christmas?:
+
+18, Which books were written by Danielle Steel?:
+
+19, Which companies are located in California, USA?:
+
+20, Which genre does DBpedia belong to?:
+
+21, In which programming language is GIMP written?:
+
+22, Who produced films starring Natalie Portman?:
+
+23, Give me all movies with Tom Cruise!:
+
+24, In which films did Julia Roberts as well as Richard Gere play?:
+
+25, Who wrote the book The pillars of the Earth?:
+
+26, Give me all soccer clubs in the Premier League.:
+
+27, Which organizations were founded in 1950?:
+
+28, What is the highest mountain?:
+
+29, Give me the official websites of actors of the television show Charmed.:
+
+30, Where did Abraham Lincoln die?:
+
+31, In which country does the Nile start?:
+
+32, Which classis does the Millepede belong to?:
+
+33, How tall is Claudia Schiffer?:
+
+34, Which museum exhibits The Scream by Munch?:
+
+35, What is the revenue of IBM?:
+
+36, In which country is the Limerick Lake?:
+
+37, Which television shows were created by Walt Disney?:
+
+38, In which films directed by Garry Marshall was Julia Roberts starring?:
+
+39, Which bridges are of the same type as the Manhattan Bridge?:
+
+40, Who is the author of WikiLeaks?:
+
+41, What is the area code of Berlin?:
+
+42, When was the Battle of Gettysburg?:
+
+43, What is the highest mountain in Germany?:
+
+44, Give me all soccer clubs in Spain.:
+
+45, What are the official languages of the Philippines?:
+
+46, Who is the mayor of New York City?:
+
+47, Which telecommunications organizations are located in Belgium?:
+
+48, What is the profession of Frank Herbert?:
+
+49, Give me the homepage of Forbes.:
+
+50, Which companies are in the computer software industry?:
+
+51, What did Bruce Carver die from?:
+
+52, Who is the Formula 1 race driver with the most races?:
+
+53, Who is the youngest player in the Premier League?:
+
+54, Give me all members of Prodigy.:
+
+55, What is the longest river?:
+
+56, Give me all cars that are produced in Germany.:
+
+57, Give me all people that were born in Vienna and died in Berlin.:
+
+58, Who was the successor of John F. Kennedy?:
+
+59, How tall is Michael Jordan?:
+
+60, What is the capital of Canada?:
+
+61, Who is the governor of Texas?:
+
+62, Who was the father of Queen Elizabeth II?:
+
+63, Give me all movies directed by Francis Ford Coppola.:
+
+64, Give me all actors starring in movies directed by and starring William Shatner.:
+
+65, Who is the mayor of Berlin?:
+
+66, What is the birth name of Angela Merkel?:
+
+67, Give me all Australian nonprofit organizations.:
+
+68, In which military conflicts did Lawrence of Arabia participate?:
+
+69, Who developed Skype?:
+
+70, How many inhabitants does Maribor have?:
+
+71, Give me all companies in Munich.:
+
+72, List all boardgames by GMT.:
+
+73, Who founded Intel?:
+
+74, Who is the husband of Amanda Palmer?:
+
+75, Which cities does the Weser flow through?:
+
+76, Which countries are connected by the Rhine?:
+
+77, Which professional surfers were born on the Philippines?:
+
+78, In which UK city are the headquarters of the MI6?:
+
+79, Which other weapons did the designer of the Uzi develop?:
+
+80, What is the second highest mountain on Earth?:
+
+81, What is the ruling party in Lisbon?:
+
+82, What are the nicknames of San Francisco?:
+
+83, When were the Hells Angels founded?:
+
+84, Give me the Apollo 14 astronauts.:
+
+85, What is the time zone of Salt Lake City?:
+
+86, Give me all professional skateboarders from Sweden.:
+
+87, Give me a list of all lakes in Denmark.:
+
+88, Give me all Argentine films.:
+
+89, Which ships were called after Benjamin Franklin?:
+
+90, Who are the parents of the wife of Juan Carlos I?:
+
+91, When was Alberta admitted as province?:
+
+92, List the children of Margaret Thatcher.:
+
+93, To which countries does the Himalayan mountain system extend?:
+
+94, Which books by Kerouac were published by Viking Press?:
+
+95, How high is the Mount Everest?:
+
+96, How many people live in the capital of Australia?:
+
+97, What is the largest city in Australia?:
+
+98, Who composed the music for Harold and Maude?:
+
+99, Which films starring Clint Eastwood did he direct himself?:
+
+100, Give me a list of all trumpet players that were bandleaders.:
+
+101, Where is the residence of the prime minister of Spain?:
+
+102, What is the founding year of the brewery that produces Pilsner Urquell?:
+
+103, Who wrote the lyrics for the Polish national anthem?:
+
+104, Give me all B-sides of the Ramones.:
+
+105, Who painted The Storm on the Sea of Galilee?:
+
+106, Which country does the creator of Miffy come from?:
+
+107, For which label did Elvis record his first album?:
+
+108, In which country does the Nile start?:
+
+109, Which classis does the Millepede belong to?:
+
+110, How tall is Claudia Schiffer?:
+
+111, Who created Goofy?:
+
+112, Which museum exhibits The Scream by Munch?:
+
+113, Give me the birthdays of all actors of the television show Charmed.:
+
+114, How many employees does IBM have?:
+
+115, Which states border Illinois?:
+
+116, In which country is the Limerick Lake?:
+
+117, Which television shows were created by Walt Disney?:
+
+118, In which films directed by Garry Marshall was Julia Roberts starring?:
+
+119, Which bridges are of the same type as the Manhattan Bridge?:
+
+120, Which awards did WikiLeaks win?:
+
+121, What is the currency of the Czech Republic?:
+
+122, What is the area code of Berlin?:
+
+123, Through which countries does the Yenisei river flow?:
+
+124, When did Finland join the EU?:
+
+125, When was the Battle of Gettysburg?:
+
+126, Which river does the Brooklyn Bridge cross?:
+
+127, What is the highest mountain in Australia?:
+
+128, Give me all soccer clubs in Spain.:
+
+129, What are the official languages of the Philippines?:
+
+130, Who is the mayor of New York City?:
+
+131, Who designed the Brooklyn Bridge?:
+
+132, Which telecommunications organizations are located in Belgium?:
+
+133, Give me the homepage of Forbes.:
+
+134, Give me all companies in the advertising industry.:
+
+135, What did Bruce Carver die from?:
+
+136, Which presidents were born in 1945?:
+
+137, Who was the wife of U.S. president Lincoln?:
+
+138, Who developed the video game World of Warcraft?:
+
+139, What is the official website of Tom Cruise?:
+
+140, List all episodes of the first season of the HBO television series The Sopranos!:
+
+141, Give me all people with first name Jimmy.:
+
+142, Where did Abraham Lincoln die?:
+
+143, Who created Wikipedia?:
+
+144, Which software has been developed by organizations founded in California?:
+
+145, Which actors were born in Germany?:
+
+146, Give me all films produced by Hal Roach.:
+
+147, Give me all video games published by Mean Hamster Software.:
+
+148, Which languages are spoken in Estonia?:
+
+149, Which music albums contain the song Last Christmas?:
+
+150, Give me all books written by Danielle Steel.:
+
+151, Which airports are located in California, USA?:
+
+152, Give me all Canadian Grunge record labels.:
+
+153, In which programming language is GIMP written?:
+
+154, Who produced films starring Natalie Portman?:
+
+155, Give me all movies with Tom Cruise.:
+
+156, In which films did Julia Roberts as well as Richard Gere play?:
+
+157, Who wrote the book The pillars of the Earth?:
+
+158, Give me all soccer clubs in the Premier League.:
+
+159, Which organizations were founded in 1950?:
+
+160, What is the highest mountain?:
+
+161, From which region is the Refosco dal Peduncolo Rosso?:
+
+162, Give me all Avant-garde jazz record labels.:
+
+163, Give me all books written by David Foster Wallace.:
+
+164, Give me all cars that are produced in Netherlands.:
+
+165, Give me all companies in Jena.:
+
+166, Give me all inflows of the Lake Houston.:
+
+167, Give me all members of The Who.:
+
+168, Give me all professional skateboarders from Sweden.:
+
+169, Give me all soccer clubs in Qatar.:
+
+170, Give me all video games published by Black Isle Studios.:
+
+171, Give me the children of David Foster.:
+
+172, Give me the homepage of Metropolitan Home.:
+
+173, How big is the Mammoth Pool Reservoir?:
+
+174, How deep is Steinsee?:
+
+175, How high is the Doe Hill Mountain?:
+
+176, How high is the Volcano Mountain?:
+
+177, How high is the Landegode Lighthouse?:
+
+178, How many employees does Staedtler have?:
+
+179, How many inhabitants does Nagamangala have?:
+
+180, How many pages does The Man with the Red Tattoo have?:
+
+181, How many people live in the capital of Togo?:
+
+182, How many students does the Texas Tech University have?:
+
+183, How much did Vanilla Sky cost?:
+
+184, How tall is John Windsor?:
+
+185, How tall is Kate Upton?:
+
+186, In which country is Solaize located?:
+
+187, In which country is the Tasman Lake?:
+
+188, In which country is the Tiefer See?:
+
+189, In which programming language is QuickTime written?:
+
+190, Show me everyone who was born on Boxing Day.:
+
+191, What are the official languages of Tunisia?:
+
+192, What is the area code of Aegina?:
+
+193, What is the capital of Venezuela?:
+
+194, What is the currency of Rhodesia?:
+
+195, What is the eye color of Liza Kennedy?:
+
+196, What is the hair color of Marlon Teixeira?:
+
+197, What is the official color of the Carleton University?:
+
+198, What is the ruling party in Lo Espejo?:
+
+199, When did Jules Bergman die?:
+
+200, When did Red Sonja's creator die?:
+
+201, When is Gibraltar Diamond Jubilee Flotilla?:
+
+202, When was Sevcon founded?:
+
+203, When was Albert Schweitzer born?:
+
+204, When was the Cobble Hill Tunnel built?:
+
+205, When was the Riverdale Monument built?:
+
+206, When was the Operation Purple Haze?:
+
+207, Where did Queen Emma of Hawaii die?:
+
+208, Where is the Sandhammaren located?:
+
+209, Which airports are located in Chios?:
+
+210, Which artist made the album Old School Prankstas?:
+
+211, Which books were published by DAW Books?:
+
+212, Which bridges cross the Prut?:
+
+213, Which instruments does Courtney Love play?:
+
+214, Which languages are spoken in Romania?:
+
+215, Which museum exhibits The Skater?:
+
+216, Which music albums contain the song Into Your Arms?:
+
+217, Which organizations were founded in 1918?:
+
+218, Which presidents were born in 1891?:
+
+219, Which professional surfers were born in Australia?:
+
+220, Who created Retrocrush?:
+
+221, Who created Miss Marple?:
+
+222, Who created the comic Old Man Logan?:
+
+223, Who designed the Langebro?:
+
+224, Who developed Quake engine?:
+
+225, Who developed the video game Duke Nukem 3D?:
+
+226, Who founded Sony?:
+
+227, Who is the editor of Semana?:
+
+228, Who is the founder of DC Comics?:
+
+229, Who is the heaviest player of the ASK Riga?:
+
+230, Who is the manager of Gazelle FC?:
+
+231, Who is the mayor of Virar?:
+
+232, Who is the mayor of the capital of New Caledonia?:
+
+233, Who is the owner of Mazda?:
+
+234, Who is the tallest player of Udinese Calcio?:
+
+235, Who is the youngest Snooker player?:
+
+236, Who painted Unfinished portrait of General Bonaparte?:
+
+237, Who produces Red Bull?:
+
+238, Who were the parents of Maria of Antioch?:
+
+239, Who wrote the book Leave It to Psmith?:
+
+1, Which presidents were born in 1945?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N presidents N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> were <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L S[pss]\NP born S[pss]\NP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │                      ┌<L <<S\NP>\<S\NP>>/NP in <<S\NP>\<S\NP>>/NP>
+                                                     └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                            └<T NP 0 1> ┐
+                                                                                        └<L N 1945? N>
+2, Who are the presidents of the United States?:
+               ┌<L S[wq]/<S[q]/NP> Who S[wq]/<S[q]/NP>>
+ <T S[wq] 0 2> ┤
+               │                ┌<L <S[q]/NP>/NP are <S[q]/NP>/NP>
+               └<T S[q]/NP 0 2> ┤
+                                │                               ┌<L NP[nb]/N the NP[nb]/N>
+                                │               ┌<T NP[nb] 0 2> ┤
+                                │               │               └<L N presidents N>
+                                └<T NP[nb] 0 2> ┤
+                                                │              ┌<L <NP\NP>/NP of <NP\NP>/NP>
+                                                └<T NP\NP 0 2> ┤
+                                                               │               ┌<L NP[nb]/N the NP[nb]/N>
+                                                               └<T NP[nb] 0 2> ┤
+                                                                               │          ┌<L N/N United N/N>
+                                                                               └<T N 1 2> ┤
+                                                                                          └<L N States? N>
+3, Who developed the video game World of Warcraft?:
+               ┌<L S[wq]/<S[dcl]\NP> Who S[wq]/<S[dcl]\NP>>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/NP developed <S[dcl]\NP>/NP>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                              ┌<L <NP\NP>/NP of <NP\NP>/NP>
+                                  │               ┌<T NP\NP 0 2> ┤
+                                  │               │              └<T NP 0 1> ┐
+                                  │               │                          └<L N Warcraft? N>
+                                  └<T NP[nb] 0 2> ┤
+                                                  │               ┌<L NP[nb]/N the NP[nb]/N>
+                                                  └<T NP[nb] 0 2> ┤
+                                                                  │          ┌<L N/N video N/N>
+                                                                  └<T N 1 2> ┤
+                                                                             │          ┌<L N/N game N/N>
+                                                                             └<T N 1 2> ┤
+                                                                                        └<L N World N>
+4, List all episodes of the first season of the HBO television series The Sopranos!:
+                              ┌<L NP[nb]/N The NP[nb]/N>
+              ┌<T NP[nb] 0 2> ┤
+              │               └<L N Sopranos! N>
+ <T S[q] 0 2> ┤
+              │                ┌<L <S[q]/NP>/NP List <S[q]/NP>/NP>
+              └<T S[q]/NP 0 2> ┤
+                               │                               ┌<L NP[nb]/N all NP[nb]/N>
+                               │               ┌<T NP[nb] 0 2> ┤
+                               │               │               └<L N episodes N>
+                               └<T NP[nb] 0 2> ┤
+                                               │              ┌<L <NP\NP>/NP of <NP\NP>/NP>
+                                               └<T NP\NP 0 2> ┤
+                                                              │                               ┌<L NP[nb]/N the NP[nb]/N>
+                                                              │               ┌<T NP[nb] 0 2> ┤
+                                                              │               │               │          ┌<L N/N first N/N>
+                                                              │               │               └<T N 1 2> ┤
+                                                              │               │                          └<L N season N>
+                                                              └<T NP[nb] 0 2> ┤
+                                                                              │              ┌<L <NP\NP>/NP of <NP\NP>/NP>
+                                                                              └<T NP\NP 0 2> ┤
+                                                                                             │               ┌<L NP[nb]/N the NP[nb]/N>
+                                                                                             └<T NP[nb] 0 2> ┤
+                                                                                                             │          ┌<L N/N HBO N/N>
+                                                                                                             └<T N 1 2> ┤
+                                                                                                                        │          ┌<L N/N television N/N>
+                                                                                                                        └<T N 1 2> ┤
+                                                                                                                                   └<L N series N>
+5, Which people have as their given name Jimmy?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N people N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<T NP 0 1> ┐
+               │                  │           └<L N Jimmy? N>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                       ┌<L <<S[dcl]\NP>/PP>/NP have <<S[dcl]\NP>/PP>/NP>
+                                  └<T <S[dcl]\NP>/NP 0 2> ┤
+                                                          └<T <S[X]\NP>\<<S[X]\NP>/PP> 0 1> ┐
+                                                                                            │           ┌<L PP/NP as PP/NP>
+                                                                                            └<T PP 0 2> ┤
+                                                                                                        │               ┌<L NP[nb]/N their NP[nb]/N>
+                                                                                                        └<T NP[nb] 0 2> ┤
+                                                                                                                        │          ┌<L N/N given N/N>
+                                                                                                                        └<T N 1 2> ┤
+                                                                                                                                   └<L N name N>
+6, Who created English Wikipedia?:
+               ┌<L S[wq]/<S[dcl]\NP> Who S[wq]/<S[dcl]\NP>>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/NP created <S[dcl]\NP>/NP>
+               └<T S[dcl]\NP 0 2> ┤
+                                  └<T NP 0 1> ┐
+                                              │          ┌<L N/N English N/N>
+                                              └<T N 1 2> ┤
+                                                         └<L N Wikipedia? N>
+7, Which software has been developed by organizations founded in California?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N software N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pt]\NP> has <S[dcl]\NP>/<S[pt]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                 ┌<L <S[pt]\NP>/<S[pss]\NP> been <S[pt]\NP>/<S[pss]\NP>>
+                                  └<T S[pt]\NP 0 2> ┤
+                                                    │                  ┌<L S[pss]\NP developed S[pss]\NP>
+                                                    └<T S[pss]\NP 0 2> ┤
+                                                                       │                      ┌<L <<S\NP>\<S\NP>>/NP by <<S\NP>\<S\NP>>/NP>
+                                                                       └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                                              │           ┌<T NP 0 1> ┐
+                                                                                              │           │           └<L N organizations N>
+                                                                                              └<T NP 0 2> ┤
+                                                                                                          └<T NP\NP 0 1> ┐
+                                                                                                                         │                  ┌<L S[pss]\NP founded S[pss]\NP>
+                                                                                                                         └<T S[pss]\NP 0 2> ┤
+                                                                                                                                            │                      ┌<L <<S\NP>\<S\NP>>/NP in <<S\NP>\<S\NP>>/NP>
+                                                                                                                                            └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                                                                                                                   └<T NP 0 1> ┐
+                                                                                                                                                                               └<L N California? N>
+8, Which actors were born in Germany?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N actors N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> were <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L <S[pss]\NP>/PP born <S[pss]\NP>/PP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │           ┌<L PP/NP in PP/NP>
+                                                     └<T PP 0 2> ┤
+                                                                 └<T NP 0 1> ┐
+                                                                             └<L N Germany? N>
+9, Which country does the Airedale Terrier come from?:
+                                        ┌<L <S[wq]/<S[q]/NP>>/N Which <S[wq]/<S[q]/NP>>/N>
+               ┌<T S[wq]/<S[q]/NP> 0 2> ┤
+               │                        └<L N country N>
+ <T S[wq] 0 2> ┤
+               │                                      ┌<L <S[b]\NP>/NP come <S[b]\NP>/NP>
+               │                ┌<T <S[b]\NP>/NP 0 2> ┤
+               │                │                     └<L <S\NP>\<S\NP> from? <S\NP>\<S\NP>>
+               └<T S[q]/NP 0 2> ┤
+                                │                       ┌<L <S[q]/<S[b]\NP>>/NP does <S[q]/<S[b]\NP>>/NP>
+                                └<T S[q]/<S[b]\NP> 0 2> ┤
+                                                        │               ┌<L NP[nb]/N the NP[nb]/N>
+                                                        └<T NP[nb] 0 2> ┤
+                                                                        │          ┌<L N/N Airedale N/N>
+                                                                        └<T N 1 2> ┤
+                                                                                   └<L N Terrier N>
+10, Who was Tom Hanks married to?:
+               ┌<L S[wq]/<S[q]/NP> Who S[wq]/<S[q]/NP>>
+ <T S[wq] 0 2> ┤
+               │                ┌<L <S[q]/NP>/NP was <S[q]/NP>/NP>
+               └<T S[q]/NP 0 2> ┤
+                                │           ┌<T NP 0 1> ┐
+                                │           │           │          ┌<L N/N Tom N/N>
+                                │           │           └<T N 1 2> ┤
+                                │           │                      └<L N Hanks N>
+                                └<T NP 0 2> ┤
+                                            └<T NP\NP 0 1> ┐
+                                                           │                  ┌<L <S[pss]\NP>/NP married <S[pss]\NP>/NP>
+                                                           └<T S[pss]\NP 0 2> ┤
+                                                                              └<T NP 0 1> ┐
+                                                                                          └<L N to? N>
+11, When was DBpedia released?:
+               ┌<L S[wq]/S[q] When S[wq]/S[q]>
+ <T S[wq] 0 2> ┤
+               │             ┌<T NP 0 1> ┐
+               │             │           └<L N released? N>
+               └<T S[q] 0 2> ┤
+                             │                ┌<L <S[q]/NP>/NP was <S[q]/NP>/NP>
+                             └<T S[q]/NP 0 2> ┤
+                                              └<T NP 0 1> ┐
+                                                          └<L N DBpedia N>
+12, Which people were born in Heraklion?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N people N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> were <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L <S[pss]\NP>/PP born <S[pss]\NP>/PP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │           ┌<L PP/NP in PP/NP>
+                                                     └<T PP 0 2> ┤
+                                                                 └<T NP 0 1> ┐
+                                                                             └<L N Heraklion? N>
+13, Give me all films produced by Hal Roach.:
+                                          ┌<L N films N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          │                              ┌<L <<S[wq]/<S[dcl]\NP>>/N>/<NP/N> Give <<S[wq]/<S[dcl]\NP>>/N>/<NP/N>>
+               │                          └<T <S[wq]/<S[dcl]\NP>>/N 0 2> ┤
+               │                                                         │                 ┌<L NP/NP me NP/NP>
+               │                                                         └<T NP[nb]/N 1 2> ┤
+               │                                                                           └<L NP[nb]/N all NP[nb]/N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L S[dcl]\NP produced S[dcl]\NP>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                      ┌<L <<S\NP>\<S\NP>>/NP by <<S\NP>\<S\NP>>/NP>
+                                  └<T <S\NP>\<S\NP> 0 2> ┤
+                                                         └<T NP 0 1> ┐
+                                                                     │          ┌<L N/N Hal N/N>
+                                                                     └<T N 1 2> ┤
+                                                                                └<L N Roach. N>
+14, Which software has been published by Mean Hamster Software?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N software N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pt]\NP> has <S[dcl]\NP>/<S[pt]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                 ┌<L <S[pt]\NP>/<S[pss]\NP> been <S[pt]\NP>/<S[pss]\NP>>
+                                  └<T S[pt]\NP 0 2> ┤
+                                                    │                  ┌<L S[pss]\NP published S[pss]\NP>
+                                                    └<T S[pss]\NP 0 2> ┤
+                                                                       │                      ┌<L <<S\NP>\<S\NP>>/NP by <<S\NP>\<S\NP>>/NP>
+                                                                       └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                                              └<T NP 0 1> ┐
+                                                                                                          │          ┌<L N/N Mean N/N>
+                                                                                                          └<T N 1 2> ┤
+                                                                                                                     │          ┌<L N/N Hamster N/N>
+                                                                                                                     └<T N 1 2> ┤
+                                                                                                                                └<L N Software? N>
+15, What languages are spoken in Estonia?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N What <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N languages N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> are <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L <S[pss]\NP>/PP spoken <S[pss]\NP>/PP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │           ┌<L PP/NP in PP/NP>
+                                                     └<T PP 0 2> ┤
+                                                                 └<T NP 0 1> ┐
+                                                                             └<L N Estonia? N>
+16, Who is called Dana?:
+               ┌<L S[wq]/<S[dcl]\NP> Who S[wq]/<S[dcl]\NP>>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> is <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L <S[pss]\NP>/NP called <S[pss]\NP>/NP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     └<T NP 0 1> ┐
+                                                                 └<L N Dana? N>
+17, Which music albums contain the song Last Christmas?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          │          ┌<L N/N music N/N>
+               │                          └<T N 1 2> ┤
+               │                                     └<L N albums N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/NP contain <S[dcl]\NP>/NP>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │               ┌<L NP[nb]/N the NP[nb]/N>
+                                  └<T NP[nb] 0 2> ┤
+                                                  │          ┌<L N/N song N/N>
+                                                  └<T N 1 2> ┤
+                                                             │          ┌<L N/N Last N/N>
+                                                             └<T N 1 2> ┤
+                                                                        └<L N Christmas? N>
+18, Which books were written by Danielle Steel?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N books N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> were <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L S[pss]\NP written S[pss]\NP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │                      ┌<L <<S\NP>\<S\NP>>/NP by <<S\NP>\<S\NP>>/NP>
+                                                     └<T <S\NP>\<S\NP> 0 2> ┤
+                                                                            └<T NP 0 1> ┐
+                                                                                        │          ┌<L N/N Danielle N/N>
+                                                                                        └<T N 1 2> ┤
+                                                                                                   └<L N Steel? N>
+19, Which companies are located in California, USA?:
+                                          ┌<L <S[wq]/<S[dcl]\NP>>/N Which <S[wq]/<S[dcl]\NP>>/N>
+               ┌<T S[wq]/<S[dcl]\NP> 0 2> ┤
+               │                          └<L N companies N>
+ <T S[wq] 0 2> ┤
+               │                  ┌<L <S[dcl]\NP>/<S[pss]\NP> are <S[dcl]\NP>/<S[pss]\NP>>
+               └<T S[dcl]\NP 0 2> ┤
+                                  │                  ┌<L <S[pss]\NP>/PP located <S[pss]\NP>/PP>
+                                  └<T S[pss]\NP 0 2> ┤
+                                                     │           ┌<L PP/NP in PP/NP>
+                                                     └<T PP 0 2> ┤
+                                                                 └<T NP 0 1> ┐
+                                                                             │          ┌<L N/N California, N/N>
+                                                                             └<T N 1 2> ┤
+                                                                                        └<L N USA? N>

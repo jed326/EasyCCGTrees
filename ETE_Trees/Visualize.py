@@ -23,16 +23,10 @@ def combine(p):
 
     while tail < len(p):
         if isinstance(p[tail], str):
-            # print(p[tail])
             tail += 1
         else:
-            # print(p[tail])
-            # print(p[head])
-            # print(p[head:tail])
             out.append("".join(p[head:tail]))
-            # print("raw", p[tail])
             l = combine(p[tail])
-            # print("combined", l)
             if l != []:
                 out.append(l)
 
@@ -56,8 +50,6 @@ if __name__ == "__main__":
         f = file.readlines()
 
     p = parse(f[4])[0]
-
-    # print(p)
 
     c = combine(p)
     print(c)
