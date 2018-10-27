@@ -37,7 +37,7 @@ def firstWord(tree):
 def naive_equals(tree1, tree2):
     return firstWord(tree1) == firstWord(tree2)
 
-def tree_equals(tree1, tree2, tolerance = 0, limit = 1):
+def tree_equals(tree1, tree2, tolerance = 0, limit = 2):
     if tolerance > limit:
         return True
     if not tree1.children and not tree2.children:
@@ -59,20 +59,25 @@ def label(text):
 def group(file_path, eq_fn = tree_equals):
     #list of list of trees
     categories = []
+    labelled = {}
 
     with open(file_path) as input_file:
-        labelled = label(input_file.read())
+        #labelled = {label(line)[0]: line for line in input_file}
+        labelled_list = label(input_file.read())
+        #labelled = label(input_file.read())
+        input_file.seek(0)
+        labelled = {label : orig for label,orig in zip(labelled_list, input_file)}
 
     #labelled = labelled[:20]
     #print(labelled)
 
-    trees = {label: to_tree(label) for label in labelled}
+    trees = {label: to_tree(label) for label in labelled.keys()}
     #trees = list(map(labelled, to_tree))
     #print("\n".join(labelled[:10]))
 
     for line, tree in trees.items():
         for category in categories:
-            firstTree = next(iter(trees.values()))
+            firstTree = next(iter(category.values()))
             if eq_fn(tree, firstTree):
                 category[line] = tree
                 break
@@ -80,8 +85,8 @@ def group(file_path, eq_fn = tree_equals):
             categories.append({line: tree})
     with open("_grouped_out.txt", "w") as grouped_file:
         for category in categories:
-            grouped_file.write("\n".join(str(parse) for parse in category.keys()))
-            grouped_file.write("\n"*2)
+            grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
+            grouped_file.write("\n")
 
     print(len(categories))
 
@@ -121,4 +126,4 @@ def _test():
 
 if __name__ == "__main__":
     #_test()
-    group("QALD-questions.txt-stripped.txt", naive_equals)
+    group("QALD-questions.txt-stripped.txt") #naive_equals)

@@ -4,7 +4,6 @@ easyccg/model_questions
 *.tmp
 *.pyc
 *.class
-*.txt
 !QALD-questions.txt
 !QALD-questions-stripped.txt
 out/
