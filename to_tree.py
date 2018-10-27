@@ -45,6 +45,8 @@ def print_tree(current_node, indent="", last='updown'):
         print_tree(child, indent=next_indent, last=next_last)
 
 def to_tree(string):
+    string = conv_bracket(string, '<', '>')
+    string = string.replace("POS POS ", "")
     fb = string.find("(")
     lb = string.rfind(")")
     if fb == -1 or lb == -1:
@@ -94,6 +96,4 @@ if __name__ == "__main__":
     file_url = None
     ind_char = "\t"
     data = sys.stdin.read()
-    data = conv_bracket(data, '<', '>')
-    data = data.replace("POS POS ", "")
     print_tree(to_tree(data))

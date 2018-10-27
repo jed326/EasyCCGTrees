@@ -2,11 +2,11 @@ import subprocess
 import pathlib
 import collections
 import argparse
-from EasyCCGTrees.to_tree import to_tree, print_tree
+from to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
 
-EASYCCG_HOME = pathlib.Path("/opt/easyccg/")
+EASYCCG_HOME = pathlib.Path("./easyccg/")
 OUT_PATH = pathlib.Path("/tmp/")
 
 def run_easyCCG(input_path):
@@ -80,14 +80,14 @@ def _test():
     # print(type(second))
 
     # print(label("Which presidents were born in 1945?"))
-    test1 = to_tree(label("What presidents were born in 1945"))
-    test2 = to_tree(label("Which presidents were born in 1946"))
-    test3 = to_tree(label("Which presidents were not born in 1945"))
-
-    test4 = to_tree(label("How tall is John Windsor"))
-    test5 = to_tree(label("How tall is Kate Upton"))
-
-    print(label("How tall is John Windsor"))
+    test1 = to_tree(label("1 What presidents were born in 1945?"))
+    # test2 = to_tree(label("Which presidents were born in 1946"))
+    # test3 = to_tree(label("Which presidents were not born in 1945"))
+    #
+    # test4 = to_tree(label("How tall is John Windsor"))
+    # test5 = to_tree(label("How tall is Kate Upton"))
+    # 
+    # print(label("How tall is John Windsor"))
     # print_tree(test4)
 
     print_tree(test1)
