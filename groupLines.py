@@ -2,7 +2,7 @@ import subprocess
 import pathlib
 import collections
 import argparse
-from EasyCCGTrees.to_tree import to_tree, print_tree
+from to_tree import to_tree, print_tree
 # from EasyCCGTrees.Visualize import build
 import itertools
 import os
@@ -56,6 +56,7 @@ def label(text):
 
     return proc.stdout.decode("utf-8").split("\n")[1::2]
 
+#TODO: documentation
 def group(file_path, eq_fn = tree_equals):
     #list of list of trees
     categories = []
@@ -125,5 +126,11 @@ def _test():
 
 
 if __name__ == "__main__":
+    #TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
+    #or print out list of categories,where each category is just one tree
+    #or output
+    #parameter for depth
+    #take in list of categories
+    parser = argparse.ArgumentParser()
     #_test()
     group("QALD-questions.txt-stripped.txt") #naive_equals)

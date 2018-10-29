@@ -1,0 +1,3 @@
+[submodule "easyccg"]
+	path = easyccg
+	url = https://github.com/mikelewis0/easyccg
