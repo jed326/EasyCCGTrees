@@ -23,9 +23,9 @@ while getopts "hi:" o; do
 done
 
 if [ $ignore_col -eq 1 ]; then
-	echo "Using $(tput setaf 1)every column$(tput sgr 0) of file ${input_file} as input"
+	>&2 echo "Using $(tput setaf 1)every column$(tput sgr 0) of file ${input_file} as input"
 else
-	echo "Ignoring $(tput setaf 1)$(expr $ignore_col - 1) column $(tput sgr 0) of file $of file ${input_file} as input"
+	>&2 echo "Ignoring $(tput setaf 1)$(expr $ignore_col - 1) column $(tput sgr 0) of file $of file ${input_file} as input"
 fi
 
 
