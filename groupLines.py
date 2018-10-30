@@ -56,8 +56,15 @@ def label(text):
 
     return proc.stdout.decode("utf-8").split("\n")[1::2]
 
-#TODO: documentation
-def group(file_path, eq_fn = tree_equals):
+'''
+    eq_fn - function taking two trees (and optional kwargs) as input,
+    returning True if they are equal and False otherwise. eq_fn should
+    be transitive, i.e. if a = b and b = c, then a = c
+
+    file_path - relative (or absolute) path to file containing newline
+    separated questions to parse
+'''
+def group(file_path, out_path = "./_grouped_out.txt", eq_fn = tree_equals, **kwargs):
     #list of list of trees
     categories = []
     labelled = {}
@@ -78,13 +85,17 @@ def group(file_path, eq_fn = tree_equals):
 
     for line, tree in trees.items():
         for category in categories:
+
+            #get an arbitrary tree from category
             firstTree = next(iter(category.values()))
+
+            #this category matches, so move on to the next tree
             if eq_fn(tree, firstTree):
                 category[line] = tree
                 break
         else:
             categories.append({line: tree})
-    with open("_grouped_out.txt", "w") as grouped_file:
+    with open(out_path, "w") as grouped_file:
         for category in categories:
             grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
             grouped_file.write("\n")
@@ -131,6 +142,10 @@ if __name__ == "__main__":
     #or output
     #parameter for depth
     #take in list of categories
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Group similar questions into categories")
+    parser.add_argument("path", help="Relative path to input file containing newline separated questions to group")
+    parser.add_argument("--outfile", help="Optional path to output categories to", default="./_grouped_out.txt")
     #_test()
-    group("QALD-questions.txt-stripped.txt") #naive_equals)
+    args = parser.parse_args()
+    group(args.path, args.outfile)
+    #group("QALD-questions.txt-stripped.txt") #naive_equals)
