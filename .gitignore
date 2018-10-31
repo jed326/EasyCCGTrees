@@ -7,3 +7,4 @@ easyccg/model_questions
 !QALD-questions.txt
 !QALD-questions-stripped.txt
 out/
+__pycache__/
