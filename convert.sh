@@ -2,7 +2,8 @@
 
 # settings
 EASYCCG_HOME="./easyccg"
-input_file="QALD-questions.txt"
+DEFAULT_INPUT="QALD-questions.txt"
+input_file=${1:-QALD-questions.txt}
 to_tree_command="python3 to_tree.py"
 ignore_col=1
 
