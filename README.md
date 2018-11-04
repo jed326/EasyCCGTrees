@@ -24,8 +24,8 @@ git clone --recursive
 Pre-trained modules can be downloaded here: <https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc>   
 For more detailed setup instructions, reference the EasyCCG repository.
 
-### EasyCCG Usage:
-To parse into text form:
+#### EasyCCG Usage:
+To parse questions into text form:
 
 ```
 java -jar $EASYCCG_HOME/easyccg.jar -f path/to/input  --model $EASYCCG_HOME/model_questions [> outfile.txt]
@@ -37,8 +37,10 @@ To output trees to html:
 java -jar $EASYCCG_HOME/easyccg.jar -f path/to/input  --model $EASYCCG_HOME/model_questions -o html [> outfile.txt]
 ```
 
+## ETE_Trees
+ETE is a python library that can be used to visualize and print out python tree structures. Specifically this can be used to save trees to .png files.   
+Instructions on how to use ETE can be found in the ETE_Trees directory.   
 
+## groupLines.py
 
-Instructions on how to use ETE can be found in the ETE_Trees directory.
-
-## EasyCCG Usage
+## convert.sh & to_tree.py
