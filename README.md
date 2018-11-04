@@ -9,18 +9,19 @@ The main components are:
 6. convert.sh & to_tree.py
 
 ## [Data Cleaning](https://github.com/jed326/EasyCCGTrees/tree/stats/Data%20Cleaning)
-##### Contains scripts for parsing data files
+Contains scripts for parsing data files   
 
 ## data
-##### Contains the input and output data files
+Contains the input and output data files   
 
 ## [EasyCCG](https://github.com/mikelewis0/easyccg/tree/e42d58e08eb2a86593d52f730c5afe222e939781)
 EasyCCG is a CCG parser created by Mike Lewis. It is added as a submodule to this repository.   
+
 To include EasyCCG when cloning, use the command:
 ```
 git clone --recursive
 ```
-Pre-trained modules can be downloaded here: [https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc]   
+Pre-trained modules can be downloaded here: <https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc>   
 For more detailed setup instructions, reference the EasyCCG repository.
 
 ### EasyCCG Usage:
