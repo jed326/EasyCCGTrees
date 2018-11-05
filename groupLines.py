@@ -7,10 +7,15 @@ from to_tree import to_tree, print_tree
 import itertools
 import os
 
+# REQUIRED: Input path argument
+# OPTIONAL: ouput path argument
 
-EASYCCG_HOME = pathlib.Path(os.environ.get("EASYCCG_HOME", "/opt/easyccg"))
+'''
+Environment Setup
+'''
+EASYCCG_HOME = pathlib.Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
 if "EASYCCG_HOME" not in os.environ:
-    print("Didn't find EASYCCG_HOME variable, using /opt/easyccg as default")
+    print("Didn't find EASYCCG_HOME variable, looking for local copy in current directory.")
 OUT_PATH = pathlib.Path("/tmp/")
 
 def run_easyCCG(input_path):
@@ -64,8 +69,11 @@ def label(text):
     file_path - relative (or absolute) path to file containing newline
     separated questions to parse
 '''
+
 def group(file_path, out_path = "./_grouped_out.txt", eq_fn = tree_equals, **kwargs):
-    #list of list of trees
+    #categories is a list of dictionaries
+    #each index is a mapping between the parsed question and its tree representation
+    #labelled is a dictionary that maps the parsed question to the original question
     categories = []
     labelled = {}
 
@@ -74,7 +82,11 @@ def group(file_path, out_path = "./_grouped_out.txt", eq_fn = tree_equals, **kwa
         labelled_list = label(input_file.read())
         #labelled = label(input_file.read())
         input_file.seek(0)
-        labelled = {label : orig for label,orig in zip(labelled_list, input_file)}
+        # original_questions = [label,orig for label,orig in zip(labelled_list, input_file)]
+        # labelled = {}
+        # for orig in original_questions:
+        #     labelled.update
+        labelled = {label : str(i) + " " + orig for i,(label,orig) in enumerate(zip(labelled_list, input_file))}
 
     #labelled = labelled[:20]
     #print(labelled)
@@ -95,14 +107,37 @@ def group(file_path, out_path = "./_grouped_out.txt", eq_fn = tree_equals, **kwa
                 break
         else:
             categories.append({line: tree})
+
+    # TODO: Make this into a function call
+    categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
+        grouped_file.write("%d categories were found\n\n" % (len(categories)))
+        n = 1
         for category in categories:
+            questions = [str(labelled[parse]) for parse in category.keys()]
+            # print(sentences)
+            wh_words = {}
+            for question in questions:
+                word = question.split()[1]
+                if word in wh_words.keys():
+                    wh_words[word] += 1
+                else:
+                    wh_words.update({word:1})
+            # print(wh_words)
+
+            wh_words_percentages = []
+            for word in wh_words.keys():
+                wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word]/len(category)*100))
+
+            print(wh_words_percentages)
+
+
+            grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (n, len(category), ", ".join(wh_words_percentages)))
             grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
             grouped_file.write("\n")
+            n += 1
 
-    print(len(categories))
-
-    # for question in labelled.split("\n"):
+    print("Created %d categories, written to %s" % (len(categories), out_path))
 
 def _test():
     run_easyCCG("QALD-questions.txt-stripped.txt")
