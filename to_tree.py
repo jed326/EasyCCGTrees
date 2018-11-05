@@ -1,5 +1,6 @@
 #!/usr/local/anaconda3/bin/python3
 import sys
+import copy
 
 class Node:
     __slots__ = "children", "name"
@@ -8,7 +9,10 @@ class Node:
         if children is None:
             self.children = []
         else:
-            self.children = children
+            self.children = list(children)
+
+    def __deepcopy__(self, memo = None):
+        return Node(self.name, copy.deepcopy(self.children))
 
 def print_tree(current_node, indent="", last='updown'):
     nb_children = lambda node: sum(nb_children(child) for child in node.children) + 1
