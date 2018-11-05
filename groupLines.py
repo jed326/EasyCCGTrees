@@ -18,15 +18,15 @@ OUT_PATH = pathlib.Path("/tmp/")
 
 
 def run_easyCCG(input_path):
-    with open(OUT_PATH / "ccgout.txt", "w") as outfile:
+    with open(posix_path_sup_py35(OUT_PATH / "ccgout.txt"), "w") as outfile:
         subprocess.run(["java", "-jar", str(EASYCCG_HOME / "easyccg.jar"), "-f", input_path,
                         "--model", str(EASYCCG_HOME / "model_questions")],
                        stdout=outfile)
 
 
 def remove_IDs():
-    with open(OUT_PATH / "ccgout.txt") as origfile:
-        with open(OUT_PATH / "ccgout_stripped.txt", "w") as newfile:
+    with open(posix_path_sup_py35(OUT_PATH / "ccgout.txt")) as origfile:
+        with open(posix_path_sup_py35(OUT_PATH / "ccgout_stripped.txt"), "w") as newfile:
             for count, line in enumerate(origfile):
                 if count % 2 == 1:
                     print(line.rstrip(), file=newfile)
@@ -56,9 +56,14 @@ def tree_equals(tree1, tree2, tolerance=0, limit=2):
                all(tree_equals(child1, child2, tolerance + 1, limit) for (child1, child2) in
                    zip(tree1.children, tree2.children))
 
+def posix_path_sup_py35(posix_path):
+    # todo decide python version here 3 <= V < 3.6
+    if True:
+        return str(posix_path)
+    return posix_path
 
 def label(text):
-    with open(OUT_PATH / "_labeltmp", "w") as tmpfile:
+    with open(posix_path_sup_py35(OUT_PATH / "_labeltmp"), "w") as tmpfile:
         tmpfile.write(text)
     with subprocess.Popen(["java", "-jar", str(EASYCCG_HOME / "easyccg.jar"), "-f", "/tmp/_labeltmp",
                            "--model", str(EASYCCG_HOME / "model_questions")], stdout=subprocess.PIPE) as proc:
@@ -179,6 +184,7 @@ def _test():
 
 
 if __name__ == "__main__":
+    # python3 groupLines.py data/input/QALD-questions-stripped.txt
     # TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
     # or print out list of categories,where each category is just one tree
     # or output
