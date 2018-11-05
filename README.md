@@ -19,7 +19,7 @@ EasyCCG is a CCG parser created by Mike Lewis. It is added as a submodule to thi
 
 To include EasyCCG when cloning, use the command:
 ```
-git clone --recursive
+git clone --recursive git@github.com:jed326/EasyCCGTrees.git
 ```
 Pre-trained modules can be downloaded here: <https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc>   
 For more detailed setup instructions, reference the EasyCCG repository.
@@ -44,3 +44,11 @@ Instructions on how to use ETE can be found in the ETE_Trees directory.
 ## groupLines.py
 
 ## convert.sh & to_tree.py
+to_tree.py natively receives a easyccg output from stdin and writes the corresponding tree string to stdout
+
+convert.sh uses to_tree function to help batch converting questions to tree form
+``` bash
+./convert data/input/QALD-questions-stripped.txt > output.txt
+# or use -i to ignore 1 column per line
+./convert -i1 data/input/QALD-questions.txt > output.txt
+```
