@@ -1,7 +1,7 @@
 import subprocess
 import pathlib
 import argparse
-from to_tree import to_tree, print_tree
+from to_tree import to_tree, print_tree, _write_tree
 # from EasyCCGTrees.Visualize import build
 import os
 
@@ -80,7 +80,7 @@ def label(text):
 '''
 
 
-def group(file_path, out_path="./_grouped_out.txt", eq_fn=tree_equals, **kwargs):
+def group(file_path, out_path="./_grouped_out.txt", eq_fn=tree_equals, output_switch=0, **kwargs):
     # categories is a list of dictionaries
     # each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
@@ -99,7 +99,7 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=tree_equals, **kwargs)
         labelled = {label: str(i) + " " + orig for i, (label, orig) in enumerate(zip(labelled_list, input_file))}
 
     # labelled = labelled[:20]
-    # print(labelled)
+    # print('labelled', labelled)
 
     trees = {label: to_tree(label) for label in labelled.keys()}
     # trees = list(map(labelled, to_tree))
@@ -121,6 +121,14 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=tree_equals, **kwargs)
     # TODO: Make this into a function call
     categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
+        if output_switch == 1:
+            grouped_file.write("-- only categories output --\n")
+        elif output_switch == 2:
+            grouped_file.write("-- only trees output --\n")
+        elif output_switch == 3:
+            grouped_file.write("-- trees and categories output --\n")
+
+
         grouped_file.write("%d categories were found\n\n" % (len(categories)))
         n = 1
         for category in categories:
@@ -139,22 +147,28 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=tree_equals, **kwargs)
             for word in wh_words.keys():
                 wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word] / len(category) * 100))
 
-            print(wh_words_percentages)
-
+            # print(wh_words_percentages)
             grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
                 n, len(category), ", ".join(wh_words_percentages)))
-            grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
+
+            if output_switch == 2:
+                for root in category.values():
+                    _write_tree(root, grouped_file)
+            else:
+                grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
             grouped_file.write("\n")
+
             n += 1
 
-    print("Created %d categories, written to %s" % (len(categories), out_path))
+        print("Created %d categories, written to %s" % (len(categories), out_path))
+
 
 
 def _test():
-    run_easyCCG("QALD-questions.txt-stripped.txt")
+    run_easyCCG("data/input/QALD-questions.txt-stripped.txt")
     remove_IDs()
     tree = None
-    with open(OUT_PATH / "ccgout_stripped.txt") as f:
+    with open(posix_path_sup_py35(OUT_PATH / "ccgout_stripped.txt")) as f:
         first = f.readline().rstrip()
         tree = to_tree(first)
         # print_tree(to_tree(first))
@@ -163,7 +177,7 @@ def _test():
         r"(<T S[wq] 0 2> (<T S[wq]/(S[dcl]\NP) 0 2> (<L (S[wq]/(S[dcl]\NP))/N POS POS Which (S[wq]/(S[dcl]\NP))/N>) (<L N POS POS presidents N>) ) (<T S[dcl]\NP 0 2> (<L (S[dcl]\NP)/(S[pss]\NP) POS POS were (S[dcl]\NP)/(S[pss]\NP)>) (<T S[pss]\NP 0 2> (<L S[pss]\NP POS POS born S[pss]\NP>) (<T (S\NP)\(S\NP) 0 2> (<L ((S\NP)\(S\NP))/NP POS POS in ((S\NP)\(S\NP))/NP>) (<T NP 0 1> (<L N POS POS 1945? N>) ) ) ) ) )")
     # print(type(first))
     # print(type(second))
-
+    print('second', second)
     # print(label("Which presidents were born in 1945?"))
     test1 = to_tree(label("What presidents were born in 1945?"))
     # test2 = to_tree(label("Which presidents were born in 1946"))
@@ -175,10 +189,10 @@ def _test():
     # print(label("How tall is John Windsor"))
     # print_tree(test4)
 
-    print_tree(test1)
-    print_tree(test4)
+    # print_tree(test1)
+    # print_tree(test4)
 
-    print(tree_equals(test1, test4, 0, 0))
+    # print(tree_equals(test1, test4, 0, 0))
     # print(tree_equals(test1,test3))
     # print(tree_equals(test4,test5))
 
@@ -195,5 +209,6 @@ if __name__ == "__main__":
     parser.add_argument("--outfile", help="Optional path to output categories to", default="./_grouped_out.txt")
     # _test()
     args = parser.parse_args()
-    group(args.path, args.outfile)
+    group(args.path, args.outfile, output_switch=2)
+    # _test()
     # group("QALD-questions.txt-stripped.txt") #naive_equals)

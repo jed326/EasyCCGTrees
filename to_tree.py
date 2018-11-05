@@ -1,4 +1,5 @@
-#!/usr/local/anaconda3/bin/python3
+#!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+
 import sys
 
 
@@ -57,6 +58,54 @@ def print_tree(current_node, indent="", last='updown', limit=None):
         next_last = 'down' if down.index(child) is len(down) - 1 else ''
         next_indent = '{0}{1}{2}'.format(indent, ' ' if 'down' in last else '│', " " * len(current_node.name))
         print_tree(child, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+
+def _write_tree(current_node, output_file, indent="", last='updown', limit=None):
+    nb_children = lambda node: sum(nb_children(child) for child in node.children) + 1
+    size_branch = {child: nb_children(child) for child in current_node.children}
+    if limit is not None and limit == 0:
+        return
+    """ Creation of balanced lists for "up" branch and "down" branch. """
+    up = sorted(current_node.children, key=lambda node: nb_children(node))
+    down = []
+    while up and sum(size_branch[node] for node in down) < sum(size_branch[node] for node in up):
+        down.append(up.pop())
+
+    """ Printing of "up" branch. """
+    for child in up:
+        next_last = 'up' if up.index(child) is 0 else ''
+        next_indent = '{0}{1}{2}'.format(indent, ' ' if 'up' in last else '│', " " * len(current_node.name))
+        _write_tree(child, output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+
+    """ Printing of current node. """
+    if last == 'up':
+        start_shape = '┌'
+    elif last == 'down':
+        start_shape = '└'
+    elif last == 'updown':
+        start_shape = ' '
+    else:
+        start_shape = '├'
+
+    if limit is None or limit > 1:
+        if up:
+            end_shape = '┤'
+        elif down:
+            end_shape = '┐'
+        else:
+            end_shape = ''
+    else:
+        end_shape = ''
+
+    # print('{0}{1}{2}{3}'.format(indent, start_shape, current_node.name, end_shape))
+    output_file.write('{0}{1}{2}{3}'.format(indent, start_shape, current_node.name, end_shape))
+    output_file.write('\n')
+    # catch error 
+
+    """ Printing of "down" branch. """
+    for child in down:
+        next_last = 'down' if down.index(child) is len(down) - 1 else ''
+        next_indent = '{0}{1}{2}'.format(indent, ' ' if 'down' in last else '│', " " * len(current_node.name))
+        _write_tree(child, output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
 
 
 def to_tree(string):
