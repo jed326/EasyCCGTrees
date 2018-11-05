@@ -1,20 +1,67 @@
 #!/usr/local/anaconda3/bin/python3
 import sys
-import copy
 
 
 class Node:
-    __slots__ = "children", "name"
+    __slots__ = "children", "value"
 
-    def __init__(self, name, children=None):
-        self.name = name
+    @property
+    def name(self):
+        return self.name
+
+    def __init__(self, value, children=None):
+        self.value = value
         if children is None:
             self.children = []
         else:
-            self.children = list(children)
+            self.children = children
 
-    def __deepcopy__(self, memo = None):
-        return Node(self.name, copy.deepcopy(self.children))
+    def __str__(self):
+        if len(self.children) == 0:
+            return self.name
+        return "{}:[{}]".format(self.name, ",".join([str(child) for child in self.children]))
+
+
+class CCGNode(Node):
+    TREE_STRING = 123
+    LINE_STRING = 124
+    __slots__ = "children", "value", "node_type", "combinator", "string_type"
+
+    @property
+    def name(self):
+        return "%s:%s" % (self.value, self.combinator)
+
+    def __init__(self, ccg_output: str):
+        node_elements = ccg_output[ccg_output.find('<') + 1:ccg_output.find('>')].split()
+        self.node_type = node_elements[0]
+        self.combinator = node_elements[1]
+        node_children_str = ccg_output[ccg_output.find('>') + 1:ccg_output.rfind(')')]
+        node_children = []
+        if self.node_type == 'T':
+            node_children = _bracket_split(node_children_str)
+        super().__init__(node_elements[4] if self.node_type == 'L' else '',
+                         [CCGNode(c) for c in node_children])
+
+    def __str__(self):
+        if len(self.children) == 0:
+            return self.name
+        return "{} {}:[{}]".format(self.name, self.combinator, ",".join([str(child) for child in self.children]))
+
+
+def _bracket_split(s):
+    starts = []
+    ends = []
+    lvl = 0
+    for i, c in enumerate(s):
+        if c == '(':
+            if lvl == 0:
+                starts.append(i)
+            lvl += 1
+        if c == ')':
+            if lvl == 1:
+                ends.append(i)
+            lvl -= 1
+    return [s[start:end + 1] for start, end in zip(starts, ends)]
 
 
 def print_tree(current_node, indent="", last='updown', limit=None):
@@ -64,57 +111,12 @@ def print_tree(current_node, indent="", last='updown', limit=None):
 
 
 def to_tree(string):
-    string = conv_bracket(string, '<', '>')
-    string = string.replace("POS POS ", "")
-    fb = string.find("(")
-    lb = string.rfind(")")
-    if fb == -1 or lb == -1:
-        print(string, "is end")
-        return Node(string)
-    else:
-        string_in = string[fb + 1:lb]
-        fpos = string_in.find("(")
-        if fpos != -1:
-            node = Node(string_in[:fpos])
-        else:
-            return Node(string_in)
-        lvl = 0
-        lpos = []
-        rpos = []
-        for i, c in enumerate(string_in):
-            if c == '(':
-                if lvl == 0:
-                    lpos.append(i)
-                lvl += 1
-            elif c == ')':
-                lvl -= 1
-                if lvl == 0:
-                    rpos.append(i)
-        node.children = [to_tree(string_in[l:r + 1]) for l, r in zip(lpos, rpos)]
-        return node
+    return CCGNode(string)
 
 
-def conv_bracket(s, lbracket_rep, rbracket_rep):
-    inside = False
-    new = ""
-    for i, c in enumerate(s):
-        if c == '<':
-            inside = True
-        elif c == '>':
-            inside = False
-        if c == '(' and inside:
-            new += lbracket_rep
-        elif c == ')' and inside:
-            new += rbracket_rep
-        else:
-            new += c
-    return new
-
-
-# example:
-# java -jar easyccg.jar --model model_qstions -s -r S[q] S[qem] S[wq] | python prettify_stdin.py
+# receives a string from stdin and write tree to stdout
 if __name__ == "__main__":
     file_url = None
     ind_char = "\t"
     data = sys.stdin.read()
-    print_tree(to_tree(data))
+    print_tree(CCGNode(data))
