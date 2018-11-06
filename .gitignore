@@ -9,3 +9,4 @@ easyccg/model_questions
 !output/*.txt
 out/
 __pycache__/
+_grouped_out.txt
