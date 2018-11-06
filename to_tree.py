@@ -1,4 +1,3 @@
-#!/usr/local/anaconda3/bin/python3
 import sys
 
 
@@ -16,6 +15,12 @@ class Node:
         else:
             self.children = children
 
+<<<<<<< HEAD
+    def __deepcopy__(self, memo=None):
+        return Node(self.name, copy.deepcopy(self.children))
+
+=======
+>>>>>>> master
     def __str__(self):
         if len(self.children) == 0:
             return self.name
@@ -64,7 +69,11 @@ def _bracket_split(s):
     return [s[start:end + 1] for start, end in zip(starts, ends)]
 
 
+<<<<<<< HEAD
+def output_tree(current_node, output_file=None, indent="", last='updown', limit=None):
+=======
 def print_tree(current_node, indent="", last='updown', limit=None):
+>>>>>>> master
     nb_children = lambda node: sum(nb_children(child) for child in node.children) + 1
     size_branch = {child: nb_children(child) for child in current_node.children}
     if limit is not None and limit == 0:
@@ -79,7 +88,7 @@ def print_tree(current_node, indent="", last='updown', limit=None):
     for child in up:
         next_last = 'up' if up.index(child) is 0 else ''
         next_indent = '{0}{1}{2}'.format(indent, ' ' if 'up' in last else '│', " " * len(current_node.name))
-        print_tree(child, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+        output_tree(child, output_file=output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
 
     """ Printing of current node. """
     if last == 'up':
@@ -101,13 +110,17 @@ def print_tree(current_node, indent="", last='updown', limit=None):
     else:
         end_shape = ''
 
-    print('{0}{1}{2}{3}'.format(indent, start_shape, current_node.name, end_shape))
+    if output_file is None:
+        print('{0}{1}{2}{3}'.format(indent, start_shape, current_node.name, end_shape))
+    else:
+        # try catch TODO 
+        output_file.write('{0}{1}{2}{3}\n'.format(indent, start_shape, current_node.name, end_shape))
 
     """ Printing of "down" branch. """
     for child in down:
         next_last = 'down' if down.index(child) is len(down) - 1 else ''
         next_indent = '{0}{1}{2}'.format(indent, ' ' if 'down' in last else '│', " " * len(current_node.name))
-        print_tree(child, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+        output_tree(child, output_file=output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
 
 
 def to_tree(string):
@@ -119,4 +132,8 @@ if __name__ == "__main__":
     file_url = None
     ind_char = "\t"
     data = sys.stdin.read()
+<<<<<<< HEAD
+    output_tree(CCGNode(data))
+=======
     print_tree(CCGNode(data))
+>>>>>>> master
