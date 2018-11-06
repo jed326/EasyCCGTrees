@@ -1,6 +1,8 @@
 import sys
+import copy
 
 
+# basic node class
 class Node:
     __slots__ = "children", "value"
 
@@ -24,14 +26,16 @@ class Node:
         return "{}:[{}]".format(self.name, ",".join([str(child) for child in self.children]))
 
 
+# tree node for ccg parse
 class CCGNode(Node):
-    TREE_STRING = 123
-    LINE_STRING = 124
     __slots__ = "children", "value", "node_type", "combinator", "string_type"
 
     @property
     def name(self):
-        return "%s:%s" % (self.value, self.combinator)
+        if self.node_type == 'T':
+            return self.combinator
+        else:
+            return "%s %s" % (self.combinator, self.value)
 
     def __init__(self, ccg_output: str):
         node_elements = ccg_output[ccg_output.find('<') + 1:ccg_output.find('>')].split()
@@ -50,6 +54,7 @@ class CCGNode(Node):
         return "{} {}:[{}]".format(self.name, self.combinator, ",".join([str(child) for child in self.children]))
 
 
+# separates a string to a list of strings based on top-level brackets
 def _bracket_split(s):
     starts = []
     ends = []
@@ -66,6 +71,7 @@ def _bracket_split(s):
     return [s[start:end + 1] for start, end in zip(starts, ends)]
 
 
+# print tree to either screen or output to file
 def output_tree(current_node, output_file=None, indent="", last='updown', limit=None):
     nb_children = lambda node: sum(nb_children(child) for child in node.children) + 1
     size_branch = {child: nb_children(child) for child in current_node.children}
@@ -81,7 +87,8 @@ def output_tree(current_node, output_file=None, indent="", last='updown', limit=
     for child in up:
         next_last = 'up' if up.index(child) is 0 else ''
         next_indent = '{0}{1}{2}'.format(indent, ' ' if 'up' in last else '│', " " * len(current_node.name))
-        output_tree(child, output_file=output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+        output_tree(child, output_file=output_file, indent=next_indent, last=next_last,
+                    limit=limit - 1 if limit else None)
 
     """ Printing of current node. """
     if last == 'up':
@@ -113,17 +120,17 @@ def output_tree(current_node, output_file=None, indent="", last='updown', limit=
     for child in down:
         next_last = 'down' if down.index(child) is len(down) - 1 else ''
         next_indent = '{0}{1}{2}'.format(indent, ' ' if 'down' in last else '│', " " * len(current_node.name))
-        output_tree(child, output_file=output_file, indent=next_indent, last=next_last, limit=limit - 1 if limit else None)
+        output_tree(child, output_file=output_file, indent=next_indent, last=next_last,
+                    limit=limit - 1 if limit else None)
 
 
+# legacy:
+# converts a string to tree format
 def to_tree(string):
     return CCGNode(string)
 
 
 # receives a string from stdin and write tree to stdout
 if __name__ == "__main__":
-    file_url = None
-    ind_char = "\t"
     data = sys.stdin.read()
     output_tree(CCGNode(data))
-
