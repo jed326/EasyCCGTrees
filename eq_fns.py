@@ -1,9 +1,5 @@
 import functools
-<<<<<<< HEAD
 from to_tree import Node, output_tree
-=======
-from to_tree import print_tree, Node
->>>>>>> master
 import functools
 import copy
 

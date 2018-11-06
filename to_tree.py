@@ -15,12 +15,9 @@ class Node:
         else:
             self.children = children
 
-<<<<<<< HEAD
     def __deepcopy__(self, memo=None):
         return Node(self.name, copy.deepcopy(self.children))
 
-=======
->>>>>>> master
     def __str__(self):
         if len(self.children) == 0:
             return self.name
@@ -69,11 +66,7 @@ def _bracket_split(s):
     return [s[start:end + 1] for start, end in zip(starts, ends)]
 
 
-<<<<<<< HEAD
 def output_tree(current_node, output_file=None, indent="", last='updown', limit=None):
-=======
-def print_tree(current_node, indent="", last='updown', limit=None):
->>>>>>> master
     nb_children = lambda node: sum(nb_children(child) for child in node.children) + 1
     size_branch = {child: nb_children(child) for child in current_node.children}
     if limit is not None and limit == 0:
@@ -132,8 +125,5 @@ if __name__ == "__main__":
     file_url = None
     ind_char = "\t"
     data = sys.stdin.read()
-<<<<<<< HEAD
     output_tree(CCGNode(data))
-=======
-    print_tree(CCGNode(data))
->>>>>>> master
+
