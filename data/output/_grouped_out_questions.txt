@@ -1,311 +1,311 @@
 51 categories were found
 
-Category 1: contains 53 questions with wh-words [What (49.06%), Who (41.51%), Where (3.77%), When (5.66%)]
-207 Where is the Sandhammaren located?
-59 What is the capital of Canada?
-100 Where is the residence of the prime minister of Spain?
-136 Who was the wife of U.S. president Lincoln?
-234 Who is the youngest Snooker player?
-120 What is the currency of the Czech Republic?
-203 When was the Cobble Hill Tunnel built?
-195 What is the hair color of Marlon Teixeira?
-80 What is the ruling party in Lisbon?
-231 Who is the mayor of the capital of New Caledonia?
-126 What is the highest mountain in Australia?
-96 What is the largest city in Australia?
-61 Who was the father of Queen Elizabeth II?
-84 What is the time zone of Salt Lake City?
-192 What is the capital of Venezuela?
-232 Who is the owner of Mazda?
-47 What is the profession of Frank Herbert?
-81 What are the nicknames of San Francisco?
-57 Who was the successor of John F. Kennedy?
-65 What is the birth name of Angela Merkel?
+Category 1: contains 53 questions with wh-words [Who (41.51%), What (49.06%), When (5.66%), Where (3.77%)]
 1 Who are the presidents of the United States?
-229 Who is the manager of Gazelle FC?
-128 What are the official languages of the Philippines?
-237 Who were the parents of Maria of Antioch?
-73 Who is the husband of Amanda Palmer?
-79 What is the second highest mountain on Earth?
-191 What is the area code of Aegina?
-190 What are the official languages of Tunisia?
-64 Who is the mayor of Berlin?
-194 What is the eye color of Liza Kennedy?
-121 What is the area code of Berlin?
-197 What is the ruling party in Lo Espejo?
-138 What is the official website of Tom Cruise?
-193 What is the currency of Rhodesia?
+159 What is the highest mountain?
 34 What is the revenue of IBM?
 39 Who is the author of WikiLeaks?
-51 Who is the Formula 1 race driver with the most races?
-226 Who is the editor of Semana?
-205 When was the Operation Purple Haze?
-228 Who is the heaviest player of the ASK Riga?
-52 Who is the youngest player in the Premier League?
-230 Who is the mayor of Virar?
-129 Who is the mayor of New York City?
-42 What is the highest mountain in Germany?
-60 Who is the governor of Texas?
-233 Who is the tallest player of Udinese Calcio?
-54 What is the longest river?
-227 Who is the founder of DC Comics?
-89 Who are the parents of the wife of Juan Carlos I?
-159 What is the highest mountain?
+121 What is the area code of Berlin?
 124 When was the Battle of Gettysburg?
-196 What is the official color of the Carleton University?
+42 What is the highest mountain in Germany?
+128 What are the official languages of the Philippines?
+129 Who is the mayor of New York City?
+47 What is the profession of Frank Herbert?
+51 Who is the Formula 1 race driver with the most races?
+52 Who is the youngest player in the Premier League?
+54 What is the longest river?
+57 Who was the successor of John F. Kennedy?
+59 What is the capital of Canada?
+60 Who is the governor of Texas?
+61 Who was the father of Queen Elizabeth II?
+64 Who is the mayor of Berlin?
+65 What is the birth name of Angela Merkel?
+73 Who is the husband of Amanda Palmer?
+79 What is the second highest mountain on Earth?
+80 What is the ruling party in Lisbon?
+81 What are the nicknames of San Francisco?
+84 What is the time zone of Salt Lake City?
+89 Who are the parents of the wife of Juan Carlos I?
+96 What is the largest city in Australia?
+100 Where is the residence of the prime minister of Spain?
 101 What is the founding year of the brewery that produces Pilsner Urquell?
+120 What is the currency of the Czech Republic?
+126 What is the highest mountain in Australia?
+136 Who was the wife of U.S. president Lincoln?
+138 What is the official website of Tom Cruise?
+190 What are the official languages of Tunisia?
+191 What is the area code of Aegina?
+192 What is the capital of Venezuela?
+193 What is the currency of Rhodesia?
+194 What is the eye color of Liza Kennedy?
+195 What is the hair color of Marlon Teixeira?
+196 What is the official color of the Carleton University?
+197 What is the ruling party in Lo Espejo?
+203 When was the Cobble Hill Tunnel built?
+205 When was the Operation Purple Haze?
+207 Where is the Sandhammaren located?
+226 Who is the editor of Semana?
+227 Who is the founder of DC Comics?
+228 Who is the heaviest player of the ASK Riga?
+229 Who is the manager of Gazelle FC?
+230 Who is the mayor of Virar?
+231 Who is the mayor of the capital of New Caledonia?
+232 Who is the owner of Mazda?
+233 Who is the tallest player of Udinese Calcio?
+234 Who is the youngest Snooker player?
+237 Who were the parents of Maria of Antioch?
 
-Category 2: contains 16 questions with wh-words [What (6.25%), Which (93.75%)]
-17 Which books were written by Danielle Steel?
-158 Which organizations were founded in 1950?
-213 Which languages are spoken in Romania?
-210 Which books were published by DAW Books?
-18 Which companies are located in California, USA?
-150 Which airports are located in California, USA?
-14 What languages are spoken in Estonia?
-147 Which languages are spoken in Estonia?
-75 Which countries are connected by the Rhine?
-217 Which presidents were born in 1891?
-88 Which ships were called after Benjamin Franklin?
-11 Which people were born in Heraklion?
+Category 2: contains 16 questions with wh-words [Which (93.75%), What (6.25%)]
 135 Which presidents were born in 1945?
-208 Which airports are located in Chios?
-216 Which organizations were founded in 1918?
 144 Which actors were born in Germany?
+11 Which people were born in Heraklion?
+14 What languages are spoken in Estonia?
+17 Which books were written by Danielle Steel?
+18 Which companies are located in California, USA?
+158 Which organizations were founded in 1950?
+75 Which countries are connected by the Rhine?
+88 Which ships were called after Benjamin Franklin?
+147 Which languages are spoken in Estonia?
+150 Which airports are located in California, USA?
+208 Which airports are located in Chios?
+210 Which books were published by DAW Books?
+213 Which languages are spoken in Romania?
+216 Which organizations were founded in 1918?
+217 Which presidents were born in 1891?
 
 Category 3: contains 12 questions with wh-words [Give (100.00%)]
-140 Give me all people with first name Jimmy.
-171 Give me the homepage of Metropolitan Home.
-167 Give me all professional skateboarders from Sweden.
-168 Give me all soccer clubs in Qatar.
-170 Give me the children of David Foster.
-53 Give me all members of Prodigy.
-132 Give me the homepage of Forbes.
-154 Give me all movies with Tom Cruise.
-70 Give me all companies in Munich.
 22 Give me all movies with Tom Cruise!
 127 Give me all soccer clubs in Spain.
+132 Give me the homepage of Forbes.
+53 Give me all members of Prodigy.
+70 Give me all companies in Munich.
+167 Give me all professional skateboarders from Sweden.
+140 Give me all people with first name Jimmy.
+154 Give me all movies with Tom Cruise.
 164 Give me all companies in Jena.
+168 Give me all soccer clubs in Qatar.
+170 Give me the children of David Foster.
+171 Give me the homepage of Metropolitan Home.
 
 Category 4: contains 11 questions with wh-words [Who (90.91%), Which (9.09%)]
-223 Who developed Quake engine?
-110 Who created Goofy?
-236 Who produces Red Bull?
 5 Who created English Wikipedia?
+68 Who developed Skype?
+72 Who founded Intel?
+110 Who created Goofy?
+114 Which states border Illinois?
 142 Who created Wikipedia?
 219 Who created Retrocrush?
-72 Who founded Intel?
-68 Who developed Skype?
-114 Which states border Illinois?
-225 Who founded Sony?
 220 Who created Miss Marple?
+223 Who developed Quake engine?
+225 Who founded Sony?
+236 Who produces Red Bull?
 
-Category 5: contains 8 questions with wh-words [Give (100.00%)]
-99 Give me a list of all trumpet players that were bandleaders.
-165 Give me all inflows of the Lake Houston.
-157 Give me all soccer clubs in the Premier League.
-86 Give me a list of all lakes in Denmark.
-166 Give me all members of The Who.
-133 Give me all companies in the advertising industry.
-112 Give me the birthdays of all actors of the television show Charmed.
-103 Give me all B-sides of the Ramones.
-
-Category 6: contains 8 questions with wh-words [Who (100.00%)]
+Category 5: contains 8 questions with wh-words [Who (100.00%)]
+137 Who developed the video game World of Warcraft?
+97 Who composed the music for Harold and Maude?
+102 Who wrote the lyrics for the Polish national anthem?
+104 Who painted The Storm on the Sea of Galilee?
+130 Who designed the Brooklyn Bridge?
+221 Who created the comic Old Man Logan?
 222 Who designed the Langebro?
 224 Who developed the video game Duke Nukem 3D?
-137 Who developed the video game World of Warcraft?
-102 Who wrote the lyrics for the Polish national anthem?
-130 Who designed the Brooklyn Bridge?
-97 Who composed the music for Harold and Maude?
-221 Who created the comic Old Man Logan?
-104 Who painted The Storm on the Sea of Galilee?
 
-Category 7: contains 6 questions with wh-words [How (100.00%)]
+Category 6: contains 8 questions with wh-words [Give (100.00%)]
+157 Give me all soccer clubs in the Premier League.
+86 Give me a list of all lakes in Denmark.
+99 Give me a list of all trumpet players that were bandleaders.
+103 Give me all B-sides of the Ramones.
+112 Give me the birthdays of all actors of the television show Charmed.
+133 Give me all companies in the advertising industry.
+165 Give me all inflows of the Lake Houston.
+166 Give me all members of The Who.
+
+Category 7: contains 6 questions with wh-words [Give (100.00%)]
+145 Give me all films produced by Hal Roach.
+62 Give me all movies directed by Francis Ford Coppola.
+146 Give me all video games published by Mean Hamster Software.
+149 Give me all books written by Danielle Steel.
+162 Give me all books written by David Foster Wallace.
+169 Give me all video games published by Black Isle Studios.
+
+Category 8: contains 6 questions with wh-words [How (100.00%)]
+69 How many inhabitants does Maribor have?
+113 How many employees does IBM have?
 177 How many employees does Staedtler have?
 178 How many inhabitants does Nagamangala have?
-181 How many students does the Texas Tech University have?
-69 How many inhabitants does Maribor have?
 179 How many pages does The Man with the Red Tattoo have?
-113 How many employees does IBM have?
+181 How many students does the Texas Tech University have?
 
-Category 8: contains 6 questions with wh-words [Give (100.00%)]
-149 Give me all books written by Danielle Steel.
-62 Give me all movies directed by Francis Ford Coppola.
-169 Give me all video games published by Black Isle Studios.
-162 Give me all books written by David Foster Wallace.
-145 Give me all films produced by Hal Roach.
-146 Give me all video games published by Mean Hamster Software.
+Category 9: contains 5 questions with wh-words [When (100.00%)]
+10 When was DBpedia released?
+82 When were the Hells Angels founded?
+201 When was Sevcon founded?
+202 When was Albert Schweitzer born?
+204 When was the Riverdale Monument built?
 
-Category 9: contains 5 questions with wh-words [Which (100.00%)]
-209 Which artist made the album Old School Prankstas?
-125 Which river does the Brooklyn Bridge cross?
-214 Which museum exhibits The Skater?
-211 Which bridges cross the Prut?
-74 Which cities does the Weser flow through?
+Category 10: contains 5 questions with wh-words [In (100.00%)]
+152 In which programming language is GIMP written?
+115 In which country is the Limerick Lake?
+186 In which country is the Tasman Lake?
+187 In which country is the Tiefer See?
+188 In which programming language is QuickTime written?
 
-Category 10: contains 5 questions with wh-words [Through (20.00%), To (20.00%), In (60.00%)]
+Category 11: contains 5 questions with wh-words [In (60.00%), To (20.00%), Through (20.00%)]
 155 In which films did Julia Roberts as well as Richard Gere play?
+107 In which country does the Nile start?
 67 In which military conflicts did Lawrence of Arabia participate?
 92 To which countries does the Himalayan mountain system extend?
-107 In which country does the Nile start?
 122 Through which countries does the Yenisei river flow?
 
-Category 11: contains 5 questions with wh-words [How (100.00%)]
-183 How tall is John Windsor?
-184 How tall is Kate Upton?
+Category 12: contains 5 questions with wh-words [How (100.00%)]
 109 How tall is Claudia Schiffer?
 58 How tall is Michael Jordan?
 173 How deep is Steinsee?
+183 How tall is John Windsor?
+184 How tall is Kate Upton?
 
-Category 12: contains 5 questions with wh-words [How (100.00%)]
-175 How high is the Volcano Mountain?
-172 How big is the Mammoth Pool Reservoir?
+Category 13: contains 5 questions with wh-words [Which (100.00%)]
+74 Which cities does the Weser flow through?
+125 Which river does the Brooklyn Bridge cross?
+209 Which artist made the album Old School Prankstas?
+211 Which bridges cross the Prut?
+214 Which museum exhibits The Skater?
+
+Category 14: contains 5 questions with wh-words [How (100.00%)]
 94 How high is the Mount Everest?
+172 How big is the Mammoth Pool Reservoir?
 174 How high is the Doe Hill Mountain?
+175 How high is the Volcano Mountain?
 176 How high is the Landegode Lighthouse?
 
-Category 13: contains 5 questions with wh-words [When (100.00%)]
-201 When was Sevcon founded?
-10 When was DBpedia released?
-204 When was the Riverdale Monument built?
-202 When was Albert Schweitzer born?
-82 When were the Hells Angels founded?
-
-Category 14: contains 5 questions with wh-words [In (100.00%)]
-188 In which programming language is QuickTime written?
-186 In which country is the Tasman Lake?
-152 In which programming language is GIMP written?
-187 In which country is the Tiefer See?
-115 In which country is the Limerick Lake?
-
 Category 15: contains 4 questions with wh-words [Which (100.00%)]
-76 Which professional surfers were born on the Philippines?
-218 Which professional surfers were born in Australia?
-131 Which telecommunications organizations are located in Belgium?
-116 Which television shows were created by Walt Disney?
-
-Category 16: contains 4 questions with wh-words [Which (100.00%)]
+8 Which country does the Airedale Terrier come from?
 19 Which genre does DBpedia belong to?
 108 Which classis does the Millepede belong to?
 105 Which country does the creator of Miffy come from?
-8 Which country does the Airedale Terrier come from?
 
-Category 17: contains 4 questions with wh-words [When (50.00%), Where (50.00%)]
+Category 16: contains 4 questions with wh-words [Where (50.00%), When (50.00%)]
+141 Where did Abraham Lincoln die?
+198 When did Jules Bergman die?
 199 When did Red Sonja's creator die?
 206 Where did Queen Emma of Hawaii die?
-198 When did Jules Bergman die?
-141 Where did Abraham Lincoln die?
+
+Category 17: contains 4 questions with wh-words [Which (100.00%)]
+116 Which television shows were created by Walt Disney?
+131 Which telecommunications organizations are located in Belgium?
+76 Which professional surfers were born on the Philippines?
+218 Which professional surfers were born in Australia?
 
 Category 18: contains 3 questions with wh-words [Give (100.00%)]
 55 Give me all cars that are produced in Germany.
-163 Give me all cars that are produced in Netherlands.
 56 Give me all people that were born in Vienna and died in Berlin.
+163 Give me all cars that are produced in Netherlands.
 
-Category 19: contains 2 questions with wh-words [Which (100.00%)]
-13 Which software has been published by Mean Hamster Software?
-143 Which software has been developed by organizations founded in California?
-
-Category 20: contains 2 questions with wh-words [In (50.00%), List (50.00%)]
-117 In which films directed by Garry Marshall was Julia Roberts starring?
+Category 19: contains 2 questions with wh-words [List (50.00%), In (50.00%)]
 139 List all episodes of the first season of the HBO television series The Sopranos!
+117 In which films directed by Garry Marshall was Julia Roberts starring?
 
-Category 21: contains 2 questions with wh-words [Who (100.00%)]
-235 Who painted Unfinished portrait of General Bonaparte?
-153 Who produced films starring Natalie Portman?
+Category 20: contains 2 questions with wh-words [Which (100.00%)]
+143 Which software has been developed by organizations founded in California?
+13 Which software has been published by Mean Hamster Software?
 
-Category 22: contains 2 questions with wh-words [Which (100.00%)]
-78 Which other weapons did the designer of the Uzi develop?
+Category 21: contains 2 questions with wh-words [Which (100.00%)]
 148 Which music albums contain the song Last Christmas?
+78 Which other weapons did the designer of the Uzi develop?
 
-Category 23: contains 2 questions with wh-words [Give (100.00%)]
-87 Give me all Argentine films.
-161 Give me all Avant-garde jazz record labels.
+Category 22: contains 2 questions with wh-words [Who (100.00%)]
+153 Who produced films starring Natalie Portman?
+235 Who painted Unfinished portrait of General Bonaparte?
 
-Category 24: contains 2 questions with wh-words [Which (100.00%)]
-49 Which companies are in the computer software industry?
+Category 23: contains 2 questions with wh-words [Which (100.00%)]
 118 Which bridges are of the same type as the Manhattan Bridge?
+49 Which companies are in the computer software industry?
 
-Category 25: contains 2 questions with wh-words [Give (100.00%)]
+Category 24: contains 2 questions with wh-words [Give (100.00%)]
 83 Give me the Apollo 14 astronauts.
 151 Give me all Canadian Grunge record labels.
 
-Category 26: contains 2 questions with wh-words [Which (100.00%)]
-119 Which awards did WikiLeaks win?
-212 Which instruments does Courtney Love play?
+Category 25: contains 2 questions with wh-words [Give (100.00%)]
+87 Give me all Argentine films.
+161 Give me all Avant-garde jazz record labels.
 
-Category 27: contains 2 questions with wh-words [How (100.00%)]
+Category 26: contains 2 questions with wh-words [How (100.00%)]
 95 How many people live in the capital of Australia?
 180 How many people live in the capital of Togo?
 
-Category 28: contains 1 questions with wh-words [List (100.00%)]
-91 List the children of Margaret Thatcher.
+Category 27: contains 2 questions with wh-words [Which (100.00%)]
+119 Which awards did WikiLeaks win?
+212 Which instruments does Courtney Love play?
 
-Category 29: contains 1 questions with wh-words [Which (100.00%)]
-215 Which music albums contain the song Into Your Arms?
+Category 28: contains 1 questions with wh-words [Which (100.00%)]
+4 Which people have as their given name Jimmy?
+
+Category 29: contains 1 questions with wh-words [Who (100.00%)]
+9 Who was Tom Hanks married to?
 
 Category 30: contains 1 questions with wh-words [Who (100.00%)]
 15 Who is called Dana?
 
-Category 31: contains 1 questions with wh-words [Which (100.00%)]
-93 Which books by Kerouac were published by Viking Press?
+Category 31: contains 1 questions with wh-words [Who (100.00%)]
+156 Who wrote the book The pillars of the Earth?
 
-Category 32: contains 1 questions with wh-words [Which (100.00%)]
+Category 32: contains 1 questions with wh-words [Give (100.00%)]
+28 Give me the official websites of actors of the television show Charmed.
+
+Category 33: contains 1 questions with wh-words [Which (100.00%)]
 111 Which museum exhibits The Scream by Munch?
 
-Category 33: contains 1 questions with wh-words [How (100.00%)]
-182 How much did Vanilla Sky cost?
-
-Category 34: contains 1 questions with wh-words [In (100.00%)]
-185 In which country is Solaize located?
+Category 34: contains 1 questions with wh-words [What (100.00%)]
+134 What did Bruce Carver die from?
 
 Category 35: contains 1 questions with wh-words [Give (100.00%)]
+63 Give me all actors starring in movies directed by and starring William Shatner.
+
+Category 36: contains 1 questions with wh-words [Give (100.00%)]
 66 Give me all Australian nonprofit organizations.
 
-Category 36: contains 1 questions with wh-words [When (100.00%)]
-200 When is Gibraltar Diamond Jubilee Flotilla?
+Category 37: contains 1 questions with wh-words [List (100.00%)]
+71 List all boardgames by GMT.
 
-Category 37: contains 1 questions with wh-words [When (100.00%)]
-123 When did Finland join the EU?
-
-Category 38: contains 1 questions with wh-words [For (100.00%)]
-106 For which label did Elvis record his first album?
+Category 38: contains 1 questions with wh-words [In (100.00%)]
+77 In which UK city are the headquarters of the MI6?
 
 Category 39: contains 1 questions with wh-words [When (100.00%)]
 90 When was Alberta admitted as province?
 
-Category 40: contains 1 questions with wh-words [Who (100.00%)]
-9 Who was Tom Hanks married to?
+Category 40: contains 1 questions with wh-words [List (100.00%)]
+91 List the children of Margaret Thatcher.
 
-Category 41: contains 1 questions with wh-words [What (100.00%)]
-134 What did Bruce Carver die from?
+Category 41: contains 1 questions with wh-words [Which (100.00%)]
+93 Which books by Kerouac were published by Viking Press?
 
-Category 42: contains 1 questions with wh-words [From (100.00%)]
-160 From which region is the Refosco dal Peduncolo Rosso?
-
-Category 43: contains 1 questions with wh-words [Who (100.00%)]
-238 Who wrote the book Leave It to Psmith?
-
-Category 44: contains 1 questions with wh-words [In (100.00%)]
-77 In which UK city are the headquarters of the MI6?
-
-Category 45: contains 1 questions with wh-words [Which (100.00%)]
+Category 42: contains 1 questions with wh-words [Which (100.00%)]
 98 Which films starring Clint Eastwood did he direct himself?
 
-Category 46: contains 1 questions with wh-words [Give (100.00%)]
-63 Give me all actors starring in movies directed by and starring William Shatner.
+Category 43: contains 1 questions with wh-words [For (100.00%)]
+106 For which label did Elvis record his first album?
 
-Category 47: contains 1 questions with wh-words [Which (100.00%)]
-4 Which people have as their given name Jimmy?
+Category 44: contains 1 questions with wh-words [When (100.00%)]
+123 When did Finland join the EU?
 
-Category 48: contains 1 questions with wh-words [List (100.00%)]
-71 List all boardgames by GMT.
+Category 45: contains 1 questions with wh-words [From (100.00%)]
+160 From which region is the Refosco dal Peduncolo Rosso?
 
-Category 49: contains 1 questions with wh-words [Show (100.00%)]
+Category 46: contains 1 questions with wh-words [How (100.00%)]
+182 How much did Vanilla Sky cost?
+
+Category 47: contains 1 questions with wh-words [In (100.00%)]
+185 In which country is Solaize located?
+
+Category 48: contains 1 questions with wh-words [Show (100.00%)]
 189 Show me everyone who was born on Boxing Day.
 
-Category 50: contains 1 questions with wh-words [Who (100.00%)]
-156 Who wrote the book The pillars of the Earth?
+Category 49: contains 1 questions with wh-words [When (100.00%)]
+200 When is Gibraltar Diamond Jubilee Flotilla?
 
-Category 51: contains 1 questions with wh-words [Give (100.00%)]
-28 Give me the official websites of actors of the television show Charmed.
+Category 50: contains 1 questions with wh-words [Which (100.00%)]
+215 Which music albums contain the song Into Your Arms?
+
+Category 51: contains 1 questions with wh-words [Who (100.00%)]
+238 Who wrote the book Leave It to Psmith?
 
