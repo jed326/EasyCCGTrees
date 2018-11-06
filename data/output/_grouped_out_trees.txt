@@ -1,0 +1,3109 @@
+51 categories were found
+
+Category 1: contains 53 questions with wh-words [What (49.06%), Where (3.77%), When (5.66%), Who (41.51%)]
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌youngest:N/N
+                │       │       └:N┤
+                │       │          └player:N
+                └:NP[nb]┤
+                        │      ┌in:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       │  ┌Premier:N/N
+                                       └:N┤
+                                          └League?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └governor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Texas?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌are:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └nicknames:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌San:N/N
+                                   └:N┤
+                                      └Francisco?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └mayor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌New:N/N
+                                   └:N┤
+                                      │  ┌York:N/N
+                                      └:N┤
+                                         └City?:N
+       ┌When:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └Battle:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Gettysburg?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └mayor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Berlin?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └capital:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Venezuela?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌official:N/N
+                │       │       └:N┤
+                │       │          └color:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       │  ┌Carleton:N/N
+                                       └:N┤
+                                          └University?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌eye:N/N
+                │       │       └:N┤
+                │       │          └color:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Liza:N/N
+                                   └:N┤
+                                      └Kennedy?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌official:N/N
+                │       │       └:N┤
+                │       │          └website:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Tom:N/N
+                                   └:N┤
+                                      └Cruise?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌time:N/N
+                │       │       └:N┤
+                │       │          └zone:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Salt:N/N
+                                   └:N┤
+                                      │  ┌Lake:N/N
+                                      └:N┤
+                                         └City?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌tallest:N/N
+                │       │       └:N┤
+                │       │          └player:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Udinese:N/N
+                                   └:N┤
+                                      └Calcio?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └founder:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌DC:N/N
+                                   └:N┤
+                                      └Comics?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌in:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Australia?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌highest:N/N
+                                └:N┤
+                                   └mountain:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌founding:N/N
+                │       │       └:N┤
+                │       │          └year:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │               ┌the:NP[nb]/N
+                               │       ┌:NP[nb]┤
+                               │       │       └brewery:N
+                               └:NP[nb]┤
+                                       │      ┌that:(NP\NP)/(S[dcl]\NP)
+                                       └:NP\NP┤
+                                              │          ┌produces:(S[dcl]\NP)/NP
+                                              └:S[dcl]\NP┤
+                                                         └:NP┐
+                                                             │  ┌Pilsner:N/N
+                                                             └:N┤
+                                                                └Urquell?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌heaviest:N/N
+                │       │       └:N┤
+                │       │          └player:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       │  ┌ASK:N/N
+                                       └:N┤
+                                          └Riga?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └husband:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Amanda:N/N
+                                   └:N┤
+                                      └Palmer?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌in:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Lisbon?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌ruling:N/N
+                                └:N┤
+                                   └party:N
+       ┌Where:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └residence:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │              ┌of:(NP\NP)/NP
+                               │       ┌:NP\NP┤
+                               │       │      └:NP┐
+                               │       │          └Spain?:N
+                               └:NP[nb]┤
+                                       │       ┌the:NP[nb]/N
+                                       └:NP[nb]┤
+                                               │  ┌prime:N/N
+                                               └:N┤
+                                                  └minister:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌in:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Germany?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌highest:N/N
+                                └:N┤
+                                   └mountain:N
+       ┌When:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌Operation:N/N
+                        └:N┤
+                           │  ┌Purple:N/N
+                           └:N┤
+                              └Haze?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └mayor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Virar?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └currency:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       │  ┌Czech:N/N
+                                       └:N┤
+                                          └Republic?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌on:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Earth?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌second:N/N
+                                └:N┤
+                                   │  ┌highest:N/N
+                                   └:N┤
+                                      └mountain:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └successor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌John:N/N
+                                   └:N┤
+                                      │  ┌F.:N/N
+                                      └:N┤
+                                         └Kennedy?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌highest:N/N
+                        └:N┤
+                           └mountain?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └wife:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌U.S.:N/N
+                                   └:N┤
+                                      │  ┌president:N/N
+                                      └:N┤
+                                         └Lincoln?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └author:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └WikiLeaks?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └revenue:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └IBM?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └currency:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Rhodesia?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └profession:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Frank:N/N
+                                   └:N┤
+                                      └Herbert?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌were:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └parents:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │   ┌:NP┐
+                               │   │   └Maria:N
+                               └:NP┤
+                                   │      ┌of:(NP\NP)/NP
+                                   └:NP\NP┤
+                                          └:NP┐
+                                              └Antioch?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌are:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └presidents:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       │  ┌United:N/N
+                                       └:N┤
+                                          └States?:N
+       ┌When:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌built?:N\N
+                        └:N┤
+                           │  ┌Tunnel:N
+                           └:N┤
+                              │    ┌Cobble:(N/N)/(N/N)
+                              └:N/N┤
+                                   └Hill:N/N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌of:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Aegina?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌area:N/N
+                                └:N┤
+                                   └code:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌are:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └parents:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │               ┌the:NP[nb]/N
+                               │       ┌:NP[nb]┤
+                               │       │       └wife:N
+                               └:NP[nb]┤
+                                       │      ┌of:(NP\NP)/NP
+                                       └:NP\NP┤
+                                              └:NP┐
+                                                  │  ┌Juan:N/N
+                                                  └:N┤
+                                                     │  ┌Carlos:N/N
+                                                     └:N┤
+                                                        └I?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └mayor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │               ┌the:NP[nb]/N
+                               │       ┌:NP[nb]┤
+                               │       │       └capital:N
+                               └:NP[nb]┤
+                                       │      ┌of:(NP\NP)/NP
+                                       └:NP\NP┤
+                                              └:NP┐
+                                                  │  ┌New:N/N
+                                                  └:N┤
+                                                     └Caledonia?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └editor:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Semana?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌player?:N\N
+                        └:N┤
+                           │  ┌youngest:N/N
+                           └:N┤
+                              └Snooker:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌in:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Australia?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌largest:N/N
+                                └:N┤
+                                   └city:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └capital:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Canada?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └Formula:N
+                └:NP[nb]┤
+                        │      ┌1:(NP\NP)/NP
+                        └:NP\NP┤
+                               │   ┌:NP┐
+                               │   │   │  ┌race:N/N
+                               │   │   └:N┤
+                               │   │      └driver:N
+                               └:NP┤
+                                   │      ┌with:(NP\NP)/NP
+                                   └:NP\NP┤
+                                          │       ┌the:NP[nb]/N
+                                          └:NP[nb]┤
+                                                  │  ┌most:N/N
+                                                  └:N┤
+                                                     └races?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └owner:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   └Mazda?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌of:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Berlin?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌area:N/N
+                                └:N┤
+                                   └code:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌birth:N/N
+                │       │       └:N┤
+                │       │          └name:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Angela:N/N
+                                   └:N┤
+                                      └Merkel?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌are:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌official:N/N
+                │       │       └:N┤
+                │       │          └languages:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │       ┌the:NP[nb]/N
+                               └:NP[nb]┤
+                                       └Philippines?:N
+       ┌Where:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌Sandhammaren:N
+                        └:N┤
+                           └located?:N\N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌hair:N/N
+                │       │       └:N┤
+                │       │          └color:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Marlon:N/N
+                                   └:N┤
+                                      └Teixeira?:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └father:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │   ┌II?:NP\NP
+                               └:NP┤
+                                   └:NP┐
+                                       │  ┌Queen:N/N
+                                       └:N┤
+                                          └Elizabeth:N
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └manager:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Gazelle:N/N
+                                   └:N┤
+                                      └FC?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │               ┌the:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       │  ┌ruling:N/N
+                │       │       └:N┤
+                │       │          └party:N
+                └:NP[nb]┤
+                        │      ┌in:(NP\NP)/NP
+                        └:NP\NP┤
+                               └:NP┐
+                                   │  ┌Lo:N/N
+                                   └:N┤
+                                      └Espejo?:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌are:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │              ┌of:(NP\NP)/NP
+                │       ┌:NP\NP┤
+                │       │      └:NP┐
+                │       │          └Tunisia?:N
+                └:NP[nb]┤
+                        │       ┌the:NP[nb]/N
+                        └:NP[nb]┤
+                                │  ┌official:N/N
+                                └:N┤
+                                   └languages:N
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌longest:N/N
+                        └:N┤
+                           └river?:N
+
+Category 2: contains 16 questions with wh-words [What (6.25%), Which (93.75%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └languages:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌spoken:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Romania?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └books:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌written:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌by:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                │  ┌Danielle:N/N
+                                                └:N┤
+                                                   └Steel?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └countries:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌connected:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌by:PP/NP
+                             └:PP┤
+                                 │       ┌the:NP[nb]/N
+                                 └:NP[nb]┤
+                                         └Rhine?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └languages:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌spoken:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Estonia?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └airports:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌located:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     │  ┌California,:N/N
+                                     └:N┤
+                                        └USA?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └people:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Heraklion?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └presidents:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌in:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                └1945?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └books:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌published:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌by:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                │  ┌DAW:N/N
+                                                └:N┤
+                                                   └Books?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └airports:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌located:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Chios?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └actors:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Germany?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └ships:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌called:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌after:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     │  ┌Benjamin:N/N
+                                     └:N┤
+                                        └Franklin?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └organizations:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌founded:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌in:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                └1918?:N
+                          ┌What:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └languages:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌spoken:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Estonia?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └companies:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌located:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     │  ┌California,:N/N
+                                     └:N┤
+                                        └USA?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └presidents:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌in:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                └1891?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └organizations:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌founded:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌in:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                └1950?:N
+
+Category 3: contains 12 questions with wh-words [Give (100.00%)]
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          │  ┌David:N/N
+    │          └:N┤
+    │             └Foster.:N
+ :NP┤
+    └:NP┐
+        │                 ┌the:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └children:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌with:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          │  ┌Tom:N/N
+    │          └:N┤
+    │             └Cruise.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └movies:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌with:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          │  ┌Tom:N/N
+    │          └:N┤
+    │             └Cruise!:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └movies:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Qatar.:N
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌all:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌soccer:N/N
+                          └:N┤
+                             └clubs:N
+           ┌from:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Sweden.:N
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌all:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌professional:N/N
+                          └:N┤
+                             └skateboarders:N
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Spain.:N
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌all:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌soccer:N/N
+                          └:N┤
+                             └clubs:N
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          │  ┌Metropolitan:N/N
+    │          └:N┤
+    │             └Home.:N
+ :NP┤
+    └:NP┐
+        │                 ┌the:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └homepage:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Prodigy.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └members:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Jena.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └companies:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌with:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          │  ┌first:N/N
+    │          └:N┤
+    │             │  ┌name:N/N
+    │             └:N┤
+    │                └Jimmy.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └people:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Forbes.:N
+ :NP┤
+    └:NP┐
+        │                 ┌the:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └homepage:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      └:NP┐
+    │          └Munich.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └companies:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+
+Category 4: contains 11 questions with wh-words [Which (9.09%), Who (90.91%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌developed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      │  ┌Quake:N
+                      └:N┤
+                         └engine?:N\N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌founded:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Sony?:N
+       ┌Which:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌states:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      │  ┌border:N/N
+                      └:N┤
+                         └Illinois?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌produces:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      │  ┌Red:N/N
+                      └:N┤
+                         └Bull?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      │  ┌Miss:N/N
+                      └:N┤
+                         └Marple?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Wikipedia?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      │  ┌English:N/N
+                      └:N┤
+                         └Wikipedia?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Retrocrush?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌developed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Skype?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌founded:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Intel?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  └:NP┐
+                      └Goofy?:N
+
+Category 5: contains 8 questions with wh-words [Give (100.00%)]
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      │       ┌the:NP[nb]/N
+    │      └:NP[nb]┤
+    │              │  ┌advertising:N/N
+    │              └:N┤
+    │                 └industry.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └companies:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+    ┌:NP┐
+    │   │                 ┌a:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └list:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌of:(NP\NP)/NP
+    └:NP\NP┤
+           │               ┌all:NP[nb]/N
+           │       ┌:NP[nb]┤
+           │       │       │  ┌trumpet:N/N
+           │       │       └:N┤
+           │       │          └players:N
+           └:NP[nb]┤
+                   │      ┌that:(NP\NP)/(S[dcl]\NP)
+                   └:NP\NP┤
+                          │          ┌were:(S[dcl]\NP)/(S[adj]\NP)
+                          └:S[dcl]\NP┤
+                                     └bandleaders.:S[adj]\NP
+    ┌:NP┐
+    │   │                 ┌a:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └list:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌of:(NP\NP)/NP
+    └:NP\NP┤
+           │               ┌all:NP[nb]/N
+           │       ┌:NP[nb]┤
+           │       │       └lakes:N
+           └:NP[nb]┤
+                   │      ┌in:(NP\NP)/NP
+                   └:NP\NP┤
+                          └:NP┐
+                              └Denmark.:N
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      │       ┌the:NP[nb]/N
+    │      └:NP[nb]┤
+    │              │  ┌Lake:N/N
+    │              └:N┤
+    │                 └Houston.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └inflows:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      │       ┌The:NP[nb]/N
+    │      └:NP[nb]┤
+    │              └Who.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └members:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+    ┌:NP┐
+    │   │                 ┌the:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └birthdays:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌of:(NP\NP)/NP
+    └:NP\NP┤
+           │               ┌all:NP[nb]/N
+           │       ┌:NP[nb]┤
+           │       │       └actors:N
+           └:NP[nb]┤
+                   │      ┌of:(NP\NP)/NP
+                   └:NP\NP┤
+                          │       ┌the:NP[nb]/N
+                          └:NP[nb]┤
+                                  │  ┌television:N/N
+                                  └:N┤
+                                     │  ┌show:N/N
+                                     └:N┤
+                                        └Charmed.:N
+           ┌in:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      │       ┌the:NP[nb]/N
+    │      └:NP[nb]┤
+    │              │  ┌Premier:N/N
+    │              └:N┤
+    │                 └League.:N
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌all:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌soccer:N/N
+                          └:N┤
+                             └clubs:N
+           ┌of:(NP\NP)/NP
+    ┌:NP\NP┤
+    │      │       ┌the:NP[nb]/N
+    │      └:NP[nb]┤
+    │              └Ramones.:N
+ :NP┤
+    └:NP┐
+        │                 ┌all:NP[nb]/N
+        │         ┌:NP[nb]┤
+        │         │       └B-sides:N
+        └:S[ng]\NP┤
+                  │              ┌Give:((S[ng]\NP)/NP)/NP
+                  └:(S[ng]\NP)/NP┤
+                                 └:(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                           └me:NP
+
+Category 6: contains 8 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌developed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌3D?:RQU
+                  └:NP[nb]┤
+                          │       ┌the:NP[nb]/N
+                          └:NP[nb]┤
+                                  │  ┌video:N/N
+                                  └:N┤
+                                     │  ┌game:N/N
+                                     └:N┤
+                                        │  ┌Duke:N/N
+                                        └:N┤
+                                           └Nukem:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌designed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌Brooklyn:N/N
+                          └:N┤
+                             └Bridge?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌wrote:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │               ┌the:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └lyrics:N
+                  └:NP[nb]┤
+                          │      ┌for:(NP\NP)/NP
+                          └:NP\NP┤
+                                 │       ┌the:NP[nb]/N
+                                 └:NP[nb]┤
+                                         │  ┌Polish:N/N
+                                         └:N┤
+                                            │  ┌national:N/N
+                                            └:N┤
+                                               └anthem?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌developed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │              ┌of:(NP\NP)/NP
+                  │       ┌:NP\NP┤
+                  │       │      └:NP┐
+                  │       │          └Warcraft?:N
+                  └:NP[nb]┤
+                          │       ┌the:NP[nb]/N
+                          └:NP[nb]┤
+                                  │  ┌video:N/N
+                                  └:N┤
+                                     │  ┌game:N/N
+                                     └:N┤
+                                        └World:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌painted:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │               ┌The:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └Storm:N
+                  └:NP[nb]┤
+                          │      ┌on:(NP\NP)/NP
+                          └:NP\NP┤
+                                 │               ┌the:NP[nb]/N
+                                 │       ┌:NP[nb]┤
+                                 │       │       └Sea:N
+                                 └:NP[nb]┤
+                                         │      ┌of:(NP\NP)/NP
+                                         └:NP\NP┤
+                                                └:NP┐
+                                                    └Galilee?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌created:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌comic:N/N
+                          └:N┤
+                             │  ┌Old:N/N
+                             └:N┤
+                                │  ┌Man:N/N
+                                └:N┤
+                                   └Logan?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌composed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │               ┌the:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └music:N
+                  └:NP[nb]┤
+                          │      ┌for:(NP\NP)/NP
+                          └:NP\NP┤
+                                 │   ┌:NP┐
+                                 │   │   └Harold:N
+                                 └:NP┤
+                                     │      ┌and:conj
+                                     └:NP\NP┤
+                                            └:NP┐
+                                                └Maude?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌designed:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          └Langebro?:N
+
+Category 7: contains 6 questions with wh-words [Give (100.00%)]
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └books:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    └:NP\NP┐
+           │          ┌written:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌David:N/N
+                                         └:N┤
+                                            │  ┌Foster:N/N
+                                            └:N┤
+                                               └Wallace.:N
+    ┌:NP┐
+    │   │                        ┌Give:((S[ng]\NP)/NP)/NP
+    │   │         ┌:(S[ng]\NP)/NP┤
+    │   │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │   │         │                                        └me:NP
+    │   └:S[ng]\NP┤
+    │             │       ┌all:NP[nb]/N
+    │             └:NP[nb]┤
+    │                     │  ┌video:N/N
+    │                     └:N┤
+    │                        └games:N
+ :NP┤
+    └:NP\NP┐
+           │          ┌published:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌Black:N/N
+                                         └:N┤
+                                            │  ┌Isle:N/N
+                                            └:N┤
+                                               └Studios.:N
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └films:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    └:NP\NP┐
+           │          ┌produced:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌Hal:N/N
+                                         └:N┤
+                                            └Roach.:N
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └movies:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    └:NP\NP┐
+           │          ┌directed:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌Francis:N/N
+                                         └:N┤
+                                            │  ┌Ford:N/N
+                                            └:N┤
+                                               └Coppola.:N
+    ┌:NP┐
+    │   │                        ┌Give:((S[ng]\NP)/NP)/NP
+    │   │         ┌:(S[ng]\NP)/NP┤
+    │   │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │   │         │                                        └me:NP
+    │   └:S[ng]\NP┤
+    │             │       ┌all:NP[nb]/N
+    │             └:NP[nb]┤
+    │                     │  ┌video:N/N
+    │                     └:N┤
+    │                        └games:N
+ :NP┤
+    └:NP\NP┐
+           │          ┌published:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌Mean:N/N
+                                         └:N┤
+                                            │  ┌Hamster:N/N
+                                            └:N┤
+                                               └Software.:N
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └books:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    └:NP\NP┐
+           │          ┌written:S[pss]\NP
+           └:S[pss]\NP┤
+                      │              ┌by:((S\NP)\(S\NP))/NP
+                      └:(S\NP)\(S\NP)┤
+                                     └:NP┐
+                                         │  ┌Danielle:N/N
+                                         └:N┤
+                                            └Steel.:N
+
+Category 8: contains 6 questions with wh-words [How (100.00%)]
+                        ┌employees:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └Staedtler:N
+                        ┌employees:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └IBM:N
+                        ┌students:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                │       ┌the:NP[nb]/N
+                                └:NP[nb]┤
+                                        │  ┌Texas:N/N
+                                        └:N┤
+                                           │  ┌Tech:N/N
+                                           └:N┤
+                                              └University:N
+                        ┌inhabitants:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └Nagamangala:N
+                        ┌pages:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                │               ┌The:NP[nb]/N
+                                │       ┌:NP[nb]┤
+                                │       │       └Man:N
+                                └:NP[nb]┤
+                                        │      ┌with:(NP\NP)/NP
+                                        └:NP\NP┤
+                                               │       ┌the:NP[nb]/N
+                                               └:NP[nb]┤
+                                                       │  ┌Red:N/N
+                                                       └:N┤
+                                                          └Tattoo:N
+                        ┌inhabitants:N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                │                    ┌How:((S[wq]/(S[q]/NP))/N)/(NP/N)
+       │                └:(S[wq]/(S[q]/NP))/N┤
+       │                                     └many:NP/N
+ :S[wq]┤
+       │        ┌have?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └Maribor:N
+
+Category 9: contains 5 questions with wh-words [In (60.00%), To (20.00%), Through (20.00%)]
+                   ┌In:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └films:N
+ :S[wq]┤
+       │     ┌play?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │   ┌:NP┐
+                             │   │   │  ┌Julia:N/N
+                             │   │   └:N┤
+                             │   │      └Roberts:N
+                             └:NP┤
+                                 │      ┌:NP┐
+                                 │      │   │  ┌Richard:N/N
+                                 │      │   └:N┤
+                                 │      │      └Gere:N
+                                 └:NP\NP┤
+                                        │     ┌as:conj/conj
+                                        └:conj┤
+                                              │     ┌well:conj/conj
+                                              └:conj┤
+                                                    └as:conj
+                   ┌To:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └countries:N
+ :S[wq]┤
+       │     ┌extend?:S[b]\NP
+       └:S[q]┤
+             │               ┌does:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │       ┌the:NP[nb]/N
+                             └:NP[nb]┤
+                                     │  ┌Himalayan:N/N
+                                     └:N┤
+                                        │  ┌mountain:N/N
+                                        └:N┤
+                                           └system:N
+                   ┌In:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └country:N
+ :S[wq]┤
+       │     ┌start?:S[b]\NP
+       └:S[q]┤
+             │               ┌does:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │       ┌the:NP[nb]/N
+                             └:NP[nb]┤
+                                     └Nile:N
+                   ┌Through:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └countries:N
+ :S[wq]┤
+       │     ┌flow?:S[b]\NP
+       └:S[q]┤
+             │               ┌does:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │       ┌the:NP[nb]/N
+                             └:NP[nb]┤
+                                     │  ┌Yenisei:N/N
+                                     └:N┤
+                                        └river:N
+                   ┌In:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            │  ┌military:N/N
+       │                            └:N┤
+       │                               └conflicts:N
+ :S[wq]┤
+       │     ┌participate?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │   ┌:NP┐
+                             │   │   └Lawrence:N
+                             └:NP┤
+                                 │      ┌of:(NP\NP)/NP
+                                 └:NP\NP┤
+                                        └:NP┐
+                                            └Arabia:N
+
+Category 10: contains 5 questions with wh-words [In (100.00%)]
+       ┌In:S/S
+ :S[wq]┤
+       │                       ┌which:(S[wq]/(S[q]/NP))/N
+       │      ┌:S[wq]/(S[q]/NP)┤
+       │      │                └country:N
+       └:S[wq]┤
+              │        ┌is:(S[q]/NP)/NP
+              └:S[q]/NP┤
+                       │       ┌the:NP[nb]/N
+                       └:NP[nb]┤
+                               │  ┌Limerick:N/N
+                               └:N┤
+                                  └Lake?:N
+       ┌In:S/S
+ :S[wq]┤
+       │                       ┌which:(S[wq]/(S[q]/NP))/N
+       │      ┌:S[wq]/(S[q]/NP)┤
+       │      │                │  ┌programming:N/N
+       │      │                └:N┤
+       │      │                   └language:N
+       └:S[wq]┤
+              │        ┌is:(S[q]/NP)/NP
+              └:S[q]/NP┤
+                       └:NP┐
+                           │  ┌QuickTime:N/N
+                           └:N┤
+                              └written?:N
+       ┌In:S/S
+ :S[wq]┤
+       │                       ┌which:(S[wq]/(S[q]/NP))/N
+       │      ┌:S[wq]/(S[q]/NP)┤
+       │      │                │  ┌programming:N/N
+       │      │                └:N┤
+       │      │                   └language:N
+       └:S[wq]┤
+              │        ┌is:(S[q]/NP)/NP
+              └:S[q]/NP┤
+                       │   ┌:NP┐
+                       │   │   └GIMP:N
+                       └:NP┤
+                           └:NP\NP┐
+                                  └written?:S[adj]\NP
+       ┌In:S/S
+ :S[wq]┤
+       │                       ┌which:(S[wq]/(S[q]/NP))/N
+       │      ┌:S[wq]/(S[q]/NP)┤
+       │      │                └country:N
+       └:S[wq]┤
+              │        ┌is:(S[q]/NP)/NP
+              └:S[q]/NP┤
+                       │       ┌the:NP[nb]/N
+                       └:NP[nb]┤
+                               │  ┌Tiefer:N/N
+                               └:N┤
+                                  └See?:N
+       ┌In:S/S
+ :S[wq]┤
+       │                       ┌which:(S[wq]/(S[q]/NP))/N
+       │      ┌:S[wq]/(S[q]/NP)┤
+       │      │                └country:N
+       └:S[wq]┤
+              │        ┌is:(S[q]/NP)/NP
+              └:S[q]/NP┤
+                       │       ┌the:NP[nb]/N
+                       └:NP[nb]┤
+                               │  ┌Tasman:N/N
+                               └:N┤
+                                  └Lake?:N
+
+Category 11: contains 5 questions with wh-words [How (100.00%)]
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └high:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         │       ┌the:NP[nb]/N
+                         └:NP[nb]┤
+                                 │  ┌Landegode:N/N
+                                 └:N┤
+                                    └Lighthouse?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └high:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         │       ┌the:NP[nb]/N
+                         └:NP[nb]┤
+                                 │  ┌Mount:N/N
+                                 └:N┤
+                                    └Everest?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └big:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         │       ┌the:NP[nb]/N
+                         └:NP[nb]┤
+                                 │  ┌Mammoth:N/N
+                                 └:N┤
+                                    │  ┌Pool:N/N
+                                    └:N┤
+                                       └Reservoir?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └high:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         │       ┌the:NP[nb]/N
+                         └:NP[nb]┤
+                                 │  ┌Doe:N/N
+                                 └:N┤
+                                    │  ┌Hill:N/N
+                                    └:N┤
+                                       └Mountain?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └high:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         │       ┌the:NP[nb]/N
+                         └:NP[nb]┤
+                                 │  ┌Volcano:N
+                                 └:N┤
+                                    └Mountain?:N\N
+
+Category 12: contains 5 questions with wh-words [How (100.00%)]
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └deep:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         └:NP┐
+                             └Steinsee?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └tall:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         └:NP┐
+                             │  ┌Claudia:N/N
+                             └:N┤
+                                └Schiffer?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └tall:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         └:NP┐
+                             │  ┌Michael:N/N
+                             └:N┤
+                                └Jordan?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └tall:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         └:NP┐
+                             │  ┌John:N/N
+                             └:N┤
+                                └Windsor?:N
+                                 ┌How:(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP)
+       ┌:S[wq]/(S[q]/(S[adj]\NP))┤
+       │                         └tall:S[adj]\NP
+ :S[wq]┤
+       │                 ┌is:(S[q]/(S[adj]\NP))/NP
+       └:S[q]/(S[adj]\NP)┤
+                         └:NP┐
+                             │  ┌Kate:N/N
+                             └:N┤
+                                └Upton?:N
+
+Category 13: contains 5 questions with wh-words [When (100.00%)]
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └built?:N
+       └:S[q]┤
+             │        ┌was:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      │       ┌the:NP[nb]/N
+                      └:NP[nb]┤
+                              │  ┌Riverdale:N/N
+                              └:N┤
+                                 └Monument:N
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └born?:N
+       └:S[q]┤
+             │        ┌was:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      └:NP┐
+                          │  ┌Albert:N/N
+                          └:N┤
+                             └Schweitzer:N
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └founded?:N
+       └:S[q]┤
+             │        ┌was:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      └:NP┐
+                          └Sevcon:N
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └released?:N
+       └:S[q]┤
+             │        ┌was:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      └:NP┐
+                          └DBpedia:N
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └founded?:N
+       └:S[q]┤
+             │        ┌were:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      │       ┌the:NP[nb]/N
+                      └:NP[nb]┤
+                              │  ┌Hells:N/N
+                              └:N┤
+                                 └Angels:N
+
+Category 14: contains 5 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └museum:N
+ :S[wq]┤
+       │          ┌exhibits:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌The:NP[nb]/N
+                  └:NP[nb]┤
+                          └Skater?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └bridges:N
+ :S[wq]┤
+       │          ┌cross:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          └Prut?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └artist:N
+ :S[wq]┤
+       │          ┌made:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌album:N/N
+                          └:N┤
+                             │  ┌Old:N/N
+                             └:N┤
+                                │  ┌School:N/N
+                                └:N┤
+                                   └Prankstas?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └river:N
+ :S[wq]┤
+       │          ┌does:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌cross?:N\N
+                          └:N┤
+                             │  ┌Brooklyn:N/N
+                             └:N┤
+                                └Bridge:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └cities:N
+ :S[wq]┤
+       │          ┌does:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌through?:NP\NP
+                  └:NP[nb]┤
+                          │       ┌the:NP[nb]/N
+                          └:NP[nb]┤
+                                  │  ┌Weser:N/N
+                                  └:N┤
+                                     └flow:N
+
+Category 15: contains 4 questions with wh-words [Where (50.00%), When (50.00%)]
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌die?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             └:NP┐
+                                 │  ┌Red:N/N
+                                 └:N┤
+                                    │  ┌Sonja's:N/N
+                                    └:N┤
+                                       └creator:N
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌die?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             └:NP┐
+                                 │  ┌Jules:N/N
+                                 └:N┤
+                                    └Bergman:N
+       ┌Where:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌die?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             └:NP┐
+                                 │  ┌Abraham:N/N
+                                 └:N┤
+                                    └Lincoln:N
+       ┌Where:S[wq]/S[q]
+ :S[wq]┤
+       │     ┌die?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             │   ┌:NP┐
+                             │   │   │  ┌Queen:N/N
+                             │   │   └:N┤
+                             │   │      └Emma:N
+                             └:NP┤
+                                 │      ┌of:(NP\NP)/NP
+                                 └:NP\NP┤
+                                        └:NP┐
+                                            └Hawaii:N
+
+Category 16: contains 4 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌professional:N/N
+       │                  └:N┤
+       │                     └surfers:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌in:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                └Australia?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌television:N/N
+       │                  └:N┤
+       │                     └shows:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌created:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌by:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            └:NP┐
+                                                │  ┌Walt:N/N
+                                                └:N┤
+                                                   └Disney?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌telecommunications:N/N
+       │                  └:N┤
+       │                     └organizations:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌located:(S[pss]\NP)/PP
+                  └:S[pss]\NP┤
+                             │   ┌in:PP/NP
+                             └:PP┤
+                                 └:NP┐
+                                     └Belgium?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌professional:N/N
+       │                  └:N┤
+       │                     └surfers:N
+ :S[wq]┤
+       │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌born:S[pss]\NP
+                  └:S[pss]\NP┤
+                             │              ┌on:((S\NP)\(S\NP))/NP
+                             └:(S\NP)\(S\NP)┤
+                                            │       ┌the:NP[nb]/N
+                                            └:NP[nb]┤
+                                                    └Philippines?:N
+
+Category 17: contains 4 questions with wh-words [Which (100.00%)]
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └genre:N
+ :S[wq]┤
+       │                      ┌belong:(S[b]\NP)/NP
+       │        ┌:(S[b]\NP)/NP┤
+       │        │             └to?:(S\NP)\(S\NP)
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └DBpedia:N
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └classis:N
+ :S[wq]┤
+       │                      ┌belong:(S[b]\NP)/NP
+       │        ┌:(S[b]\NP)/NP┤
+       │        │             └to?:(S\NP)\(S\NP)
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                │       ┌the:NP[nb]/N
+                                └:NP[nb]┤
+                                        └Millepede:N
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └country:N
+ :S[wq]┤
+       │                      ┌come:(S[b]\NP)/NP
+       │        ┌:(S[b]\NP)/NP┤
+       │        │             └from?:(S\NP)\(S\NP)
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                │       ┌the:NP[nb]/N
+                                └:NP[nb]┤
+                                        │  ┌Airedale:N/N
+                                        └:N┤
+                                           └Terrier:N
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └country:N
+ :S[wq]┤
+       │                      ┌come:(S[b]\NP)/NP
+       │        ┌:(S[b]\NP)/NP┤
+       │        │             └from?:(S\NP)\(S\NP)
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                │               ┌the:NP[nb]/N
+                                │       ┌:NP[nb]┤
+                                │       │       └creator:N
+                                └:NP[nb]┤
+                                        │      ┌of:(NP\NP)/NP
+                                        └:NP\NP┤
+                                               └:NP┐
+                                                   └Miffy:N
+
+Category 18: contains 3 questions with wh-words [Give (100.00%)]
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └people:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌that:(NP\NP)/(S[dcl]\NP)
+    └:NP\NP┤
+           │                     ┌were:(S[dcl]\NP)/(S[pss]\NP)
+           │          ┌:S[dcl]\NP┤
+           │          │          │          ┌born:S[pss]\NP
+           │          │          └:S[pss]\NP┤
+           │          │                     │              ┌in:((S\NP)\(S\NP))/NP
+           │          │                     └:(S\NP)\(S\NP)┤
+           │          │                                    └:NP┐
+           │          │                                        └Vienna:N
+           └:S[dcl]\NP┤
+                      │                        ┌and:conj
+                      └:(S[dcl]\NP)\(S[dcl]\NP)┤
+                                               │          ┌died:S[dcl]\NP
+                                               └:S[dcl]\NP┤
+                                                          │              ┌in:((S\NP)\(S\NP))/NP
+                                                          └:(S\NP)\(S\NP)┤
+                                                                         └:NP┐
+                                                                             └Berlin.:N
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └cars:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌that:(NP\NP)/(S[dcl]\NP)
+    └:NP\NP┤
+           │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+           └:S[dcl]\NP┤
+                      │          ┌produced:S[pss]\NP
+                      └:S[pss]\NP┤
+                                 │              ┌in:((S\NP)\(S\NP))/NP
+                                 └:(S\NP)\(S\NP)┤
+                                                └:NP┐
+                                                    └Netherlands.:N
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └cars:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    │      ┌that:(NP\NP)/(S[dcl]\NP)
+    └:NP\NP┤
+           │          ┌are:(S[dcl]\NP)/(S[pss]\NP)
+           └:S[dcl]\NP┤
+                      │          ┌produced:S[pss]\NP
+                      └:S[pss]\NP┤
+                                 │              ┌in:((S\NP)\(S\NP))/NP
+                                 └:(S\NP)\(S\NP)┤
+                                                └:NP┐
+                                                    └Germany.:N
+
+Category 19: contains 2 questions with wh-words [Give (100.00%)]
+    ┌labels.:NP\NP
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌all:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌Canadian:N/N
+                          └:N┤
+                             │  ┌Grunge:N/N
+                             └:N┤
+                                └record:N
+    ┌astronauts.:NP\NP
+ :NP┤
+    └:NP┐
+        │                        ┌Give:((S[ng]\NP)/NP)/NP
+        │         ┌:(S[ng]\NP)/NP┤
+        │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+        │         │                                        └me:NP
+        └:S[ng]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌Apollo:N
+                          └:N┤
+                             └14:N\N
+
+Category 20: contains 2 questions with wh-words [Which (100.00%)]
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └instruments:N
+ :S[wq]┤
+       │        ┌play?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌does:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    │  ┌Courtney:N/N
+                                    └:N┤
+                                       └Love:N
+                        ┌Which:(S[wq]/(S[q]/NP))/N
+       ┌:S[wq]/(S[q]/NP)┤
+       │                └awards:N
+ :S[wq]┤
+       │        ┌win?:(S[b]\NP)/NP
+       └:S[q]/NP┤
+                │               ┌did:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    └WikiLeaks:N
+
+Category 21: contains 2 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └companies:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/PP
+       └:S[dcl]\NP┤
+                  │   ┌in:PP/NP
+                  └:PP┤
+                      │       ┌industry?:NP\NP
+                      └:NP[nb]┤
+                              │       ┌the:NP[nb]/N
+                              └:NP[nb]┤
+                                      │  ┌computer:N/N
+                                      └:N┤
+                                         └software:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └bridges:N
+ :S[wq]┤
+       │          ┌are:(S[dcl]\NP)/PP
+       └:S[dcl]\NP┤
+                  │   ┌of:PP/NP
+                  └:PP┤
+                      │               ┌the:NP[nb]/N
+                      │       ┌:NP[nb]┤
+                      │       │       │  ┌same:N/N
+                      │       │       └:N┤
+                      │       │          └type:N
+                      └:NP[nb]┤
+                              │      ┌as:(NP\NP)/NP
+                              └:NP\NP┤
+                                     │       ┌the:NP[nb]/N
+                                     └:NP[nb]┤
+                                             │  ┌Manhattan:N/N
+                                             └:N┤
+                                                └Bridge?:N
+
+Category 22: contains 2 questions with wh-words [How (100.00%)]
+                          ┌people:N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │                      ┌How:((S[wq]/(S[dcl]\NP))/N)/(NP/N)
+       │                  └:(S[wq]/(S[dcl]\NP))/N┤
+       │                                         └many:NP/N
+ :S[wq]┤
+       │          ┌live:(S[dcl]\NP)/PP
+       └:S[dcl]\NP┤
+                  │   ┌in:PP/NP
+                  └:PP┤
+                      │               ┌the:NP[nb]/N
+                      │       ┌:NP[nb]┤
+                      │       │       └capital:N
+                      └:NP[nb]┤
+                              │      ┌of:(NP\NP)/NP
+                              └:NP\NP┤
+                                     └:NP┐
+                                         └Australia?:N
+                          ┌people:N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │                      ┌How:((S[wq]/(S[dcl]\NP))/N)/(NP/N)
+       │                  └:(S[wq]/(S[dcl]\NP))/N┤
+       │                                         └many:NP/N
+ :S[wq]┤
+       │          ┌live:(S[dcl]\NP)/PP
+       └:S[dcl]\NP┤
+                  │   ┌in:PP/NP
+                  └:PP┤
+                      │               ┌the:NP[nb]/N
+                      │       ┌:NP[nb]┤
+                      │       │       └capital:N
+                      └:NP[nb]┤
+                              │      ┌of:(NP\NP)/NP
+                              └:NP\NP┤
+                                     └:NP┐
+                                         └Togo?:N
+
+Category 23: contains 2 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌music:N/N
+       │                  └:N┤
+       │                     └albums:N
+ :S[wq]┤
+       │          ┌contain:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │       ┌the:NP[nb]/N
+                  └:NP[nb]┤
+                          │  ┌song:N/N
+                          └:N┤
+                             │  ┌Last:N/N
+                             └:N┤
+                                └Christmas?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌other:N/N
+       │                  └:N┤
+       │                     └weapons:N
+ :S[wq]┤
+       │          ┌did:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │               ┌the:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └designer:N
+                  └:NP[nb]┤
+                          │      ┌of:(NP\NP)/NP
+                          └:NP\NP┤
+                                 │       ┌the:NP[nb]/N
+                                 └:NP[nb]┤
+                                         │  ┌Uzi:N
+                                         └:N┤
+                                            └develop?:N\N
+
+Category 24: contains 2 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌painted:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │   ┌:NP┐
+                  │   │   │  ┌Unfinished:N/N
+                  │   │   └:N┤
+                  │   │      └portrait:N
+                  └:NP┤
+                      │      ┌of:(NP\NP)/NP
+                      └:NP\NP┤
+                             └:NP┐
+                                 │  ┌General:N/N
+                                 └:N┤
+                                    └Bonaparte?:N
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌produced:(S[dcl]\NP)/NP
+       └:S[dcl]\NP┤
+                  │   ┌:NP┐
+                  │   │   └films:N
+                  └:NP┤
+                      └:NP\NP┐
+                             │         ┌starring:(S[ng]\NP)/NP
+                             └:S[ng]\NP┤
+                                       └:NP┐
+                                           │  ┌Natalie:N/N
+                                           └:N┤
+                                              └Portman?:N
+
+Category 25: contains 2 questions with wh-words [Give (100.00%)]
+             ┌Give:(S/S)/NP
+        ┌:S/S┤
+        │    └me:NP
+ :S[dcl]┤
+        │       ┌labels.:S[dcl]\NP
+        └:S[dcl]┤
+                │       ┌all:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌Avant-garde:N/N
+                        └:N┤
+                           │  ┌jazz:N/N
+                           └:N┤
+                              └record:N
+             ┌Give:(S/S)/NP
+        ┌:S/S┤
+        │    └me:NP
+ :S[dcl]┤
+        │       ┌films.:S[dcl]\NP
+        └:S[dcl]┤
+                │       ┌all:NP[nb]/N
+                └:NP[nb]┤
+                        └Argentine:N
+
+Category 26: contains 2 questions with wh-words [In (50.00%), List (50.00%)]
+        ┌In:S/S
+ :S[dcl]┤
+        │                  ┌was:(S[dcl]\NP)/NP
+        │       ┌:S[dcl]\NP┤
+        │       │          │   ┌:NP\NP┐
+        │       │          │   │      └starring?:S[adj]\NP
+        │       │          └:NP┤
+        │       │              └:NP┐
+        │       │                  │  ┌Julia:N/N
+        │       │                  └:N┤
+        │       │                     └Roberts:N
+        └:S[dcl]┤
+                │               ┌which:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └films:N
+                └:NP[nb]┤
+                        └:NP\NP┐
+                               │          ┌directed:S[pss]\NP
+                               └:S[pss]\NP┤
+                                          │              ┌by:((S\NP)\(S\NP))/NP
+                                          └:(S\NP)\(S\NP)┤
+                                                         └:NP┐
+                                                             │  ┌Garry:N/N
+                                                             └:N┤
+                                                                └Marshall:N
+        ┌List:S/S
+ :S[dcl]┤
+        │                  ┌series:(S[dcl]\NP)/NP
+        │       ┌:S[dcl]\NP┤
+        │       │          │       ┌The:NP[nb]/N
+        │       │          └:NP[nb]┤
+        │       │                  └Sopranos!:N
+        └:S[dcl]┤
+                │               ┌all:NP[nb]/N
+                │       ┌:NP[nb]┤
+                │       │       └episodes:N
+                └:NP[nb]┤
+                        │      ┌of:(NP\NP)/NP
+                        └:NP\NP┤
+                               │               ┌the:NP[nb]/N
+                               │       ┌:NP[nb]┤
+                               │       │       │  ┌first:N/N
+                               │       │       └:N┤
+                               │       │          └season:N
+                               └:NP[nb]┤
+                                       │      ┌of:(NP\NP)/NP
+                                       └:NP\NP┤
+                                              │       ┌the:NP[nb]/N
+                                              └:NP[nb]┤
+                                                      │  ┌HBO:N/N
+                                                      └:N┤
+                                                         └television:N
+
+Category 27: contains 2 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └software:N
+ :S[wq]┤
+       │          ┌has:(S[dcl]\NP)/(S[pt]\NP)
+       └:S[dcl]\NP┤
+                  │         ┌been:(S[pt]\NP)/(S[pss]\NP)
+                  └:S[pt]\NP┤
+                            │          ┌developed:S[pss]\NP
+                            └:S[pss]\NP┤
+                                       │              ┌by:((S\NP)\(S\NP))/NP
+                                       └:(S\NP)\(S\NP)┤
+                                                      │   ┌:NP┐
+                                                      │   │   └organizations:N
+                                                      └:NP┤
+                                                          └:NP\NP┐
+                                                                 │          ┌founded:S[pss]\NP
+                                                                 └:S[pss]\NP┤
+                                                                            │              ┌in:((S\NP)\(S\NP))/NP
+                                                                            └:(S\NP)\(S\NP)┤
+                                                                                           └:NP┐
+                                                                                               └California?:N
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └software:N
+ :S[wq]┤
+       │          ┌has:(S[dcl]\NP)/(S[pt]\NP)
+       └:S[dcl]\NP┤
+                  │         ┌been:(S[pt]\NP)/(S[pss]\NP)
+                  └:S[pt]\NP┤
+                            │          ┌published:S[pss]\NP
+                            └:S[pss]\NP┤
+                                       │              ┌by:((S\NP)\(S\NP))/NP
+                                       └:(S\NP)\(S\NP)┤
+                                                      └:NP┐
+                                                          │  ┌Mean:N/N
+                                                          └:N┤
+                                                             │  ┌Hamster:N/N
+                                                             └:N┤
+                                                                └Software?:N
+
+Category 28: contains 1 questions with wh-words [In (100.00%)]
+                   ┌In:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └country:N
+ :S[wq]┤
+       │     ┌:NP┐
+       │     │   └located?:N
+       └:S[q]┤
+             │        ┌is:(S[q]/NP)/NP
+             └:S[q]/NP┤
+                      └:NP┐
+                          └Solaize:N
+
+Category 29: contains 1 questions with wh-words [Show (100.00%)]
+               ┌Show:(S[q]/NP)/NP
+      ┌:S[q]/NP┤
+      │        └me:NP
+ :S[q]┤
+      │   ┌everyone:NP
+      └:NP┤
+          │      ┌who:(NP\NP)/(S[dcl]\NP)
+          └:NP\NP┤
+                 │          ┌was:(S[dcl]\NP)/(S[pss]\NP)
+                 └:S[dcl]\NP┤
+                            │          ┌born:S[pss]\NP
+                            └:S[pss]\NP┤
+                                       │              ┌on:((S\NP)\(S\NP))/NP
+                                       └:(S\NP)\(S\NP)┤
+                                                      └:NP┐
+                                                          │  ┌Boxing:N/N
+                                                          └:N┤
+                                                             └Day.:N
+
+Category 30: contains 1 questions with wh-words [Give (100.00%)]
+    ┌:NP┐
+    │   │                 ┌all:NP[nb]/N
+    │   │         ┌:NP[nb]┤
+    │   │         │       └actors:N
+    │   └:S[ng]\NP┤
+    │             │              ┌Give:((S[ng]\NP)/NP)/NP
+    │             └:(S[ng]\NP)/NP┤
+    │                            └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │                                                      └me:NP
+ :NP┤
+    └:NP\NP┐
+           │         ┌starring:S[ng]\NP
+           └:S[ng]\NP┤
+                     │              ┌in:((S\NP)\(S\NP))/NP
+                     └:(S\NP)\(S\NP)┤
+                                    │       ┌:NP┐
+                                    │       │   └movies:N
+                                    │   ┌:NP┤
+                                    │   │   └:NP\NP┐
+                                    │   │          │          ┌directed:S[pss]\NP
+                                    │   │          └:S[pss]\NP┤
+                                    │   │                     └by:(S\NP)\(S\NP)
+                                    └:NP┤
+                                        │      ┌and:conj
+                                        └:NP\NP┤
+                                               └:NP┐
+                                                   │  ┌starring:N/N
+                                                   └:N┤
+                                                      │  ┌William:N/N
+                                                      └:N┤
+                                                         └Shatner.:N
+
+Category 31: contains 1 questions with wh-words [When (100.00%)]
+       ┌When:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌is:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                └:NP┐
+                    │  ┌Gibraltar:N/N
+                    └:N┤
+                       │  ┌Diamond:N/N
+                       └:N┤
+                          │  ┌Jubilee:N/N
+                          └:N┤
+                             └Flotilla?:N
+
+Category 32: contains 1 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌is:(S[dcl]\NP)/(S[pss]\NP)
+       └:S[dcl]\NP┤
+                  │          ┌called:(S[pss]\NP)/NP
+                  └:S[pss]\NP┤
+                             └:NP┐
+                                 └Dana?:N
+
+Category 33: contains 1 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │        ┌was:(S[q]/NP)/NP
+       └:S[q]/NP┤
+                │   ┌:NP┐
+                │   │   │  ┌Tom:N/N
+                │   │   └:N┤
+                │   │      └Hanks:N
+                └:NP┤
+                    └:NP\NP┐
+                           │          ┌married:(S[pss]\NP)/NP
+                           └:S[pss]\NP┤
+                                      └:NP┐
+                                          └to?:N
+
+Category 34: contains 1 questions with wh-words [For (100.00%)]
+                   ┌For:(S[wq]/S[q])/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/S[q]┤
+       │           │                ┌which:(S[wq]/(S[q]/NP))/N
+       │           └:S[wq]/(S[q]/NP)┤
+       │                            └label:N
+ :S[wq]┤
+       │                     ┌did:(S[q]/(S[b]\NP))/NP
+       │     ┌:S[q]/(S[b]\NP)┤
+       │     │               └:NP┐
+       │     │                   └Elvis:N
+       └:S[q]┤
+             │        ┌record:(S[b]\NP)/NP
+             └:S[b]\NP┤
+                      │       ┌his:NP[nb]/N
+                      └:NP[nb]┤
+                              │  ┌first:N/N
+                              └:N┤
+                                 └album?:N
+
+Category 35: contains 1 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └books:N
+ :S[wq]┤
+       │                         ┌by:((S\NP)/(S\NP))/NP
+       │          ┌:(S\NP)/(S\NP)┤
+       │          │              └:NP┐
+       │          │                  └Kerouac:N
+       └:S[dcl]\NP┤
+                  │          ┌were:(S[dcl]\NP)/(S[pss]\NP)
+                  └:S[dcl]\NP┤
+                             │          ┌published:S[pss]\NP
+                             └:S[pss]\NP┤
+                                        │              ┌by:((S\NP)\(S\NP))/NP
+                                        └:(S\NP)\(S\NP)┤
+                                                       └:NP┐
+                                                           │  ┌Viking:N/N
+                                                           └:N┤
+                                                              └Press?:N
+
+Category 36: contains 1 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │                          ┌wrote:((S[dcl]\NP)/NP)/NP
+       │          ┌:(S[dcl]\NP)/NP┤
+       │          │               │       ┌the:NP[nb]/N
+       │          │               └:NP[nb]┤
+       │          │                       └book:N
+       └:S[dcl]\NP┤
+                  │               ┌The:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └pillars:N
+                  └:NP[nb]┤
+                          │      ┌of:(NP\NP)/NP
+                          └:NP\NP┤
+                                 │       ┌the:NP[nb]/N
+                                 └:NP[nb]┤
+                                         └Earth?:N
+
+Category 37: contains 1 questions with wh-words [Who (100.00%)]
+       ┌Who:S[wq]/(S[dcl]\NP)
+ :S[wq]┤
+       │          ┌wrote:(S[dcl]\NP)/S[dcl]
+       └:S[dcl]\NP┤
+                  │               ┌the:NP[nb]/N
+                  │       ┌:NP[nb]┤
+                  │       │       └book:N
+                  └:S[dcl]┤
+                          │                          ┌Leave:((S[dcl]\NP)/PP)/NP
+                          │          ┌:(S[dcl]\NP)/PP┤
+                          │          │               └It:NP
+                          └:S[dcl]\NP┤
+                                     │   ┌to:PP/NP
+                                     └:PP┤
+                                         └:NP┐
+                                             └Psmith?:N
+
+Category 38: contains 1 questions with wh-words [From (100.00%)]
+                        ┌From:(S[wq]/(S[q]/PP))/(S[wq]/(S[q]/NP))
+       ┌:S[wq]/(S[q]/PP)┤
+       │                │                ┌which:(S[wq]/(S[q]/NP))/N
+       │                └:S[wq]/(S[q]/NP)┤
+       │                                 └region:N
+ :S[wq]┤
+       │        ┌is:(S[q]/PP)/NP
+       └:S[q]/PP┤
+                │       ┌the:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌Refosco:N/N
+                        └:N┤
+                           │  ┌dal:N/N
+                           └:N┤
+                              │  ┌Peduncolo:N/N
+                              └:N┤
+                                 └Rosso?:N
+
+Category 39: contains 1 questions with wh-words [How (100.00%)]
+                   ┌How:(S[wq]/S[q])/(S[adj]\NP)
+       ┌:S[wq]/S[q]┤
+       │           └much:S[adj]\NP
+ :S[wq]┤
+       │     ┌cost?:S[b]\NP
+       └:S[q]┤
+             │               ┌did:(S[q]/(S[b]\NP))/NP
+             └:S[q]/(S[b]\NP)┤
+                             └:NP┐
+                                 │  ┌Vanilla:N/N
+                                 └:N┤
+                                    └Sky:N
+
+Category 40: contains 1 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └people:N
+ :S[wq]┤
+       │          ┌:NP┐
+       │          │   └Jimmy?:N
+       └:S[dcl]\NP┤
+                  │               ┌have:((S[dcl]\NP)/PP)/NP
+                  └:(S[dcl]\NP)/NP┤
+                                  └:(S[X]\NP)\((S[X]\NP)/PP)┐
+                                                            │   ┌as:PP/NP
+                                                            └:PP┤
+                                                                │       ┌their:NP[nb]/N
+                                                                └:NP[nb]┤
+                                                                        │  ┌given:N/N
+                                                                        └:N┤
+                                                                           └name:N
+
+Category 41: contains 1 questions with wh-words [List (100.00%)]
+      ┌:NP┐
+      │   └Thatcher.:N
+ :S[q]┤
+      │        ┌List:(S[q]/NP)/NP
+      └:S[q]/NP┤
+               │               ┌the:NP[nb]/N
+               │       ┌:NP[nb]┤
+               │       │       └children:N
+               └:NP[nb]┤
+                       │      ┌of:(NP\NP)/NP
+                       └:NP\NP┤
+                              └:NP┐
+                                  └Margaret:N
+
+Category 42: contains 1 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │  ┌music:N/N
+       │                  └:N┤
+       │                     └albums:N
+ :S[wq]┤
+       │                     ┌contain:(S[dcl]\NP)/NP
+       │          ┌:S[dcl]\NP┤
+       │          │          │       ┌the:NP[nb]/N
+       │          │          └:NP[nb]┤
+       │          │                  └song:N
+       └:S[dcl]\NP┤
+                  │              ┌Into:((S\NP)\(S\NP))/NP
+                  └:(S\NP)\(S\NP)┤
+                                 │       ┌Your:NP[nb]/N
+                                 └:NP[nb]┤
+                                         └Arms?:N
+
+Category 43: contains 1 questions with wh-words [When (100.00%)]
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │                       ┌was:(S[q]/(S[pss]\NP))/NP
+       │     ┌:S[q]/(S[pss]\NP)┤
+       │     │                 └:NP┐
+       │     │                     └Alberta:N
+       └:S[q]┤
+             │          ┌admitted:(S[pss]\NP)/PP
+             └:S[pss]\NP┤
+                        │   ┌as:PP/NP
+                        └:PP┤
+                            └:NP┐
+                                └province?:N
+
+Category 44: contains 1 questions with wh-words [Which (100.00%)]
+                          ┌Which:(S[wq]/(S[dcl]\NP))/N
+       ┌:S[wq]/(S[dcl]\NP)┤
+       │                  └museum:N
+ :S[wq]┤
+       │                         ┌by:((S\NP)\(S\NP))/NP
+       │          ┌:(S\NP)\(S\NP)┤
+       │          │              └:NP┐
+       │          │                  └Munch?:N
+       └:S[dcl]\NP┤
+                  │          ┌exhibits:(S[dcl]\NP)/NP
+                  └:S[dcl]\NP┤
+                             │       ┌The:NP[nb]/N
+                             └:NP[nb]┤
+                                     └Scream:N
+
+Category 45: contains 1 questions with wh-words [What (100.00%)]
+       ┌What:S[wq]/(S[q]/NP)
+ :S[wq]┤
+       │                      ┌die:(S[b]\NP)/NP
+       │        ┌:(S[b]\NP)/NP┤
+       │        │             └from?:(S\NP)\(S\NP)
+       └:S[q]/NP┤
+                │               ┌did:(S[q]/(S[b]\NP))/NP
+                └:S[q]/(S[b]\NP)┤
+                                └:NP┐
+                                    │  ┌Bruce:N/N
+                                    └:N┤
+                                       └Carver:N
+
+Category 46: contains 1 questions with wh-words [List (100.00%)]
+        ┌:NP┐
+        │   └List:N
+ :S[dcl]┤
+        │          ┌all:(S\NP)/(S\NP)
+        └:S[dcl]\NP┤
+                   │          ┌boardgames:S[dcl]\NP
+                   └:S[dcl]\NP┤
+                              │              ┌by:((S\NP)\(S\NP))/NP
+                              └:(S\NP)\(S\NP)┤
+                                             └:NP┐
+                                                 └GMT.:N
+
+Category 47: contains 1 questions with wh-words [In (100.00%)]
+       ┌In:S/S
+ :S[wq]┤
+       │                         ┌which:(S[wq]/(S[dcl]\NP))/N
+       │      ┌:S[wq]/(S[dcl]\NP)┤
+       │      │                  │  ┌UK:N/N
+       │      │                  └:N┤
+       │      │                     └city:N
+       └:S[wq]┤
+              │          ┌are:(S[dcl]\NP)/NP
+              └:S[dcl]\NP┤
+                         │               ┌the:NP[nb]/N
+                         │       ┌:NP[nb]┤
+                         │       │       └headquarters:N
+                         └:NP[nb]┤
+                                 │      ┌of:(NP\NP)/NP
+                                 └:NP\NP┤
+                                        │       ┌the:NP[nb]/N
+                                        └:NP[nb]┤
+                                                └MI6?:N
+
+Category 48: contains 1 questions with wh-words [Which (100.00%)]
+                                         ┌did:((S[dcl]\NP)/(S[b]\NP))/NP
+                  ┌:(S[dcl]\NP)/(S[b]\NP)┤
+                  │                      └he:NP
+       ┌:S[dcl]\NP┤
+       │          │        ┌direct:(S[b]\NP)/NP
+       │          └:S[b]\NP┤
+       │                   └:NP┐
+       │                       └himself?:N
+ :S[wq]┤
+       │                                     ┌Which:(S[wq]/(S[dcl]\NP))/N
+       │                  ┌:S[wq]/(S[dcl]\NP)┤
+       │                  │                  └films:N
+       └:S[wq]/(S[dcl]\NP)┤
+                          └:S\S┐
+                               │         ┌starring:(S[ng]\NP)/NP
+                               └:S[ng]\NP┤
+                                         └:NP┐
+                                             │  ┌Clint:N/N
+                                             └:N┤
+                                                └Eastwood:N
+
+Category 49: contains 1 questions with wh-words [Give (100.00%)]
+    ┌:NP┐
+    │   │                        ┌Give:((S[ng]\NP)/NP)/NP
+    │   │         ┌:(S[ng]\NP)/NP┤
+    │   │         │              └:(S[X]\NP)\((S[X]\NP)/NP)┐
+    │   │         │                                        └me:NP
+    │   └:S[ng]\NP┤
+    │             │       ┌the:NP[nb]/N
+    │             └:NP[nb]┤
+    │                     │  ┌official:N/N
+    │                     └:N┤
+    │                        └websites:N
+ :NP┤
+    │      ┌of:(NP\NP)/NP
+    └:NP\NP┤
+           │   ┌:NP┐
+           │   │   └actors:N
+           └:NP┤
+               │      ┌of:(NP\NP)/NP
+               └:NP\NP┤
+                      │       ┌the:NP[nb]/N
+                      └:NP[nb]┤
+                              │  ┌television:N/N
+                              └:N┤
+                                 │  ┌show:N/N
+                                 └:N┤
+                                    └Charmed.:N
+
+Category 50: contains 1 questions with wh-words [When (100.00%)]
+       ┌When:S[wq]/S[q]
+ :S[wq]┤
+       │                     ┌did:(S[q]/(S[b]\NP))/NP
+       │     ┌:S[q]/(S[b]\NP)┤
+       │     │               └:NP┐
+       │     │                   └Finland:N
+       └:S[q]┤
+             │        ┌join:(S[b]\NP)/NP
+             └:S[b]\NP┤
+                      │       ┌the:NP[nb]/N
+                      └:NP[nb]┤
+                              └EU?:N
+
+Category 51: contains 1 questions with wh-words [Give (100.00%)]
+        ┌Give:S[dcl]/NP
+ :S[dcl]┤
+        │       ┌me:NP/NP
+        └:NP[nb]┤
+                │       ┌all:NP[nb]/N
+                └:NP[nb]┤
+                        │  ┌Australian:N/N
+                        └:N┤
+                           │  ┌nonprofit:N/N
+                           └:N┤
+                              └organizations.:N
+

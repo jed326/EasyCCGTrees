@@ -4,7 +4,8 @@ easyccg/model_questions
 *.tmp
 *.pyc
 *.class
-!QALD-questions.txt
-!QALD-questions-stripped.txt
+.txt*
+!input/*.txt
+!output/*.txt
 out/
 __pycache__/
