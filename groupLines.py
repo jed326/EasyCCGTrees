@@ -1,11 +1,18 @@
 import subprocess
 import pathlib
 import argparse
+<<<<<<< HEAD
+=======
+from to_tree import to_tree, print_tree
+>>>>>>> master
 import itertools
 import os #environ
 import eq_fns
 import sys #exit
+<<<<<<< HEAD
 from to_tree import to_tree, output_tree
+=======
+>>>>>>> master
 
 
 # REQUIRED: Input path argument
@@ -35,7 +42,15 @@ def remove_IDs():
                 if count % 2 == 1:
                     print(line.rstrip(), file=newfile)
 
+<<<<<<< HEAD
 
+=======
+def posix_path_sup_py35(posix_path):
+    # todo decide python version here 3 <= V < 3.6
+    if True:
+        return str(posix_path)
+    return posix_path
+>>>>>>> master
 
 def label(text):
     with open(posix_path_sup_parser(OUT_PATH / "_labeltmp"), "w") as tmpfile:
@@ -53,11 +68,17 @@ def label(text):
     file_path - relative (or absolute) path to file containing newline
     separated questions to parse
 
+<<<<<<< HEAD
     output_switch - 0. questions only / 1. tree only / 2. both 
 
     kwargs - extra args for eq_fn
 '''
 def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, output_switch=0, **kwargs):
+=======
+    kwargs - extra args for eq_fn
+'''
+def group(file_path, out_path = "./_grouped_out.txt", eq_fn = eq_fns.tree_equals, **kwargs):
+>>>>>>> master
     #list of dicts {string : tree}
     # categories is a list of dictionaries
     # each index is a mapping between the parsed question and its tree representation
@@ -140,17 +161,21 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
     print("Created %d categories, written to %s" % (len(categories), out_path))
 
     return categories
+<<<<<<< HEAD
 
 def posix_path_sup_parser(posix_path):
     # todo decide python version here 3 <= V < 3.6 solved 
     if True:
         return str(posix_path)
     return posix_path
+=======
+>>>>>>> master
 
 def _test():
     tree2 = to_tree(label("How do commercial jets fly"))
     tree1 = to_tree(label("How do airplanes fly"))
 
+<<<<<<< HEAD
     # output_tree(tree1)
 
     from eq_fns import _tree_weight
@@ -158,6 +183,15 @@ def _test():
     # output_tree(tree1)
     eq_fns.equals_with_application(tree1, tree2)
     output_tree(tree1)
+=======
+    # print_tree(tree1)
+
+    from eq_fns import _tree_weight
+    # print(_tree_weight(tree1))
+    # print_tree(tree1)
+    eq_fns.equals_with_application(tree1, tree2)
+    print_tree(tree1)
+>>>>>>> master
 
 
 if __name__ == "__main__":
@@ -171,15 +205,23 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Group similar questions into categories")
     parser.add_argument("path", help="Relative path to input file containing newline separated questions to group")
     parser.add_argument("--outfile", help="Optional path to output categories to", default="./_grouped_out.txt")
+<<<<<<< HEAD
     parser.add_argument("-d", "--depth", help="Maximum depth to compare trees at", default=2, type=int)
     parser.add_argument("-o", "--output", help="0:Questions / 1: Trees / 2: Both", default=0, type=int)
+=======
+    parser.add_argument("-d", "--depth", help = "Maximum depth to compare trees at", default = 2, type=int)
+>>>>>>> master
     args = parser.parse_args()
 
 
     #fns = eq_fns.__all__
     #for fn in fns:
     #    print(fn.__name__)
+<<<<<<< HEAD
     categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+=======
+    categories = group(args.path, args.outfile, depth = args.depth)
+>>>>>>> master
     print(len(categories))
 
     print(len(categories) / sum( len(category) for category in categories))
