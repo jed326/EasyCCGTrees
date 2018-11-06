@@ -1,11 +1,11 @@
 import subprocess
 import pathlib
 import argparse
-from to_tree import to_tree, output_tree
 import itertools
 import os #environ
 import eq_fns
 import sys #exit
+from to_tree import to_tree, output_tree
 
 
 # REQUIRED: Input path argument
@@ -35,11 +35,7 @@ def remove_IDs():
                 if count % 2 == 1:
                     print(line.rstrip(), file=newfile)
 
-def posix_path_sup_parser(posix_path):
-    # todo decide python version here 3 <= V < 3.6
-    if True:
-        return str(posix_path)
-    return posix_path
+
 
 def label(text):
     with open(posix_path_sup_parser(OUT_PATH / "_labeltmp"), "w") as tmpfile:
@@ -144,6 +140,12 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
     print("Created %d categories, written to %s" % (len(categories), out_path))
 
     return categories
+
+def posix_path_sup_parser(posix_path):
+    # todo decide python version here 3 <= V < 3.6 solved 
+    if True:
+        return str(posix_path)
+    return posix_path
 
 def _test():
     tree2 = to_tree(label("How do commercial jets fly"))

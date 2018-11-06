@@ -1,5 +1,5 @@
 import functools
-from to_tree import output_tree, Node
+from to_tree import Node, output_tree
 import functools
 import copy
 
