@@ -28,7 +28,9 @@ class Node:
 
 # tree node for ccg parse
 class CCGNode(Node):
-    __slots__ = "children", "value", "node_type", "combinator", "string_type"
+    __slots__ = "children", "value", "node_type", "combinator"
+    NON_LEAF = 'T'
+    LEAF = 'L'
 
     @property
     def name(self):
@@ -37,21 +39,53 @@ class CCGNode(Node):
         else:
             return "%s %s" % (self.combinator, self.value)
 
-    def __init__(self, ccg_output: str):
+    @classmethod
+    def from_ccg(cls, ccg_output: str):
         node_elements = ccg_output[ccg_output.find('<') + 1:ccg_output.find('>')].split()
-        self.node_type = node_elements[0]
-        self.combinator = node_elements[1]
+        node_type = node_elements[0]
+        combinator = node_elements[1]
         node_children_str = ccg_output[ccg_output.find('>') + 1:ccg_output.rfind(')')]
         node_children = []
-        if self.node_type == 'T':
+        if node_type == CCGNode.NON_LEAF:
             node_children = _bracket_split(node_children_str)
-        super().__init__(node_elements[4] if self.node_type == 'L' else '',
-                         [CCGNode(c) for c in node_children])
+        value = node_elements[4] if node_type == CCGNode.LEAF else ''
+        children = [CCGNode.from_ccg(c) for c in node_children]
+        return CCGNode(value, node_type, combinator, children)
+
+    def __init__(self, value: str, node_type: str, combinator: str, children: list = None):
+        super().__init__(value, children)
+        self.node_type = node_type
+        self.combinator = combinator
 
     def __str__(self):
         if len(self.children) == 0:
             return self.name
         return "{} {}:[{}]".format(self.name, self.combinator, ",".join([str(child) for child in self.children]))
+
+    def intersection(self, other):
+        if type(other) != CCGNode:
+            print(type(other))
+            return None
+        if self.combinator == other.combinator:
+            if (self.node_type, other.node_type) == (CCGNode.NON_LEAF, CCGNode.NON_LEAF):
+                return CCGNode(self.name, self.node_type, self.combinator,
+                               [s.intersection(o) for s, o in zip(self.children, other.children) if
+                                s.combinator == o.combinator])
+            else:
+                self_word_set = set(self.to_sentence().split('|'))
+                other_word_set = set(other.to_sentence().split('|'))
+                return CCGNode('|'.join(self_word_set.union(other_word_set)), CCGNode.LEAF, self.combinator)
+        else:
+            return None
+
+    def to_sentence(self):
+        if self.node_type == CCGNode.LEAF:
+            return self.value
+        else:
+            return " ".join([c.to_sentence() for c in self.children])
+
+    def __and__(self, other):
+        return self.intersection(other)
 
 
 # separates a string to a list of strings based on top-level brackets
@@ -113,9 +147,7 @@ def output_tree(current_node, output_file=None, indent="", last='updown', limit=
     if output_file is None:
         print('{0}{1}{2}{3}'.format(indent, start_shape, current_node.name, end_shape))
     else:
-        # try catch TODO 
         output_file.write('{0}{1}{2}{3}\n'.format(indent, start_shape, current_node.name, end_shape))
-
     """ Printing of "down" branch. """
     for child in down:
         next_last = 'down' if down.index(child) is len(down) - 1 else ''
@@ -124,13 +156,13 @@ def output_tree(current_node, output_file=None, indent="", last='updown', limit=
                     limit=limit - 1 if limit else None)
 
 
-# legacy:
-# converts a string to tree format
+# legacy: converts a string to tree format
+# recommend: use CCGNode.from_ccg directly
 def to_tree(string):
-    return CCGNode(string)
+    return CCGNode.from_ccg(string)
 
 
 # receives a string from stdin and write tree to stdout
 if __name__ == "__main__":
     data = sys.stdin.read()
-    output_tree(CCGNode(data))
+    output_tree(CCGNode.from_ccg(data))
