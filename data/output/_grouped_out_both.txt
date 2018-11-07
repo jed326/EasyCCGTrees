@@ -54,9 +54,9 @@ Category 1: contains 53 questions with wh-words [Who (41.51%), What (49.06%), Wh
 233 Who is the tallest player of Udinese Calcio?
 234 Who is the youngest Snooker player?
 237 Who were the parents of Maria of Antioch?
-      ┌S[wq]/(S[q]/NP) Who
+      ┌S[wq]/(S[q]/NP) What|Where|Who|When
  S[wq]┤
-      │       ┌(S[q]/NP)/NP are
+      │       ┌(S[q]/NP)/NP were|is|was|are
       └S[q]/NP┤
               └NP[nb]
 
@@ -77,11 +77,11 @@ Category 2: contains 16 questions with wh-words [Which (93.75%), What (6.25%)]
 213 Which languages are spoken in Romania?
 216 Which organizations were founded in 1918?
 217 Which presidents were born in 1891?
-                        ┌(S[wq]/(S[dcl]\NP))/N Which
+                        ┌(S[wq]/(S[dcl]\NP))/N What|Which
       ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N presidents
+      │                 └N companies|countries|ships|books|airports|languages|organizations|actors|presidents|people
  S[wq]┤
-      │         ┌(S[dcl]\NP)/(S[pss]\NP) were
+      │         ┌(S[dcl]\NP)/(S[pss]\NP) were|are
       └S[dcl]\NP┤
                 └S[pss]\NP
 
@@ -98,12 +98,20 @@ Category 3: contains 12 questions with wh-words [Give (100.00%)]
 168 Give me all soccer clubs in Qatar.
 170 Give me the children of David Foster.
 171 Give me the homepage of Metropolitan Home.
-         ┌(NP\NP)/NP with
+         ┌(NP\NP)/NP from|with|in|of
    ┌NP\NP┤
-   │     └NP
+   │     └NP┐
+   │        └N Munich.|Prodigy.|David Foster.|Jena.|Qatar.|Forbes.|Spain.|Tom Cruise!|Tom Cruise.|Sweden.|first name Jimmy.|Metropolitan Home.
  NP┤
    └NP┐
-      └S[ng]\NP
+      │               ┌NP[nb]/N all|the
+      │        ┌NP[nb]┤
+      │        │      └N companies|professional skateboarders|movies|members|children|soccer clubs|homepage|people
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
 
 Category 4: contains 11 questions with wh-words [Who (90.91%), Which (9.09%)]
 5 Who created English Wikipedia?
@@ -117,11 +125,12 @@ Category 4: contains 11 questions with wh-words [Who (90.91%), Which (9.09%)]
 223 Who developed Quake engine?
 225 Who founded Sony?
 236 Who produces Red Bull?
-      ┌S[wq]/(S[dcl]\NP) Who
+      ┌S[wq]/(S[dcl]\NP) Which|Who
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP created
+      │         ┌(S[dcl]\NP)/NP founded|produces|developed|states|created
       └S[dcl]\NP┤
-                └NP
+                └NP┐
+                   └N Sony?|Retrocrush?|Goofy?|Skype?|English Wikipedia?|border Illinois?|Wikipedia?|Miss Marple?|Quake engine?|Red Bull?|Intel?
 
 Category 5: contains 8 questions with wh-words [Who (100.00%)]
 137 Who developed the video game World of Warcraft?
@@ -134,7 +143,7 @@ Category 5: contains 8 questions with wh-words [Who (100.00%)]
 224 Who developed the video game Duke Nukem 3D?
       ┌S[wq]/(S[dcl]\NP) Who
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP developed
+      │         ┌(S[dcl]\NP)/NP painted|composed|designed|wrote|developed|created
       └S[dcl]\NP┤
                 └NP[nb]
 
@@ -147,12 +156,19 @@ Category 6: contains 8 questions with wh-words [Give (100.00%)]
 133 Give me all companies in the advertising industry.
 165 Give me all inflows of the Lake Houston.
 166 Give me all members of The Who.
-         ┌(NP\NP)/NP in
+         ┌(NP\NP)/NP in|of
    ┌NP\NP┤
    │     └NP[nb]
  NP┤
    └NP┐
-      └S[ng]\NP
+      │               ┌NP[nb]/N all|a|the
+      │        ┌NP[nb]┤
+      │        │      └N companies|soccer clubs|birthdays|list|inflows|B-sides|members
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
 
 Category 7: contains 6 questions with wh-words [Give (100.00%)]
 145 Give me all films produced by Hal Roach.
@@ -162,10 +178,24 @@ Category 7: contains 6 questions with wh-words [Give (100.00%)]
 162 Give me all books written by David Foster Wallace.
 169 Give me all video games published by Black Isle Studios.
    ┌NP┐
-   │  └S[ng]\NP
+   │  │               ┌NP[nb]/N all
+   │  │        ┌NP[nb]┤
+   │  │        │      └N films|movies|books|video games
+   │  └S[ng]\NP┤
+   │           │             ┌((S[ng]\NP)/NP)/NP Give
+   │           └(S[ng]\NP)/NP┤
+   │                         └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │                                                  └NP me
  NP┤
    └NP\NP┐
-         └S[pss]\NP
+         │         ┌S[pss]\NP written|produced|published|directed
+         └S[pss]\NP┤
+                   │             ┌((S\NP)\(S\NP))/NP by
+                   └(S\NP)\(S\NP)┤
+                                 └NP┐
+                                    │ ┌N/N David|Black|Hal|Danielle|Mean|Francis
+                                    └N┤
+                                      └N Roach.|Steel.|Isle Studios.|Ford Coppola.|Foster Wallace.|Hamster Software.
 
 Category 8: contains 6 questions with wh-words [How (100.00%)]
 69 How many inhabitants does Maribor have?
@@ -174,13 +204,16 @@ Category 8: contains 6 questions with wh-words [How (100.00%)]
 178 How many inhabitants does Nagamangala have?
 179 How many pages does The Man with the Red Tattoo have?
 181 How many students does the Texas Tech University have?
-                      ┌N inhabitants
-      ┌S[wq]/(S[q]/NP)┤
-      │               └(S[wq]/(S[q]/NP))/N
+              ┌(S[b]\NP)/NP have?
+      ┌S[q]/NP┤
+      │       └S[q]/(S[b]\NP)┐
+      │                      └(S[q]/(S[b]\NP))/NP does
  S[wq]┤
-      │       ┌(S[b]\NP)/NP have?
-      └S[q]/NP┤
-              └S[q]/(S[b]\NP)
+      │               ┌N employees|inhabitants|pages|students
+      └S[wq]/(S[q]/NP)┤
+                      │                   ┌((S[wq]/(S[q]/NP))/N)/(NP/N) How
+                      └(S[wq]/(S[q]/NP))/N┤
+                                          └NP/N many
 
 Category 9: contains 5 questions with wh-words [When (100.00%)]
 10 When was DBpedia released?
@@ -190,9 +223,11 @@ Category 9: contains 5 questions with wh-words [When (100.00%)]
 204 When was the Riverdale Monument built?
       ┌S[wq]/S[q] When
  S[wq]┤
-      │    ┌NP
+      │    ┌S[q]/NP┐
+      │    │       └(S[q]/NP)/NP were|was
       └S[q]┤
-           └S[q]/NP
+           └NP┐
+              └N founded?|released?|born?|built?
 
 Category 10: contains 5 questions with wh-words [In (100.00%)]
 152 In which programming language is GIMP written?
@@ -202,9 +237,12 @@ Category 10: contains 5 questions with wh-words [In (100.00%)]
 188 In which programming language is QuickTime written?
       ┌S/S In
  S[wq]┤
-      │     ┌S[wq]/(S[q]/NP)
+      │     ┌S[q]/NP┐
+      │     │       └(S[q]/NP)/NP is
       └S[wq]┤
-            └S[q]/NP
+            │               ┌(S[wq]/(S[q]/NP))/N which
+            └S[wq]/(S[q]/NP)┤
+                            └N country|programming language
 
 Category 11: contains 5 questions with wh-words [In (60.00%), To (20.00%), Through (20.00%)]
 155 In which films did Julia Roberts as well as Richard Gere play?
@@ -212,13 +250,16 @@ Category 11: contains 5 questions with wh-words [In (60.00%), To (20.00%), Throu
 67 In which military conflicts did Lawrence of Arabia participate?
 92 To which countries does the Himalayan mountain system extend?
 122 Through which countries does the Yenisei river flow?
-                 ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) In
-      ┌S[wq]/S[q]┤
-      │          └S[wq]/(S[q]/NP)
+           ┌S[b]\NP flow?|play?|extend?|start?|participate?
+      ┌S[q]┤
+      │    └S[q]/(S[b]\NP)┐
+      │                   └(S[q]/(S[b]\NP))/NP did|does
  S[wq]┤
-      │    ┌S[b]\NP play?
-      └S[q]┤
-           └S[q]/(S[b]\NP)
+      │          ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) Through|In|To
+      └S[wq]/S[q]┤
+                 │               ┌(S[wq]/(S[q]/NP))/N which
+                 └S[wq]/(S[q]/NP)┤
+                                 └N countries|films|military conflicts|country
 
 Category 12: contains 5 questions with wh-words [How (100.00%)]
 109 How tall is Claudia Schiffer?
@@ -228,11 +269,12 @@ Category 12: contains 5 questions with wh-words [How (100.00%)]
 184 How tall is Kate Upton?
                                ┌(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP) How
       ┌S[wq]/(S[q]/(S[adj]\NP))┤
-      │                        └S[adj]\NP tall
+      │                        └S[adj]\NP deep|tall
  S[wq]┤
       │                ┌(S[q]/(S[adj]\NP))/NP is
       └S[q]/(S[adj]\NP)┤
-                       └NP
+                       └NP┐
+                          └N Claudia Jordan?|Kate Upton?|Steinsee?|John Windsor?|Michael|Schiffer?
 
 Category 13: contains 5 questions with wh-words [Which (100.00%)]
 74 Which cities does the Weser flow through?
@@ -242,9 +284,9 @@ Category 13: contains 5 questions with wh-words [Which (100.00%)]
 214 Which museum exhibits The Skater?
                         ┌(S[wq]/(S[dcl]\NP))/N Which
       ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N cities
+      │                 └N bridges|artist|river|museum|cities
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP does
+      │         ┌(S[dcl]\NP)/NP exhibits|cross|made|does
       └S[dcl]\NP┤
                 └NP[nb]
 
@@ -256,11 +298,13 @@ Category 14: contains 5 questions with wh-words [How (100.00%)]
 176 How high is the Landegode Lighthouse?
                                ┌(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP) How
       ┌S[wq]/(S[q]/(S[adj]\NP))┤
-      │                        └S[adj]\NP high
+      │                        └S[adj]\NP high|big
  S[wq]┤
       │                ┌(S[q]/(S[adj]\NP))/NP is
       └S[q]/(S[adj]\NP)┤
-                       └NP[nb]
+                       │      ┌NP[nb]/N the
+                       └NP[nb]┤
+                              └N
 
 Category 15: contains 4 questions with wh-words [Which (100.00%)]
 8 Which country does the Airedale Terrier come from?
@@ -269,55 +313,74 @@ Category 15: contains 4 questions with wh-words [Which (100.00%)]
 105 Which country does the creator of Miffy come from?
                       ┌(S[wq]/(S[q]/NP))/N Which
       ┌S[wq]/(S[q]/NP)┤
-      │               └N country
+      │               └N classis|genre|country
  S[wq]┤
-      │       ┌(S[b]\NP)/NP
+      │       ┌S[q]/(S[b]\NP)┐
+      │       │              └(S[q]/(S[b]\NP))/NP does
       └S[q]/NP┤
-              └S[q]/(S[b]\NP)
+              │            ┌(S[b]\NP)/NP belong|come
+              └(S[b]\NP)/NP┤
+                           └(S\NP)\(S\NP) from?|to?
 
 Category 16: contains 4 questions with wh-words [Where (50.00%), When (50.00%)]
 141 Where did Abraham Lincoln die?
 198 When did Jules Bergman die?
 199 When did Red Sonja's creator die?
 206 Where did Queen Emma of Hawaii die?
-      ┌S[wq]/S[q] Where
+      ┌S[wq]/S[q] Where|When
  S[wq]┤
       │    ┌S[b]\NP die?
       └S[q]┤
-           └S[q]/(S[b]\NP)
+           │              ┌(S[q]/(S[b]\NP))/NP did
+           └S[q]/(S[b]\NP)┤
+                          └NP
 
 Category 17: contains 4 questions with wh-words [Which (100.00%)]
 116 Which television shows were created by Walt Disney?
 131 Which telecommunications organizations are located in Belgium?
 76 Which professional surfers were born on the Philippines?
 218 Which professional surfers were born in Australia?
-                        ┌(S[wq]/(S[dcl]\NP))/N Which
-      ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N
+                ┌(S[dcl]\NP)/(S[pss]\NP) were|are
+      ┌S[dcl]\NP┤
+      │         └S[pss]\NP
  S[wq]┤
-      │         ┌(S[dcl]\NP)/(S[pss]\NP) were
-      └S[dcl]\NP┤
-                └S[pss]\NP
+      │                 ┌(S[wq]/(S[dcl]\NP))/N Which
+      └S[wq]/(S[dcl]\NP)┤
+                        │ ┌N/N television|telecommunications|professional
+                        └N┤
+                          └N organizations|shows|surfers
 
 Category 18: contains 3 questions with wh-words [Give (100.00%)]
 55 Give me all cars that are produced in Germany.
 56 Give me all people that were born in Vienna and died in Berlin.
 163 Give me all cars that are produced in Netherlands.
-   ┌NP┐
-   │  └S[ng]\NP
+         ┌(NP\NP)/(S[dcl]\NP) that
+   ┌NP\NP┤
+   │     └S[dcl]\NP
  NP┤
-   │     ┌(NP\NP)/(S[dcl]\NP) that
-   └NP\NP┤
-         └S[dcl]\NP
+   └NP┐
+      │               ┌NP[nb]/N all
+      │        ┌NP[nb]┤
+      │        │      └N cars|people
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
 
 Category 19: contains 2 questions with wh-words [List (50.00%), In (50.00%)]
 139 List all episodes of the first season of the HBO television series The Sopranos!
 117 In which films directed by Garry Marshall was Julia Roberts starring?
-       ┌S/S List
+       ┌S/S In|List
  S[dcl]┤
-       │      ┌S[dcl]\NP
+       │      ┌S[dcl]\NP┐
+       │      │         └(S[dcl]\NP)/NP was|series
        └S[dcl]┤
-              └NP[nb]
+              │      ┌NP\NP
+              └NP[nb]┤
+                     │      ┌NP[nb]/N all|which
+                     └NP[nb]┤
+                            └N episodes|films
 
 Category 20: contains 2 questions with wh-words [Which (100.00%)]
 143 Which software has been developed by organizations founded in California?
@@ -328,46 +391,72 @@ Category 20: contains 2 questions with wh-words [Which (100.00%)]
  S[wq]┤
       │         ┌(S[dcl]\NP)/(S[pt]\NP) has
       └S[dcl]\NP┤
-                └S[pt]\NP
+                │        ┌(S[pt]\NP)/(S[pss]\NP) been
+                └S[pt]\NP┤
+                         │         ┌S[pss]\NP developed|published
+                         └S[pss]\NP┤
+                                   │             ┌((S\NP)\(S\NP))/NP by
+                                   └(S\NP)\(S\NP)┤
+                                                 └NP
 
 Category 21: contains 2 questions with wh-words [Which (100.00%)]
 148 Which music albums contain the song Last Christmas?
 78 Which other weapons did the designer of the Uzi develop?
-                        ┌(S[wq]/(S[dcl]\NP))/N Which
-      ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N
+                ┌(S[dcl]\NP)/NP contain|did
+      ┌S[dcl]\NP┤
+      │         └NP[nb]
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP contain
-      └S[dcl]\NP┤
-                └NP[nb]
+      │                 ┌(S[wq]/(S[dcl]\NP))/N Which
+      └S[wq]/(S[dcl]\NP)┤
+                        │ ┌N/N other|music
+                        └N┤
+                          └N albums|weapons
 
 Category 22: contains 2 questions with wh-words [Who (100.00%)]
 153 Who produced films starring Natalie Portman?
 235 Who painted Unfinished portrait of General Bonaparte?
       ┌S[wq]/(S[dcl]\NP) Who
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP produced
+      │         ┌(S[dcl]\NP)/NP painted|produced
       └S[dcl]\NP┤
-                └NP
+                │  ┌NP\NP
+                └NP┤
+                   └NP┐
+                      └N Unfinished portrait|films
 
 Category 23: contains 2 questions with wh-words [Which (100.00%)]
 118 Which bridges are of the same type as the Manhattan Bridge?
 49 Which companies are in the computer software industry?
                         ┌(S[wq]/(S[dcl]\NP))/N Which
       ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N bridges
+      │                 └N companies|bridges
  S[wq]┤
       │         ┌(S[dcl]\NP)/PP are
       └S[dcl]\NP┤
-                └PP
+                │  ┌PP/NP in|of
+                └PP┤
+                   │      ┌NP\NP industry?|as the Manhattan Bridge?
+                   └NP[nb]┤
+                          │      ┌NP[nb]/N the
+                          └NP[nb]┤
+                                 │ ┌N/N computer|same
+                                 └N┤
+                                   └N software|type
 
 Category 24: contains 2 questions with wh-words [Give (100.00%)]
 83 Give me the Apollo 14 astronauts.
 151 Give me all Canadian Grunge record labels.
-   ┌NP\NP astronauts.
+   ┌NP\NP astronauts.|labels.
  NP┤
    └NP┐
-      └S[ng]\NP
+      │               ┌NP[nb]/N all|the
+      │        ┌NP[nb]┤
+      │        │      └N
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
 
 Category 25: contains 2 questions with wh-words [Give (100.00%)]
 87 Give me all Argentine films.
@@ -376,31 +465,47 @@ Category 25: contains 2 questions with wh-words [Give (100.00%)]
        ┌S/S┤
        │   └NP me
  S[dcl]┤
-       │      ┌S[dcl]\NP films.
+       │      ┌S[dcl]\NP labels.|films.
        └S[dcl]┤
-              └NP[nb]
+              │      ┌NP[nb]/N all
+              └NP[nb]┤
+                     └N Argentine|Avant-garde jazz record
 
 Category 26: contains 2 questions with wh-words [How (100.00%)]
 95 How many people live in the capital of Australia?
 180 How many people live in the capital of Togo?
                         ┌N people
       ┌S[wq]/(S[dcl]\NP)┤
-      │                 └(S[wq]/(S[dcl]\NP))/N
+      │                 │                     ┌((S[wq]/(S[dcl]\NP))/N)/(NP/N) How
+      │                 └(S[wq]/(S[dcl]\NP))/N┤
+      │                                       └NP/N many
  S[wq]┤
       │         ┌(S[dcl]\NP)/PP live
       └S[dcl]\NP┤
-                └PP
+                │  ┌PP/NP in
+                └PP┤
+                   │             ┌NP[nb]/N the
+                   │      ┌NP[nb]┤
+                   │      │      └N capital
+                   └NP[nb]┤
+                          │     ┌(NP\NP)/NP of
+                          └NP\NP┤
+                                └NP┐
+                                   └N Australia?|Togo?
 
 Category 27: contains 2 questions with wh-words [Which (100.00%)]
 119 Which awards did WikiLeaks win?
 212 Which instruments does Courtney Love play?
                       ┌(S[wq]/(S[q]/NP))/N Which
       ┌S[wq]/(S[q]/NP)┤
-      │               └N awards
+      │               └N awards|instruments
  S[wq]┤
-      │       ┌(S[b]\NP)/NP win?
+      │       ┌(S[b]\NP)/NP play?|win?
       └S[q]/NP┤
-              └S[q]/(S[b]\NP)
+              │              ┌(S[q]/(S[b]\NP))/NP did|does
+              └S[q]/(S[b]\NP)┤
+                             └NP┐
+                                └N WikiLeaks|Courtney Love
 
 Category 28: contains 1 questions with wh-words [Which (100.00%)]
 4 Which people have as their given name Jimmy?
@@ -408,9 +513,19 @@ Category 28: contains 1 questions with wh-words [Which (100.00%)]
       ┌S[wq]/(S[dcl]\NP)┤
       │                 └N people
  S[wq]┤
-      │         ┌NP
+      │         ┌NP┐
+      │         │  └N Jimmy?
       └S[dcl]\NP┤
-                └(S[dcl]\NP)/NP
+                │              ┌((S[dcl]\NP)/PP)/NP have
+                └(S[dcl]\NP)/NP┤
+                               └(S[X]\NP)\((S[X]\NP)/PP)┐
+                                                        │  ┌PP/NP as
+                                                        └PP┤
+                                                           │      ┌NP[nb]/N their
+                                                           └NP[nb]┤
+                                                                  │ ┌N/N given
+                                                                  └N┤
+                                                                    └N name
 
 Category 29: contains 1 questions with wh-words [Who (100.00%)]
 9 Who was Tom Hanks married to?
@@ -418,7 +533,16 @@ Category 29: contains 1 questions with wh-words [Who (100.00%)]
  S[wq]┤
       │       ┌(S[q]/NP)/NP was
       └S[q]/NP┤
-              └NP
+              │  ┌NP┐
+              │  │  │ ┌N/N Tom
+              │  │  └N┤
+              │  │    └N Hanks
+              └NP┤
+                 └NP\NP┐
+                       │         ┌(S[pss]\NP)/NP married
+                       └S[pss]\NP┤
+                                 └NP┐
+                                    └N to?
 
 Category 30: contains 1 questions with wh-words [Who (100.00%)]
 15 Who is called Dana?
@@ -426,24 +550,59 @@ Category 30: contains 1 questions with wh-words [Who (100.00%)]
  S[wq]┤
       │         ┌(S[dcl]\NP)/(S[pss]\NP) is
       └S[dcl]\NP┤
-                └S[pss]\NP
+                │         ┌(S[pss]\NP)/NP called
+                └S[pss]\NP┤
+                          └NP┐
+                             └N Dana?
 
 Category 31: contains 1 questions with wh-words [Who (100.00%)]
 156 Who wrote the book The pillars of the Earth?
       ┌S[wq]/(S[dcl]\NP) Who
  S[wq]┤
-      │         ┌(S[dcl]\NP)/NP
+      │                        ┌((S[dcl]\NP)/NP)/NP wrote
+      │         ┌(S[dcl]\NP)/NP┤
+      │         │              │      ┌NP[nb]/N the
+      │         │              └NP[nb]┤
+      │         │                     └N book
       └S[dcl]\NP┤
-                └NP[nb]
+                │             ┌NP[nb]/N The
+                │      ┌NP[nb]┤
+                │      │      └N pillars
+                └NP[nb]┤
+                       │     ┌(NP\NP)/NP of
+                       └NP\NP┤
+                             │      ┌NP[nb]/N the
+                             └NP[nb]┤
+                                    └N Earth?
 
 Category 32: contains 1 questions with wh-words [Give (100.00%)]
 28 Give me the official websites of actors of the television show Charmed.
    ┌NP┐
-   │  └S[ng]\NP
+   │  │                      ┌((S[ng]\NP)/NP)/NP Give
+   │  │        ┌(S[ng]\NP)/NP┤
+   │  │        │             └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │  │        │                                      └NP me
+   │  └S[ng]\NP┤
+   │           │      ┌NP[nb]/N the
+   │           └NP[nb]┤
+   │                  │ ┌N/N official
+   │                  └N┤
+   │                    └N websites
  NP┤
    │     ┌(NP\NP)/NP of
    └NP\NP┤
-         └NP
+         │  ┌NP┐
+         │  │  └N actors
+         └NP┤
+            │     ┌(NP\NP)/NP of
+            └NP\NP┤
+                  │      ┌NP[nb]/N the
+                  └NP[nb]┤
+                         │ ┌N/N television
+                         └N┤
+                           │ ┌N/N show
+                           └N┤
+                             └N Charmed.
 
 Category 33: contains 1 questions with wh-words [Which (100.00%)]
 111 Which museum exhibits The Scream by Munch?
@@ -451,25 +610,65 @@ Category 33: contains 1 questions with wh-words [Which (100.00%)]
       ┌S[wq]/(S[dcl]\NP)┤
       │                 └N museum
  S[wq]┤
-      │         ┌(S\NP)\(S\NP)
+      │                       ┌((S\NP)\(S\NP))/NP by
+      │         ┌(S\NP)\(S\NP)┤
+      │         │             └NP┐
+      │         │                └N Munch?
       └S[dcl]\NP┤
-                └S[dcl]\NP
+                │         ┌(S[dcl]\NP)/NP exhibits
+                └S[dcl]\NP┤
+                          │      ┌NP[nb]/N The
+                          └NP[nb]┤
+                                 └N Scream
 
 Category 34: contains 1 questions with wh-words [What (100.00%)]
 134 What did Bruce Carver die from?
       ┌S[wq]/(S[q]/NP) What
  S[wq]┤
-      │       ┌(S[b]\NP)/NP
+      │                    ┌(S[b]\NP)/NP die
+      │       ┌(S[b]\NP)/NP┤
+      │       │            └(S\NP)\(S\NP) from?
       └S[q]/NP┤
-              └S[q]/(S[b]\NP)
+              │              ┌(S[q]/(S[b]\NP))/NP did
+              └S[q]/(S[b]\NP)┤
+                             └NP┐
+                                │ ┌N/N Bruce
+                                └N┤
+                                  └N Carver
 
 Category 35: contains 1 questions with wh-words [Give (100.00%)]
 63 Give me all actors starring in movies directed by and starring William Shatner.
    ┌NP┐
-   │  └S[ng]\NP
+   │  │               ┌NP[nb]/N all
+   │  │        ┌NP[nb]┤
+   │  │        │      └N actors
+   │  └S[ng]\NP┤
+   │           │             ┌((S[ng]\NP)/NP)/NP Give
+   │           └(S[ng]\NP)/NP┤
+   │                         └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │                                                  └NP me
  NP┤
    └NP\NP┐
-         └S[ng]\NP
+         │        ┌S[ng]\NP starring
+         └S[ng]\NP┤
+                  │             ┌((S\NP)\(S\NP))/NP in
+                  └(S\NP)\(S\NP)┤
+                                │     ┌NP┐
+                                │     │  └N movies
+                                │  ┌NP┤
+                                │  │  └NP\NP┐
+                                │  │        │         ┌S[pss]\NP directed
+                                │  │        └S[pss]\NP┤
+                                │  │                  └(S\NP)\(S\NP) by
+                                └NP┤
+                                   │     ┌conj and
+                                   └NP\NP┤
+                                         └NP┐
+                                            │ ┌N/N starring
+                                            └N┤
+                                              │ ┌N/N William
+                                              └N┤
+                                                └N Shatner.
 
 Category 36: contains 1 questions with wh-words [Give (100.00%)]
 66 Give me all Australian nonprofit organizations.
@@ -477,7 +676,13 @@ Category 36: contains 1 questions with wh-words [Give (100.00%)]
  S[dcl]┤
        │      ┌NP/NP me
        └NP[nb]┤
-              └NP[nb]
+              │      ┌NP[nb]/N all
+              └NP[nb]┤
+                     │ ┌N/N Australian
+                     └N┤
+                       │ ┌N/N nonprofit
+                       └N┤
+                         └N organizations.
 
 Category 37: contains 1 questions with wh-words [List (100.00%)]
 71 List all boardgames by GMT.
@@ -486,23 +691,50 @@ Category 37: contains 1 questions with wh-words [List (100.00%)]
  S[dcl]┤
        │         ┌(S\NP)/(S\NP) all
        └S[dcl]\NP┤
-                 └S[dcl]\NP
+                 │         ┌S[dcl]\NP boardgames
+                 └S[dcl]\NP┤
+                           │             ┌((S\NP)\(S\NP))/NP by
+                           └(S\NP)\(S\NP)┤
+                                         └NP┐
+                                            └N GMT.
 
 Category 38: contains 1 questions with wh-words [In (100.00%)]
 77 In which UK city are the headquarters of the MI6?
       ┌S/S In
  S[wq]┤
-      │     ┌S[wq]/(S[dcl]\NP)
+      │                       ┌(S[wq]/(S[dcl]\NP))/N which
+      │     ┌S[wq]/(S[dcl]\NP)┤
+      │     │                 │ ┌N/N UK
+      │     │                 └N┤
+      │     │                   └N city
       └S[wq]┤
-            └S[dcl]\NP
+            │         ┌(S[dcl]\NP)/NP are
+            └S[dcl]\NP┤
+                      │             ┌NP[nb]/N the
+                      │      ┌NP[nb]┤
+                      │      │      └N headquarters
+                      └NP[nb]┤
+                             │     ┌(NP\NP)/NP of
+                             └NP\NP┤
+                                   │      ┌NP[nb]/N the
+                                   └NP[nb]┤
+                                          └N MI6?
 
 Category 39: contains 1 questions with wh-words [When (100.00%)]
 90 When was Alberta admitted as province?
       ┌S[wq]/S[q] When
  S[wq]┤
-      │    ┌S[q]/(S[pss]\NP)
+      │                     ┌(S[q]/(S[pss]\NP))/NP was
+      │    ┌S[q]/(S[pss]\NP)┤
+      │    │                └NP┐
+      │    │                   └N Alberta
       └S[q]┤
-           └S[pss]\NP
+           │         ┌(S[pss]\NP)/PP admitted
+           └S[pss]\NP┤
+                     │  ┌PP/NP as
+                     └PP┤
+                        └NP┐
+                           └N province?
 
 Category 40: contains 1 questions with wh-words [List (100.00%)]
 91 List the children of Margaret Thatcher.
@@ -511,7 +743,14 @@ Category 40: contains 1 questions with wh-words [List (100.00%)]
  S[q]┤
      │       ┌(S[q]/NP)/NP List
      └S[q]/NP┤
-             └NP[nb]
+             │             ┌NP[nb]/N the
+             │      ┌NP[nb]┤
+             │      │      └N children
+             └NP[nb]┤
+                    │     ┌(NP\NP)/NP of
+                    └NP\NP┤
+                          └NP┐
+                             └N Margaret
 
 Category 41: contains 1 questions with wh-words [Which (100.00%)]
 93 Which books by Kerouac were published by Viking Press?
@@ -519,47 +758,100 @@ Category 41: contains 1 questions with wh-words [Which (100.00%)]
       ┌S[wq]/(S[dcl]\NP)┤
       │                 └N books
  S[wq]┤
-      │         ┌(S\NP)/(S\NP)
+      │                       ┌((S\NP)/(S\NP))/NP by
+      │         ┌(S\NP)/(S\NP)┤
+      │         │             └NP┐
+      │         │                └N Kerouac
       └S[dcl]\NP┤
-                └S[dcl]\NP
+                │         ┌(S[dcl]\NP)/(S[pss]\NP) were
+                └S[dcl]\NP┤
+                          │         ┌S[pss]\NP published
+                          └S[pss]\NP┤
+                                    │             ┌((S\NP)\(S\NP))/NP by
+                                    └(S\NP)\(S\NP)┤
+                                                  └NP┐
+                                                     │ ┌N/N Viking
+                                                     └N┤
+                                                       └N Press?
 
 Category 42: contains 1 questions with wh-words [Which (100.00%)]
 98 Which films starring Clint Eastwood did he direct himself?
-                ┌(S[dcl]\NP)/(S[b]\NP)
+                                      ┌((S[dcl]\NP)/(S[b]\NP))/NP did
+                ┌(S[dcl]\NP)/(S[b]\NP)┤
+                │                     └NP he
       ┌S[dcl]\NP┤
-      │         └S[b]\NP
+      │         │       ┌(S[b]\NP)/NP direct
+      │         └S[b]\NP┤
+      │                 └NP┐
+      │                    └N himself?
  S[wq]┤
-      │                 ┌S[wq]/(S[dcl]\NP)
+      │                                   ┌(S[wq]/(S[dcl]\NP))/N Which
+      │                 ┌S[wq]/(S[dcl]\NP)┤
+      │                 │                 └N films
       └S[wq]/(S[dcl]\NP)┤
-                        └S\S
+                        └S\S┐
+                            │        ┌(S[ng]\NP)/NP starring
+                            └S[ng]\NP┤
+                                     └NP┐
+                                        │ ┌N/N Clint
+                                        └N┤
+                                          └N Eastwood
 
 Category 43: contains 1 questions with wh-words [For (100.00%)]
 106 For which label did Elvis record his first album?
                  ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) For
       ┌S[wq]/S[q]┤
-      │          └S[wq]/(S[q]/NP)
+      │          │               ┌(S[wq]/(S[q]/NP))/N which
+      │          └S[wq]/(S[q]/NP)┤
+      │                          └N label
  S[wq]┤
-      │    ┌S[q]/(S[b]\NP)
+      │                   ┌(S[q]/(S[b]\NP))/NP did
+      │    ┌S[q]/(S[b]\NP)┤
+      │    │              └NP┐
+      │    │                 └N Elvis
       └S[q]┤
-           └S[b]\NP
+           │       ┌(S[b]\NP)/NP record
+           └S[b]\NP┤
+                   │      ┌NP[nb]/N his
+                   └NP[nb]┤
+                          │ ┌N/N first
+                          └N┤
+                            └N album?
 
 Category 44: contains 1 questions with wh-words [When (100.00%)]
 123 When did Finland join the EU?
       ┌S[wq]/S[q] When
  S[wq]┤
-      │    ┌S[q]/(S[b]\NP)
+      │                   ┌(S[q]/(S[b]\NP))/NP did
+      │    ┌S[q]/(S[b]\NP)┤
+      │    │              └NP┐
+      │    │                 └N Finland
       └S[q]┤
-           └S[b]\NP
+           │       ┌(S[b]\NP)/NP join
+           └S[b]\NP┤
+                   │      ┌NP[nb]/N the
+                   └NP[nb]┤
+                          └N EU?
 
 Category 45: contains 1 questions with wh-words [From (100.00%)]
 160 From which region is the Refosco dal Peduncolo Rosso?
                       ┌(S[wq]/(S[q]/PP))/(S[wq]/(S[q]/NP)) From
       ┌S[wq]/(S[q]/PP)┤
-      │               └S[wq]/(S[q]/NP)
+      │               │               ┌(S[wq]/(S[q]/NP))/N which
+      │               └S[wq]/(S[q]/NP)┤
+      │                               └N region
  S[wq]┤
       │       ┌(S[q]/PP)/NP is
       └S[q]/PP┤
-              └NP[nb]
+              │      ┌NP[nb]/N the
+              └NP[nb]┤
+                     │ ┌N/N Refosco
+                     └N┤
+                       │ ┌N/N dal
+                       └N┤
+                         │ ┌N/N Peduncolo
+                         └N┤
+                           └N Rosso?
 
 Category 46: contains 1 questions with wh-words [How (100.00%)]
 182 How much did Vanilla Sky cost?
@@ -569,17 +861,28 @@ Category 46: contains 1 questions with wh-words [How (100.00%)]
  S[wq]┤
       │    ┌S[b]\NP cost?
       └S[q]┤
-           └S[q]/(S[b]\NP)
+           │              ┌(S[q]/(S[b]\NP))/NP did
+           └S[q]/(S[b]\NP)┤
+                          └NP┐
+                             │ ┌N/N Vanilla
+                             └N┤
+                               └N Sky
 
 Category 47: contains 1 questions with wh-words [In (100.00%)]
 185 In which country is Solaize located?
                  ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) In
       ┌S[wq]/S[q]┤
-      │          └S[wq]/(S[q]/NP)
+      │          │               ┌(S[wq]/(S[q]/NP))/N which
+      │          └S[wq]/(S[q]/NP)┤
+      │                          └N country
  S[wq]┤
-      │    ┌NP
+      │    ┌NP┐
+      │    │  └N located?
       └S[q]┤
-           └S[q]/NP
+           │       ┌(S[q]/NP)/NP is
+           └S[q]/NP┤
+                   └NP┐
+                      └N Solaize
 
 Category 48: contains 1 questions with wh-words [Show (100.00%)]
 189 Show me everyone who was born on Boxing Day.
@@ -589,7 +892,18 @@ Category 48: contains 1 questions with wh-words [Show (100.00%)]
  S[q]┤
      │  ┌NP everyone
      └NP┤
-        └NP\NP
+        │     ┌(NP\NP)/(S[dcl]\NP) who
+        └NP\NP┤
+              │         ┌(S[dcl]\NP)/(S[pss]\NP) was
+              └S[dcl]\NP┤
+                        │         ┌S[pss]\NP born
+                        └S[pss]\NP┤
+                                  │             ┌((S\NP)\(S\NP))/NP on
+                                  └(S\NP)\(S\NP)┤
+                                                └NP┐
+                                                   │ ┌N/N Boxing
+                                                   └N┤
+                                                     └N Day.
 
 Category 49: contains 1 questions with wh-words [When (100.00%)]
 200 When is Gibraltar Diamond Jubilee Flotilla?
@@ -597,17 +911,34 @@ Category 49: contains 1 questions with wh-words [When (100.00%)]
  S[wq]┤
       │       ┌(S[q]/NP)/NP is
       └S[q]/NP┤
-              └NP
+              └NP┐
+                 │ ┌N/N Gibraltar
+                 └N┤
+                   │ ┌N/N Diamond
+                   └N┤
+                     │ ┌N/N Jubilee
+                     └N┤
+                       └N Flotilla?
 
 Category 50: contains 1 questions with wh-words [Which (100.00%)]
 215 Which music albums contain the song Into Your Arms?
                         ┌(S[wq]/(S[dcl]\NP))/N Which
       ┌S[wq]/(S[dcl]\NP)┤
-      │                 └N
+      │                 │ ┌N/N music
+      │                 └N┤
+      │                   └N albums
  S[wq]┤
-      │         ┌S[dcl]\NP
+      │                   ┌(S[dcl]\NP)/NP contain
+      │         ┌S[dcl]\NP┤
+      │         │         │      ┌NP[nb]/N the
+      │         │         └NP[nb]┤
+      │         │                └N song
       └S[dcl]\NP┤
-                └(S\NP)\(S\NP)
+                │             ┌((S\NP)\(S\NP))/NP Into
+                └(S\NP)\(S\NP)┤
+                              │      ┌NP[nb]/N Your
+                              └NP[nb]┤
+                                     └N Arms?
 
 Category 51: contains 1 questions with wh-words [Who (100.00%)]
 238 Who wrote the book Leave It to Psmith?
@@ -615,5 +946,16 @@ Category 51: contains 1 questions with wh-words [Who (100.00%)]
  S[wq]┤
       │         ┌(S[dcl]\NP)/S[dcl] wrote
       └S[dcl]\NP┤
-                └S[dcl]
+                │             ┌NP[nb]/N the
+                │      ┌NP[nb]┤
+                │      │      └N book
+                └S[dcl]┤
+                       │                        ┌((S[dcl]\NP)/PP)/NP Leave
+                       │         ┌(S[dcl]\NP)/PP┤
+                       │         │              └NP It
+                       └S[dcl]\NP┤
+                                 │  ┌PP/NP to
+                                 └PP┤
+                                    └NP┐
+                                       └N Psmith?
 

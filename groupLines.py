@@ -6,11 +6,13 @@ import os  # environ
 import eq_fns
 import warnings
 import sys  # exit
+from functools import reduce
 from to_tree import to_tree, output_tree
 
-
-# REQUIRED: Input path argument
-# OPTIONAL: ouput path argument
+# output options
+_OUTPUT_QUES = 0
+_OUTPUT_TREE = 1
+_OUTPUT_BOTH = 2
 
 
 def load_easyccg_home():
@@ -66,21 +68,12 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
     # each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
     categories = []
-    labelled = {}
 
     with open(file_path) as input_file:
         # TODO: don't read file twice; store in variable instead
         labelled_list = label(input_file.read())
-
         input_file.seek(0)
-        # original_questions = [label,orig for label,orig in zip(labelled_list, input_file)]
-        # labelled = {}
-        # for orig in original_questions:
-        #     labelled.update
         labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, input_file))}
-
-    # labelled = labelled[:20]
-    # print(labelled)
 
     trees = {l: to_tree(l) for l in labelled.keys()}
 
@@ -120,17 +113,17 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
             grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
                 n, len(category), ", ".join(wh_words_percentages)))
 
-            if output_switch == 0:
+            if output_switch == _OUTPUT_QUES:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
 
-            elif output_switch == 1:
+            elif output_switch == _OUTPUT_TREE:
                 for root in category.values():
                     output_tree(root, grouped_file)
 
-            elif output_switch == 2:
+            elif output_switch == _OUTPUT_BOTH:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
                 # naming: including head info TODO delete output
-                output_tree(next(iter(category.values())), grouped_file, limit=kwargs['depth'] + 1)
+                output_tree(reduce(lambda x, y: x & y, category.values()), grouped_file)
 
             grouped_file.write("\n")
             n += 1
