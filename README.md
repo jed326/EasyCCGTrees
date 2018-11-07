@@ -17,9 +17,15 @@ Contains the input and output data files
 ## [EasyCCG](https://github.com/mikelewis0/easyccg/tree/e42d58e08eb2a86593d52f730c5afe222e939781)
 EasyCCG is a CCG parser created by Mike Lewis. It is added as a submodule to this repository.   
 
-To include EasyCCG when cloning, use the command:
-```
+
+#### 1. To include EasyCCG when cloning, use the command:
+```bash
 git clone --recursive git@github.com:jed326/EasyCCGTrees.git
+```
+#### 2. To get EasyCCG after cloning, use the commands:
+```bash
+git submodule init
+git submodule update
 ```
 Pre-trained modules can be downloaded here: <https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc>   
 For more detailed setup instructions, reference the EasyCCG repository.
@@ -27,13 +33,13 @@ For more detailed setup instructions, reference the EasyCCG repository.
 #### EasyCCG Usage:
 To parse questions into text form:
 
-```
+```bash
 java -jar $EASYCCG_HOME/easyccg.jar -f path/to/input  --model $EASYCCG_HOME/model_questions [> outfile.txt]
 ```
 
 To output trees to html:
 
-```
+```bash
 java -jar $EASYCCG_HOME/easyccg.jar -f path/to/input  --model $EASYCCG_HOME/model_questions -o html [> outfile.txt]
 ```
 
@@ -64,7 +70,7 @@ optional arguments:
 to_tree.py natively receives a easyccg output from stdin and writes the corresponding tree string to stdout
 
 convert.sh uses to_tree function to help batch converting questions to tree form
-``` bash
+```bash
 ./convert data/input/QALD-questions-stripped.txt > output.txt
 # or use -i to ignore 1 column per line
 ./convert -i1 data/input/QALD-questions.txt > output.txt
