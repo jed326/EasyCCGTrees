@@ -149,7 +149,7 @@ def posix_path_sup_parser(posix_path):
 
 # assert that model_questions exists in the easyccg home
 def assert_model():
-    if not os.path.isdir(EASYCCG_HOME / 'model_questions'):
+    if not os.path.isdir(posix_path_sup_parser(EASYCCG_HOME / 'model_questions')):
         warnings.warn(
             "model_questions folder doesn't exists in easyccg home directory, please download the model through https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc",
             Warning, stacklevel=3)
