@@ -14,6 +14,7 @@ _OUTPUT_QUES = 0
 _OUTPUT_TREE = 1
 _OUTPUT_BOTH = 2
 
+#TODO: default output folder data/output/intputname_grouped.txt
 
 def load_easyccg_home():
     home = pathlib.Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
@@ -36,19 +37,10 @@ def easyccg_command(file_name=""):
     return cmd.split()
 
 
+#TODO: suppress stderr
 def run_easyCCG(input_path):
     with open(posix_path_sup_parser(OUT_PATH / "ccgout.txt"), "w") as outfile:
         subprocess.run(easyccg_command(file_name=input_path), stdout=outfile)
-
-
-# used to remove id's in the first column
-def remove_IDs():
-    with open(posix_path_sup_parser(OUT_PATH / "ccgout.txt")) as origfile:
-        with open(posix_path_sup_parser(OUT_PATH / "ccgout_stripped.txt"), "w") as newfile:
-            for count, line in enumerate(origfile):
-                if count % 2 == 1:
-                    print(line.rstrip(), file=newfile)
-
 
 # input: question text
 # output: list of labels for the text
@@ -153,24 +145,27 @@ def assert_model():
         warnings.warn(
             "model_questions folder doesn't exists in easyccg home directory, please download the model through https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc",
             Warning, stacklevel=3)
+        sys.exit(1)
+
 
 def _test():
     from eq_fns import equals_with_application
 
-    print(label("Which presidents were born in 1945"))
     t1 = to_tree(label("Which presidents were born in 1945")[0])
     t2 = to_tree(label("Which presidents were not born in 1945")[0])
 
-    print(t1)
-    print(t2)
+    output_tree(t2)
+
+    # print(t1)
+    # print(t2)
 
     equals_with_application(t1,t2)
 
 if __name__ == "__main__":
     assert_model()
 
-    # _test()
-    # sys.exit()
+    _test()
+    sys.exit()
     #####
     # TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
     # or print out list of categories,where each category is just one tree
