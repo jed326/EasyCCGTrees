@@ -76,7 +76,7 @@ def equals_with_application(tree1_, tree2):
     #c1,c2 now point to where the trees disagree
     #c1 needs to be 'applied'
     c1 = Node("".join(child.name for child in c1.children), functools.reduce(lambda x, y: x.children + y.children, c1.children))
-    print_tree(c1)
+    output_tree(c1)
 
-    print_tree(tree1)
-    print_tree(tree2)
+    output_tree(tree1)
+    output_tree(tree2)
