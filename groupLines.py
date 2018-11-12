@@ -62,14 +62,14 @@ def label(text):
         return proc.stdout.read().decode("utf-8").split("\n")[1::2]
 
 def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
-'''
+    '''
     file_path - path to input
     eq_fn - function taking two trees (and optional kwargs) as input,
     returning True if they are equal and False otherwise. eq_fn should
     be transitive, i.e. if a = b and b = c, then a = c
     file_path - relative (or absolute) path to file containing newline
     separated questions to parse
-'''
+    '''
     # list of dicts {string : tree}
     # categories is a list of dictionaries
     # each index is a mapping between the parsed question and its tree representation
