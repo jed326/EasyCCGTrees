@@ -134,7 +134,7 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
 
 
 def posix_path_sup_parser(posix_path):
-    # todo decide python version here 3 <= V < 3.6 solved 
+    # todo decide python version here 3 <= V < 3.6 solved
     if True:
         return str(posix_path)
     return posix_path
