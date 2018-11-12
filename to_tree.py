@@ -8,7 +8,7 @@ class Node:
 
     @property
     def name(self):
-        return self.name
+        return self.value
 
     def __init__(self, value, children=None):
         self.value = value
