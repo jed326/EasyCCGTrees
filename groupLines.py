@@ -105,11 +105,11 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
 def write_output(categories, labelled, out_path, output_switch):
     categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
+        #TODO: Write depth parameter, dataset name
         grouped_file.write("%d categories were found\n\n" % (len(categories)))
         n = 1
         for category in categories:
             questions = [str(labelled[parse]) for parse in category.keys()]
-            # print(sentences)
             wh_words = {}
             for question in questions:
                 word = question.split()[1]
@@ -122,6 +122,7 @@ def write_output(categories, labelled, out_path, output_switch):
             for word in wh_words.keys():
                 wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word] / len(category) * 100))
 
+            #TODO: Add percentage of total in this category
             grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
                 n, len(category), ", ".join(wh_words_percentages)))
 
@@ -188,9 +189,9 @@ if __name__ == "__main__":
 
     categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
-    print(len(categories))
+    # print(len(categories))
 
-    print(len(categories) / sum(len(category) for category in categories))
+    print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
     if len(categories) / sum(len(category) for category in categories) > .5:
         warnings.warn(
             "Warning: Categories are very small. Consider using a smaller depth argument to group more questions together.",
