@@ -53,15 +53,15 @@ def label(text):
     with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE) as proc:
         return proc.stdout.read().decode("utf-8").split("\n")[1::2]
 
-'''
+def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
+    '''
     file_path - path to input
     eq_fn - function taking two trees (and optional kwargs) as input,
     returning True if they are equal and False otherwise. eq_fn should
     be transitive, i.e. if a = b and b = c, then a = c
     file_path - relative (or absolute) path to file containing newline
     separated questions to parse
-'''
-def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, output_switch=0, **kwargs):
+    '''
     # list of dicts {string : tree}
     # categories is a list of dictionaries
     # each index is a mapping between the parsed question and its tree representation
@@ -89,14 +89,19 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
         else:
             categories.append({line: tree})
 
-    # TODO: Make this into a function call
+    write_output(categories, labelled, out_path, output_switch)
+
+    return categories
+
+#Function to write the categories to a file
+def write_output(categories, labelled, out_path, output_switch):
     categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
+        #TODO: Write depth parameter, dataset name
         grouped_file.write("%d categories were found\n\n" % (len(categories)))
         n = 1
         for category in categories:
             questions = [str(labelled[parse]) for parse in category.keys()]
-            # print(sentences)
             wh_words = {}
             for question in questions:
                 word = question.split()[1]
@@ -109,6 +114,7 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
             for word in wh_words.keys():
                 wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word] / len(category) * 100))
 
+            #TODO: Add percentage of total in this category
             grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
                 n, len(category), ", ".join(wh_words_percentages)))
 
@@ -128,9 +134,6 @@ def group(file_path, out_path="./_grouped_out.txt", eq_fn=eq_fns.tree_equals, ou
             n += 1
 
     print("Created %d categories, written to %s" % (len(categories), out_path))
-
-    return categories
-
 
 def posix_path_sup_parser(posix_path):
     # todo decide python version here 3 <= V < 3.6 solved
@@ -181,9 +184,9 @@ if __name__ == "__main__":
 
     categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
-    print(len(categories))
+    # print(len(categories))
 
-    print(len(categories) / sum(len(category) for category in categories))
+    print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
     if len(categories) / sum(len(category) for category in categories) > .5:
         warnings.warn(
             "Warning: Categories are very small. Consider using a smaller depth argument to group more questions together.",
