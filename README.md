@@ -1,8 +1,6 @@
 # EasyCCGTrees
-This repository was created for the Honors Option for Computer Science 442 at The Pennsylvania State University.   
-Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 
-### Table of Contents
+## Table of Contents
 * [About](https://github.com/jed326/EasyCCGTrees#About)
 * [Setup Tutorial](https://github.com/jed326/EasyCCGTrees#Setup-Tutorial)
 * [Data](https://github.com/jed326/EasyCCGTrees#data)
@@ -14,6 +12,8 @@ Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 
 ## About
 This repository can be used to categorize questions based upon their CCG parses from EasyCCG.
+This repository was created for the Honors Option for Computer Science 442 at The Pennsylvania State University.   
+Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 
 ## Setup Tutorial
 For instructions on cloning this repository along with it's submodule, reference [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule).   
@@ -27,7 +27,7 @@ For instructions on running the categorization script `categorize.py`, reference
 If an `--outfile` parameter is not provided, `categorize.py` will default the output to `data/output/_<inputfile>_grouped_out.txt`.
 
 #### Output:
-The contents of the output file will depend on what option is given to the `-o` flag of `categorize.py`.
+The contents of the output file will depend on what option is given to the `-o` flag of `categorize.py`.   
 | Option | Output Description |
 | 0 | The output will contain only the categorized questions. |
 | 1 | The output will contain only the categorized CCG trees. |
