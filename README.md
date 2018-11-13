@@ -5,7 +5,7 @@ The main components are:
 2. data
 3. easyccg
 4. ETE_Trees
-5. groupLines.py
+5. categorize.py
 6. convert.sh & to_tree.py
 
 ## [Data Cleaning](https://github.com/jed326/EasyCCGTrees/tree/stats/Data%20Cleaning)
@@ -47,9 +47,9 @@ java -jar $EASYCCG_HOME/easyccg.jar -f path/to/input  --model $EASYCCG_HOME/mode
 ETE is a python library that can be used to visualize and print out python tree structures. Specifically this can be used to save trees to .png files.   
 Instructions on how to use ETE can be found in the ETE_Trees directory.   
 
-## groupLines.py
+## categorize.py
 ```
-usage: python3 groupLines.py [-h] [--outfile OUTFILE] [-d DEPTH] [-o OUTPUT] path
+usage: python3 categorize.py [-h] [--outfile OUTFILE] [-d DEPTH] [-o OUTPUT] path
 
 Group similar questions into categories
 
