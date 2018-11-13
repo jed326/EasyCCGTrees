@@ -14,8 +14,6 @@ _OUTPUT_QUES = 0
 _OUTPUT_TREE = 1
 _OUTPUT_BOTH = 2
 
-#TODO: default output folder data/output/intputname_grouped.txt
-
 def load_easyccg_home():
     home = pathlib.Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
     if "EASYCCG_HOME" not in os.environ:
@@ -63,8 +61,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
     separated questions to parse
     '''
     # list of dicts {string : tree}
-    # categories is a list of dictionaries
-    # each index is a mapping between the parsed question and its tree representation
+    # categories is a list of dictionaries where each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
     categories = []
 
@@ -89,16 +86,15 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
         else:
             categories.append({line: tree})
 
-    write_output(categories, labelled, out_path, output_switch)
+    write_output(categories, labelled, out_path, output_switch, [file_path, kwargs['depth']])
 
     return categories
 
 #Function to write the categories to a file
-def write_output(categories, labelled, out_path, output_switch):
+def write_output(categories, labelled, out_path, output_switch, outParams):
     categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
-        #TODO: Write depth parameter, dataset name
-        grouped_file.write("%d categories were found\n\n" % (len(categories)))
+        grouped_file.write("For input %s, %d categories were created from %s questions using depth = %d\n\n" % (outParams[0], len(categories), len(labelled), outParams[1]))
         n = 1
         for category in categories:
             questions = [str(labelled[parse]) for parse in category.keys()]
@@ -114,9 +110,8 @@ def write_output(categories, labelled, out_path, output_switch):
             for word in wh_words.keys():
                 wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word] / len(category) * 100))
 
-            #TODO: Add percentage of total in this category
-            grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
-                n, len(category), ", ".join(wh_words_percentages)))
+            grouped_file.write("Category %d: contains %d (%.2f%%) questions with wh-words [%s]\n" % (
+                n, len(category), len(category)/len(labelled)*100, ", ".join(wh_words_percentages)))
 
             if output_switch == _OUTPUT_QUES:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
@@ -186,10 +181,10 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", help="0:Questions / 1: Trees / 2: Both", default=0, type=int)
     args = parser.parse_args()
 
-    #If no default outfile is given, set it to the name of the infile_grouped_out
+    #Process default outfile
     if(args.outfile):
         infilename = args.path.split("/")[-1]
-        args.outfile = "./data/output/_%s_grouped_out" % (infilename)
+        args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename)
 
     categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
