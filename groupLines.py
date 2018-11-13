@@ -167,8 +167,12 @@ def _test():
 if __name__ == "__main__":
     assert_model()
 
+    #Test functions
+    '''
     _test()
     sys.exit()
+    '''
+
     #####
     # TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
     # or print out list of categories,where each category is just one tree
@@ -177,14 +181,17 @@ if __name__ == "__main__":
     # take in list of categories
     parser = argparse.ArgumentParser(description="Group similar questions into categories")
     parser.add_argument("path", help="Relative path to input file containing newline separated questions to group")
-    parser.add_argument("--outfile", help="Optional path to output categories to", default="./_grouped_out.txt")
+    parser.add_argument("--outfile", help="Optional path to output categories to", default=True)
     parser.add_argument("-d", "--depth", help="Maximum depth to compare trees at", default=2, type=int)
     parser.add_argument("-o", "--output", help="0:Questions / 1: Trees / 2: Both", default=0, type=int)
     args = parser.parse_args()
 
-    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    #If no default outfile is given, set it to the name of the infile_grouped_out
+    if(args.outfile):
+        infilename = args.path.split("/")[-1]
+        args.outfile = "./data/output/_%s_grouped_out" % (infilename)
 
-    # print(len(categories))
+    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
     print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
     if len(categories) / sum(len(category) for category in categories) > .5:
