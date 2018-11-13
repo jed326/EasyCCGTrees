@@ -7,14 +7,16 @@ Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 * [Setup Tutorial](https://github.com/jed326/EasyCCGTrees#Setup-Tutorial)
 * [Data](https://github.com/jed326/EasyCCGTrees#data)
 * [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule)
-* [categorize.py](https://github.com/jed326/EasyCCGTrees#categorize.py)
-* [convert.sh & to_tree.py](https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_tree.py)
+* [ETE_Trees](https://github.com/jed326/EasyCCGTrees#ETE_Trees)
+* [categorize.py](https://github.com/jed326/EasyCCGTrees#categorizepy)
+* [convert.sh & to_tree.py](https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_treepy)
+* [batch_categorize.sh](https://github.com/jed326/EasyCCGTrees#batch_categorizesh)
 
 ## About
 This repository can be used to categorize questions based upon their CCG parses from EasyCCG.
 
 ## Setup Tutorial
-####SETUP INSTRUCTIONS COMING SOON
+SETUP INSTRUCTIONS COMING SOON
 
 ## [Data](https://github.com/jed326/EasyCCGTrees/tree/master/data)
 This directory contains all of the data files for both inputting questions to be categorized and outputting questions that have been categorized.   
@@ -54,6 +56,7 @@ ETE is a python library that can be used to visualize and print out python tree 
 Instructions on how to use ETE can be found in the ETE_Trees directory.   
 
 ## categorize.py
+This file is the primary script for this project. Usage is as follows:      
 ```
 usage: python3 categorize.py [-h] [--outfile OUTFILE] [-d DEPTH] [-o OUTPUT] path
 
@@ -83,4 +86,8 @@ convert.sh uses to_tree function to help batch converting questions to tree form
 ```
 
 ### batch_categorize.sh
-helper script that export all three types of categorized result to folder: data/output
+This is a helper script that exports all three types of categorized results to folder: data/output
+The types are:
+1. Output just the categorized questions.
+2. Output just the categorized trees.
+3. Output all the categorized questions as well as their common subtree.
