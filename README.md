@@ -1,15 +1,19 @@
 # EasyCCGTrees
-This repository was created for the Honors Option for CMPSC-442 at the Pennsylvania State University.
+This repository was created for the Honors Option for Computer Science 442 at The Pennsylvania State University.   
 Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 
 ### Table of Contents
-* About
-* Setup Tutorial
-* Data Cleaning
-* data
-* EasyCCG Submodule
-* categorize.py
-* convert.sh & to_tree.py
+* About [https://github.com/jed326/EasyCCGTrees#About]
+* Setup Tutorial [https://github.com/jed326/EasyCCGTrees#Setup-Tutorial]
+* Data Cleaning [https://github.com/jed326/EasyCCGTrees#data-cleaning]
+* data [https://github.com/jed326/EasyCCGTrees#data]
+* EasyCCG Submodule [https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule]
+* categorize.py [https://github.com/jed326/EasyCCGTrees#categorize.py]
+* convert.sh & to_tree.py [https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_tree.py]
+
+## About
+
+## Setup Tutorial
 
 ## [Data Cleaning](https://github.com/jed326/EasyCCGTrees/tree/stats/Data%20Cleaning)
 Contains scripts for parsing data files   
