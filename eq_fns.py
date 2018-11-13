@@ -25,6 +25,45 @@ def _tree_equals(tree1, tree2, tolerance = 0, limit = 2):
         return tree1.name == tree2.name and \
             all(_tree_equals(child1, child2, tolerance + 1, limit) for (child1, child2) in zip(tree1.children, tree2.children))
 
+def _tree_equals_leaf_up(tree1, tree2, limit = 0):
+    setHeights(tree1)
+    setHeights(tree2)
+    # _ugly_output(tree1)
+    # _ugly_output(tree2)
+
+    if tree1.height <= limit and tree2.height <= limit:
+        return True
+    #should not happen
+    if not tree1.children and not tree2.children:
+        return True
+    elif len(tree1.children) != len(tree2.children):
+        return False
+    else:
+        return tree1.name == tree2.name and \
+            all(_tree_equals_leaf_up(child1, child2, limit) for (child1, child2) in zip(tree1.children, tree2.children))
+
+
+#function to set the distance to the leaf for each node in a tree.
+def setHeights(tree):
+    if not tree.children:
+        tree.height = 0
+        return tree.height
+    else:
+        min = float('inf')
+        for child in tree.children:
+            height = setHeights(child) + 1
+            if height < min:
+                min = height
+        tree.height = min
+        return min
+
+def _ugly_output(tree, level = 0):
+    print("%s%s %d" % (level*"  ", tree.name, tree.height))
+    if tree.children:
+        for child in tree.children:
+            _ugly_output(child, level + 1)
+
+
 '''
 function application:
     find where the trees are unbalanced
@@ -34,6 +73,9 @@ function application:
 '''
 def tree_equals(tree1, tree2, limit = 2):
     return _tree_equals(tree1, tree2, limit = limit)
+
+def tree_equals_leaf_up(tree1, tree2, limit = 2):
+    return _tree_equals_leaf_up(tree1, tree2, limit = limit)
 
 def strict_equals(tree1, tree2):
     return tree_equals(tree1, tree2, 0, float('inf'))

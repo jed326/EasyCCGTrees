@@ -28,7 +28,7 @@ class Node:
 
 # tree node for ccg parse
 class CCGNode(Node):
-    __slots__ = "children", "value", "node_type", "combinator"
+    __slots__ = "children", "value", "node_type", "combinator", "height"
     NON_LEAF = 'T'
     LEAF = 'L'
 
@@ -56,6 +56,7 @@ class CCGNode(Node):
         super().__init__(value, children)
         self.node_type = node_type
         self.combinator = combinator
+        self.height = None
 
     def __str__(self):
         if len(self.children) == 0:

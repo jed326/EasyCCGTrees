@@ -149,25 +149,25 @@ def assert_model():
 
 def _test():
     from eq_fns import equals_with_application
+    from eq_fns import tree_equals_leaf_up
 
     t1 = to_tree(label("Which presidents were born in 1945")[0])
     t2 = to_tree(label("Which presidents were not born in 1945")[0])
 
-    output_tree(t2)
+    # output_tree(t2)
 
     # print(t1)
     # print(t2)
 
-    equals_with_application(t1,t2)
+    print(tree_equals_leaf_up(t1, t2))
 
 if __name__ == "__main__":
     assert_model()
 
     #Test functions
-    '''
-    _test()
-    sys.exit()
-    '''
+    # _test()
+    # sys.exit()
+
 
     #####
     # TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
@@ -187,7 +187,7 @@ if __name__ == "__main__":
         infilename = args.path.split("/")[-1]
         args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename[:-4])
 
-    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output, eq_fn=eq_fns.tree_equals_leaf_up)
 
     print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
     if len(categories) / sum(len(category) for category in categories) > .5:
