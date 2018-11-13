@@ -28,7 +28,9 @@ If an `--outfile` parameter is not provided, `categorize.py` will default the ou
 
 #### Output:
 The contents of the output file will depend on what option is given to the `-o` flag of `categorize.py`.   
+
 Option | Output Description
+--- | ---
 0 | The output will contain only the categorized questions.
 1 | The output will contain only the categorized CCG trees.
 2 | The output will contain all of the categorized questions as well as their common CCG subtree.
