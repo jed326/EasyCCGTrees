@@ -9,14 +9,29 @@ Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 * [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule)
 * [ETE_Trees](https://github.com/jed326/EasyCCGTrees#ETE_Trees)
 * [categorize.py](https://github.com/jed326/EasyCCGTrees#categorizepy)
-* [convert.sh & to_tree.py](https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_treepy)
+* [convert.sh & to_tree.py](https://github.com/jed326/EasyCCGTrees#convertsh--to_treepy)
 * [batch_categorize.sh](https://github.com/jed326/EasyCCGTrees#batch_categorizesh)
 
 ## About
 This repository can be used to categorize questions based upon their CCG parses from EasyCCG.
 
 ## Setup Tutorial
-SETUP INSTRUCTIONS COMING SOON
+For instructions on cloning this repository along with it's submodule, reference [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule).   
+For this project, the pre-trained module used in development is `model_questions`.
+
+#### Input Requirements:
+The `categorize.py` script requires a path to an input file that contains lines of questions without line numbers. The python script `data/clean.py` contains a function that will strip line numbers from an input file.
+
+#### Categorizing Questions:
+For instructions on running the categorization script `categorize.py`, reference [categorize.py](https://github.com/jed326/EasyCCGTrees#categorizepy).
+If an `--outfile` parameter is not provided, `categorize.py` will default the output to `data/output/_<inputfile>_grouped_out.txt`.
+
+#### Output:
+The contents of the output file will depend on what option is given to the `-o` flag of `categorize.py`.
+| Option | Output Description |
+| 0 | The output will contain only the categorized questions. |
+| 1 | The output will contain only the categorized CCG trees. |
+| 2 | The output will contain all of the categorized questions as well as their common CCG subtree. |
 
 ## [Data](https://github.com/jed326/EasyCCGTrees/tree/master/data)
 This directory contains all of the data files for both inputting questions to be categorized and outputting questions that have been categorized.   
@@ -24,7 +39,6 @@ This directory also contains a script `clean.py` which contains different questi
 
 ## [EasyCCG Submodule](https://github.com/mikelewis0/easyccg/tree/e42d58e08eb2a86593d52f730c5afe222e939781)
 EasyCCG is a CCG parser created by Mike Lewis. It is added as a submodule to this repository.   
-
 
 #### 1. To include EasyCCG when cloning, use the command:
 ```bash
@@ -35,7 +49,9 @@ git clone --recursive git@github.com:jed326/EasyCCGTrees.git
 git submodule init
 git submodule update
 ```
+EasyCCG requires a model in order to run. Fortunately, the author of EasyCCG has provided pre-trained modules.   
 Pre-trained modules can be downloaded here: <https://drive.google.com/drive/folders/0B7AY6PGZ8lc-NGVOcUFXNU5VWXc>   
+After the modules have been downloaded, they should be placed in the `easyccg/` directory.   
 For more detailed setup instructions, reference the EasyCCG repository.
 
 #### EasyCCG Usage:
@@ -72,7 +88,7 @@ optional arguments:
   -d DEPTH, --depth DEPTH
                         Maximum depth to compare trees at
   -o OUTPUT, --output OUTPUT
-                        0:Questions / 1: Trees / 2: Both
+                        0: Questions Only / 1: Trees Only / 2: Questions and Common Subtree
 ```
 
 ## convert.sh & to_tree.py
@@ -85,9 +101,6 @@ convert.sh uses to_tree function to help batch converting questions to tree form
 ./convert -i1 data/input/QALD-questions.txt > output.txt
 ```
 
-### batch_categorize.sh
-This is a helper script that exports all three types of categorized results to folder: data/output
-The types are:
-1. Output just the categorized questions.
-2. Output just the categorized trees.
-3. Output all the categorized questions as well as their common subtree.
+## batch_categorize.sh
+This is a helper script that exports all three types of categorized results to folder: `data/output`   
+The types are broken down here: [Output](https://github.com/jed326/EasyCCGTrees#output)

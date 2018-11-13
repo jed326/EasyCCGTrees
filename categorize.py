@@ -184,7 +184,7 @@ if __name__ == "__main__":
     #Process default outfile
     if(args.outfile):
         infilename = args.path.split("/")[-1]
-        args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename)
+        args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename[:-4])
 
     categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
