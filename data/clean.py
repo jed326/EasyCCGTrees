@@ -3,25 +3,25 @@ from collections import OrderedDict
 
 
 def removeNumbers():
-    with open("QALD-questions.txt", "r") as infile:
-        with open("QALD-questions-unnumbered-.txt", "w") as outfile:
+    with open("./input/QALD-questions.txt", "r") as infile:
+        with open("./input/QALD-questions-stripped.txt", "w") as outfile:
             for line in infile.readlines():
                 write = line.split()[1:]
                 outfile.write(" ".join(write) + "\n")
 
 def shuffle():
-    with open("../data/input/QALD-questions-stripped.txt", "r") as file:
+    with open("./input/QALD-questions-stripped.txt", "r") as file:
         lines = file.readlines()
         shuffle(lines)
-        with open("../data/input/QALD-shuffled.txt", "w") as outfile:
+        with open("./input/QALD-shuffled.txt", "w") as outfile:
             for line in lines:
                 outfile.write(line)
 
 def removeDuplicates():
-    with open("../data/input/QALD-questions-stripped.txt", "r") as file:
+    with open("./input/QALD-questions-stripped.txt", "r") as file:
         lines = file.readlines()
         noDups = list(OrderedDict.fromkeys(lines))
-        with open("../data/input/QALD-no-duplicates.txt", "w") as outfile:
+        with open("./input/QALD-no-duplicates.txt", "w") as outfile:
             for line in noDups:
                 outfile.write(line)
 

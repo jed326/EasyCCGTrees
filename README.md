@@ -3,25 +3,24 @@ This repository was created for the Honors Option for Computer Science 442 at Th
 Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
 
 ### Table of Contents
-* About [https://github.com/jed326/EasyCCGTrees#About]
-* Setup Tutorial [https://github.com/jed326/EasyCCGTrees#Setup-Tutorial]
-* Data Cleaning [https://github.com/jed326/EasyCCGTrees#data-cleaning]
-* data [https://github.com/jed326/EasyCCGTrees#data]
-* EasyCCG Submodule [https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule]
-* categorize.py [https://github.com/jed326/EasyCCGTrees#categorize.py]
-* convert.sh & to_tree.py [https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_tree.py]
+* [About](https://github.com/jed326/EasyCCGTrees#About)
+* [Setup Tutorial](https://github.com/jed326/EasyCCGTrees#Setup-Tutorial)
+* [Data](https://github.com/jed326/EasyCCGTrees#data)
+* [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule)
+* [categorize.py](https://github.com/jed326/EasyCCGTrees#categorize.py)
+* [convert.sh & to_tree.py](https://github.com/jed326/EasyCCGTrees#convert.sh-&-to_tree.py)
 
 ## About
+This repository can be used to categorize questions based upon their CCG parses from EasyCCG.
 
 ## Setup Tutorial
+####SETUP INSTRUCTIONS COMING SOON
 
-## [Data Cleaning](https://github.com/jed326/EasyCCGTrees/tree/stats/Data%20Cleaning)
-Contains scripts for parsing data files   
+## [Data](https://github.com/jed326/EasyCCGTrees/tree/master/data)
+This directory contains all of the data files for both inputting questions to be categorized and outputting questions that have been categorized.   
+This directory also contains a script `clean.py` which contains different question file processing functions.
 
-## data
-Contains the input and output data files   
-
-## [EasyCCG](https://github.com/mikelewis0/easyccg/tree/e42d58e08eb2a86593d52f730c5afe222e939781)
+## [EasyCCG Submodule](https://github.com/mikelewis0/easyccg/tree/e42d58e08eb2a86593d52f730c5afe222e939781)
 EasyCCG is a CCG parser created by Mike Lewis. It is added as a submodule to this repository.   
 
 
