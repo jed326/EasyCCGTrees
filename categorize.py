@@ -122,6 +122,7 @@ def write_output(categories, labelled, out_path, output_switch, outParams):
 
             elif output_switch == _OUTPUT_BOTH:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
+                grouped_file.write("Common Subtree:\n")
                 # naming: including head info TODO delete output
                 output_tree(reduce(lambda x, y: x & y, category.values()), grouped_file)
 
@@ -182,7 +183,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     #Process default outfile
-    if(args.outfile):
+    if(args.outfile == True):
         infilename = args.path.split("/")[-1]
         args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename[:-4])
 
