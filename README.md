@@ -1,12 +1,15 @@
 # EasyCCGTrees
-This repository can be used to group questions parsed with EasyCCG.   
-The main components are:   
-1. Data Cleaning
-2. data
-3. easyccg
-4. ETE_Trees
-5. categorize.py
-6. convert.sh & to_tree.py
+This repository was created for the Honors Option for CMPSC-442 at the Pennsylvania State University.
+Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
+
+### Table of Contents
+* About
+* Setup Tutorial
+* Data Cleaning
+* data
+* EasyCCG Submodule
+* categorize.py
+* convert.sh & to_tree.py
 
 ## [Data Cleaning](https://github.com/jed326/EasyCCGTrees/tree/stats/Data%20Cleaning)
 Contains scripts for parsing data files   
