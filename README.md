@@ -78,3 +78,12 @@ convert.sh uses to_tree function to help batch converting questions to tree form
 
 ### batch_categorize.sh
 helper script that export all three types of categorized result to folder: data/output
+
+
+## Authors
+
+* 8/2018 - 11/2018
+    * [Jay Deng](mailto:jed326@psu.edu)
+    * [Steven Fontanella](mailto:steven.fontanella@gmail.com)
+    * [Zhaohong Lyu](mailto:zql5275@psu.edu)
+    * [Qiyi Shan](mailto:qxs20@psu.edu)
