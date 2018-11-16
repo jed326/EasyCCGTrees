@@ -14,8 +14,6 @@ _OUTPUT_QUES = 0
 _OUTPUT_TREE = 1
 _OUTPUT_BOTH = 2
 
-#TODO: default output folder data/output/intputname_grouped.txt
-
 def load_easyccg_home():
     home = pathlib.Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
     if "EASYCCG_HOME" not in os.environ:
@@ -63,8 +61,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
     separated questions to parse
     '''
     # list of dicts {string : tree}
-    # categories is a list of dictionaries
-    # each index is a mapping between the parsed question and its tree representation
+    # categories is a list of dictionaries where each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
     categories = []
 
@@ -89,16 +86,15 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
         else:
             categories.append({line: tree})
 
-    write_output(categories, labelled, out_path, output_switch)
+    write_output(categories, labelled, out_path, output_switch, [file_path, kwargs['depth']])
 
     return categories
 
 #Function to write the categories to a file
-def write_output(categories, labelled, out_path, output_switch):
+def write_output(categories, labelled, out_path, output_switch, outParams):
     categories.sort(key=len, reverse=True)
     with open(out_path, "w") as grouped_file:
-        #TODO: Write depth parameter, dataset name
-        grouped_file.write("%d categories were found\n\n" % (len(categories)))
+        grouped_file.write("For input %s, %d categories were created from %s questions using depth = %d\n\n" % (outParams[0], len(categories), len(labelled), outParams[1]))
         n = 1
         for category in categories:
             questions = [str(labelled[parse]) for parse in category.keys()]
@@ -114,9 +110,8 @@ def write_output(categories, labelled, out_path, output_switch):
             for word in wh_words.keys():
                 wh_words_percentages.append("%s (%.2f%%)" % (word, wh_words[word] / len(category) * 100))
 
-            #TODO: Add percentage of total in this category
-            grouped_file.write("Category %d: contains %d questions with wh-words [%s]\n" % (
-                n, len(category), ", ".join(wh_words_percentages)))
+            grouped_file.write("Category %d: contains %d (%.2f%%) questions with wh-words [%s]\n" % (
+                n, len(category), len(category)/len(labelled)*100, ", ".join(wh_words_percentages)))
 
             if output_switch == _OUTPUT_QUES:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
@@ -127,6 +122,7 @@ def write_output(categories, labelled, out_path, output_switch):
 
             elif output_switch == _OUTPUT_BOTH:
                 grouped_file.write("".join(str(labelled[parse]) for parse in category.keys()))
+                grouped_file.write("Common Subtree:\n")
                 # naming: including head info TODO delete output
                 output_tree(reduce(lambda x, y: x & y, category.values()), grouped_file)
 
@@ -167,8 +163,12 @@ def _test():
 if __name__ == "__main__":
     assert_model()
 
+    #Test functions
+    '''
     _test()
     sys.exit()
+    '''
+
     #####
     # TODO: add flags for printing tagged form or normal form; possibly have common tree at the top of each category
     # or print out list of categories,where each category is just one tree
@@ -177,14 +177,17 @@ if __name__ == "__main__":
     # take in list of categories
     parser = argparse.ArgumentParser(description="Group similar questions into categories")
     parser.add_argument("path", help="Relative path to input file containing newline separated questions to group")
-    parser.add_argument("--outfile", help="Optional path to output categories to", default="./_grouped_out.txt")
+    parser.add_argument("--outfile", help="Optional path to output categories to", default=True)
     parser.add_argument("-d", "--depth", help="Maximum depth to compare trees at", default=2, type=int)
     parser.add_argument("-o", "--output", help="0:Questions / 1: Trees / 2: Both", default=0, type=int)
     args = parser.parse_args()
 
-    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    #Process default outfile
+    if(args.outfile == True):
+        infilename = args.path.split("/")[-1]
+        args.outfile = "./data/output/_%s_grouped_out.txt" % (infilename[:-4])
 
-    # print(len(categories))
+    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
 
     print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
     if len(categories) / sum(len(category) for category in categories) > .5:

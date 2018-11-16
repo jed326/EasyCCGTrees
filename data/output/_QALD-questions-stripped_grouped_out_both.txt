@@ -1,0 +1,1012 @@
+For input data/input/QALD-questions-stripped.txt, 51 categories were created from 207 questions using depth = 2
+
+Category 1: contains 53 (25.60%) questions with wh-words [Who (41.51%), Where (3.77%), What (49.06%), When (5.66%)]
+100 Where is the residence of the prime minister of Spain?
+54 What is the longest river?
+227 Who is the founder of DC Comics?
+138 What is the official website of Tom Cruise?
+73 Who is the husband of Amanda Palmer?
+205 When was the Operation Purple Haze?
+228 Who is the heaviest player of the ASK Riga?
+34 What is the revenue of IBM?
+226 Who is the editor of Semana?
+233 Who is the tallest player of Udinese Calcio?
+120 What is the currency of the Czech Republic?
+194 What is the eye color of Liza Kennedy?
+197 What is the ruling party in Lo Espejo?
+126 What is the highest mountain in Australia?
+64 Who is the mayor of Berlin?
+79 What is the second highest mountain on Earth?
+207 Where is the Sandhammaren located?
+195 What is the hair color of Marlon Teixeira?
+80 What is the ruling party in Lisbon?
+237 Who were the parents of Maria of Antioch?
+196 What is the official color of the Carleton University?
+1 Who are the presidents of the United States?
+89 Who are the parents of the wife of Juan Carlos I?
+232 Who is the owner of Mazda?
+192 What is the capital of Venezuela?
+159 What is the highest mountain?
+203 When was the Cobble Hill Tunnel built?
+229 Who is the manager of Gazelle FC?
+128 What are the official languages of the Philippines?
+101 What is the founding year of the brewery that produces Pilsner Urquell?
+61 Who was the father of Queen Elizabeth II?
+234 Who is the youngest Snooker player?
+81 What are the nicknames of San Francisco?
+129 Who is the mayor of New York City?
+230 Who is the mayor of Virar?
+42 What is the highest mountain in Germany?
+96 What is the largest city in Australia?
+65 What is the birth name of Angela Merkel?
+136 Who was the wife of U.S. president Lincoln?
+191 What is the area code of Aegina?
+39 Who is the author of WikiLeaks?
+231 Who is the mayor of the capital of New Caledonia?
+60 Who is the governor of Texas?
+121 What is the area code of Berlin?
+59 What is the capital of Canada?
+190 What are the official languages of Tunisia?
+84 What is the time zone of Salt Lake City?
+57 Who was the successor of John F. Kennedy?
+193 What is the currency of Rhodesia?
+124 When was the Battle of Gettysburg?
+47 What is the profession of Frank Herbert?
+52 Who is the youngest player in the Premier League?
+51 Who is the Formula 1 race driver with the most races?
+Common Subtree:
+      ┌S[wq]/(S[q]/NP) Who|Where|What|When
+ S[wq]┤
+      │       ┌(S[q]/NP)/NP is|are|was|were
+      └S[q]/NP┤
+              └NP[nb]
+
+Category 2: contains 16 (7.73%) questions with wh-words [What (6.25%), Which (93.75%)]
+208 Which airports are located in Chios?
+217 Which presidents were born in 1891?
+135 Which presidents were born in 1945?
+158 Which organizations were founded in 1950?
+75 Which countries are connected by the Rhine?
+17 Which books were written by Danielle Steel?
+150 Which airports are located in California, USA?
+18 Which companies are located in California, USA?
+216 Which organizations were founded in 1918?
+213 Which languages are spoken in Romania?
+11 Which people were born in Heraklion?
+88 Which ships were called after Benjamin Franklin?
+14 What languages are spoken in Estonia?
+210 Which books were published by DAW Books?
+147 Which languages are spoken in Estonia?
+144 Which actors were born in Germany?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N What|Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N organizations|ships|countries|airports|actors|people|languages|presidents|companies|books
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/(S[pss]\NP) are|were
+      └S[dcl]\NP┤
+                └S[pss]\NP
+
+Category 3: contains 12 (5.80%) questions with wh-words [Give (100.00%)]
+53 Give me all members of Prodigy.
+132 Give me the homepage of Forbes.
+154 Give me all movies with Tom Cruise.
+22 Give me all movies with Tom Cruise!
+167 Give me all professional skateboarders from Sweden.
+164 Give me all companies in Jena.
+170 Give me the children of David Foster.
+140 Give me all people with first name Jimmy.
+127 Give me all soccer clubs in Spain.
+70 Give me all companies in Munich.
+171 Give me the homepage of Metropolitan Home.
+168 Give me all soccer clubs in Qatar.
+Common Subtree:
+         ┌(NP\NP)/NP from|in|of|with
+   ┌NP\NP┤
+   │     └NP┐
+   │        └N Forbes.|David Foster.|Tom Cruise!|Prodigy.|Munich.|Metropolitan Home.|Qatar.|Spain.|Tom Cruise.|first name Jimmy.|Sweden.|Jena.
+ NP┤
+   └NP┐
+      │               ┌NP[nb]/N the|all
+      │        ┌NP[nb]┤
+      │        │      └N homepage|movies|soccer clubs|people|members|children|companies|professional skateboarders
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
+
+Category 4: contains 11 (5.31%) questions with wh-words [Who (90.91%), Which (9.09%)]
+225 Who founded Sony?
+219 Who created Retrocrush?
+5 Who created English Wikipedia?
+220 Who created Miss Marple?
+236 Who produces Red Bull?
+114 Which states border Illinois?
+68 Who developed Skype?
+223 Who developed Quake engine?
+142 Who created Wikipedia?
+72 Who founded Intel?
+110 Who created Goofy?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who|Which
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/NP developed|produces|founded|created|states
+      └S[dcl]\NP┤
+                └NP┐
+                   └N border Illinois?|English Wikipedia?|Miss Marple?|Sony?|Red Bull?|Quake engine?|Retrocrush?|Intel?|Goofy?|Wikipedia?|Skype?
+
+Category 5: contains 8 (3.86%) questions with wh-words [Who (100.00%)]
+224 Who developed the video game Duke Nukem 3D?
+221 Who created the comic Old Man Logan?
+222 Who designed the Langebro?
+102 Who wrote the lyrics for the Polish national anthem?
+137 Who developed the video game World of Warcraft?
+97 Who composed the music for Harold and Maude?
+104 Who painted The Storm on the Sea of Galilee?
+130 Who designed the Brooklyn Bridge?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/NP composed|wrote|painted|developed|created|designed
+      └S[dcl]\NP┤
+                └NP[nb]
+
+Category 6: contains 8 (3.86%) questions with wh-words [Give (100.00%)]
+166 Give me all members of The Who.
+99 Give me a list of all trumpet players that were bandleaders.
+165 Give me all inflows of the Lake Houston.
+157 Give me all soccer clubs in the Premier League.
+86 Give me a list of all lakes in Denmark.
+103 Give me all B-sides of the Ramones.
+133 Give me all companies in the advertising industry.
+112 Give me the birthdays of all actors of the television show Charmed.
+Common Subtree:
+         ┌(NP\NP)/NP in|of
+   ┌NP\NP┤
+   │     └NP[nb]
+ NP┤
+   └NP┐
+      │               ┌NP[nb]/N the|all|a
+      │        ┌NP[nb]┤
+      │        │      └N B-sides|companies|soccer clubs|members|inflows|list|birthdays
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
+
+Category 7: contains 6 (2.90%) questions with wh-words [How (100.00%)]
+181 How many students does the Texas Tech University have?
+69 How many inhabitants does Maribor have?
+179 How many pages does The Man with the Red Tattoo have?
+177 How many employees does Staedtler have?
+178 How many inhabitants does Nagamangala have?
+113 How many employees does IBM have?
+Common Subtree:
+              ┌(S[b]\NP)/NP have?
+      ┌S[q]/NP┤
+      │       └S[q]/(S[b]\NP)┐
+      │                      └(S[q]/(S[b]\NP))/NP does
+ S[wq]┤
+      │               ┌N inhabitants|employees|pages|students
+      └S[wq]/(S[q]/NP)┤
+                      │                   ┌((S[wq]/(S[q]/NP))/N)/(NP/N) How
+                      └(S[wq]/(S[q]/NP))/N┤
+                                          └NP/N many
+
+Category 8: contains 6 (2.90%) questions with wh-words [Give (100.00%)]
+162 Give me all books written by David Foster Wallace.
+145 Give me all films produced by Hal Roach.
+169 Give me all video games published by Black Isle Studios.
+149 Give me all books written by Danielle Steel.
+146 Give me all video games published by Mean Hamster Software.
+62 Give me all movies directed by Francis Ford Coppola.
+Common Subtree:
+   ┌NP┐
+   │  │               ┌NP[nb]/N all
+   │  │        ┌NP[nb]┤
+   │  │        │      └N movies|films|books|video games
+   │  └S[ng]\NP┤
+   │           │             ┌((S[ng]\NP)/NP)/NP Give
+   │           └(S[ng]\NP)/NP┤
+   │                         └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │                                                  └NP me
+ NP┤
+   └NP\NP┐
+         │         ┌S[pss]\NP produced|directed|published|written
+         └S[pss]\NP┤
+                   │             ┌((S\NP)\(S\NP))/NP by
+                   └(S\NP)\(S\NP)┤
+                                 └NP┐
+                                    │ ┌N/N Francis|Black|Danielle|Mean|David|Hal
+                                    └N┤
+                                      └N Foster Wallace.|Roach.|Ford Coppola.|Hamster Software.|Steel.|Isle Studios.
+
+Category 9: contains 5 (2.42%) questions with wh-words [How (100.00%)]
+174 How high is the Doe Hill Mountain?
+94 How high is the Mount Everest?
+176 How high is the Landegode Lighthouse?
+172 How big is the Mammoth Pool Reservoir?
+175 How high is the Volcano Mountain?
+Common Subtree:
+                               ┌(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP) How
+      ┌S[wq]/(S[q]/(S[adj]\NP))┤
+      │                        └S[adj]\NP big|high
+ S[wq]┤
+      │                ┌(S[q]/(S[adj]\NP))/NP is
+      └S[q]/(S[adj]\NP)┤
+                       │      ┌NP[nb]/N the
+                       └NP[nb]┤
+                              └N
+
+Category 10: contains 5 (2.42%) questions with wh-words [Which (100.00%)]
+209 Which artist made the album Old School Prankstas?
+74 Which cities does the Weser flow through?
+211 Which bridges cross the Prut?
+125 Which river does the Brooklyn Bridge cross?
+214 Which museum exhibits The Skater?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N cities|bridges|river|artist|museum
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/NP exhibits|cross|does|made
+      └S[dcl]\NP┤
+                └NP[nb]
+
+Category 11: contains 5 (2.42%) questions with wh-words [In (60.00%), To (20.00%), Through (20.00%)]
+122 Through which countries does the Yenisei river flow?
+92 To which countries does the Himalayan mountain system extend?
+107 In which country does the Nile start?
+155 In which films did Julia Roberts as well as Richard Gere play?
+67 In which military conflicts did Lawrence of Arabia participate?
+Common Subtree:
+           ┌S[b]\NP start?|flow?|play?|participate?|extend?
+      ┌S[q]┤
+      │    └S[q]/(S[b]\NP)┐
+      │                   └(S[q]/(S[b]\NP))/NP does|did
+ S[wq]┤
+      │          ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) In|To|Through
+      └S[wq]/S[q]┤
+                 │               ┌(S[wq]/(S[q]/NP))/N which
+                 └S[wq]/(S[q]/NP)┤
+                                 └N military conflicts|films|country|countries
+
+Category 12: contains 5 (2.42%) questions with wh-words [When (100.00%)]
+201 When was Sevcon founded?
+10 When was DBpedia released?
+82 When were the Hells Angels founded?
+204 When was the Riverdale Monument built?
+202 When was Albert Schweitzer born?
+Common Subtree:
+      ┌S[wq]/S[q] When
+ S[wq]┤
+      │    ┌S[q]/NP┐
+      │    │       └(S[q]/NP)/NP were|was
+      └S[q]┤
+           └NP┐
+              └N built?|founded?|born?|released?
+
+Category 13: contains 5 (2.42%) questions with wh-words [In (100.00%)]
+186 In which country is the Tasman Lake?
+187 In which country is the Tiefer See?
+115 In which country is the Limerick Lake?
+152 In which programming language is GIMP written?
+188 In which programming language is QuickTime written?
+Common Subtree:
+      ┌S/S In
+ S[wq]┤
+      │     ┌S[q]/NP┐
+      │     │       └(S[q]/NP)/NP is
+      └S[wq]┤
+            │               ┌(S[wq]/(S[q]/NP))/N which
+            └S[wq]/(S[q]/NP)┤
+                            └N programming language|country
+
+Category 14: contains 5 (2.42%) questions with wh-words [How (100.00%)]
+109 How tall is Claudia Schiffer?
+173 How deep is Steinsee?
+183 How tall is John Windsor?
+58 How tall is Michael Jordan?
+184 How tall is Kate Upton?
+Common Subtree:
+                               ┌(S[wq]/(S[q]/(S[adj]\NP)))/(S[adj]\NP) How
+      ┌S[wq]/(S[q]/(S[adj]\NP))┤
+      │                        └S[adj]\NP deep|tall
+ S[wq]┤
+      │                ┌(S[q]/(S[adj]\NP))/NP is
+      └S[q]/(S[adj]\NP)┤
+                       └NP┐
+                          └N Claudia Schiffer?|Michael Jordan?|John Windsor?|Steinsee?|Kate Upton?
+
+Category 15: contains 4 (1.93%) questions with wh-words [Where (50.00%), When (50.00%)]
+199 When did Red Sonja's creator die?
+206 Where did Queen Emma of Hawaii die?
+141 Where did Abraham Lincoln die?
+198 When did Jules Bergman die?
+Common Subtree:
+      ┌S[wq]/S[q] Where|When
+ S[wq]┤
+      │    ┌S[b]\NP die?
+      └S[q]┤
+           │              ┌(S[q]/(S[b]\NP))/NP did
+           └S[q]/(S[b]\NP)┤
+                          └NP
+
+Category 16: contains 4 (1.93%) questions with wh-words [Which (100.00%)]
+105 Which country does the creator of Miffy come from?
+8 Which country does the Airedale Terrier come from?
+108 Which classis does the Millepede belong to?
+19 Which genre does DBpedia belong to?
+Common Subtree:
+                      ┌(S[wq]/(S[q]/NP))/N Which
+      ┌S[wq]/(S[q]/NP)┤
+      │               └N classis|genre|country
+ S[wq]┤
+      │       ┌S[q]/(S[b]\NP)┐
+      │       │              └(S[q]/(S[b]\NP))/NP does
+      └S[q]/NP┤
+              │            ┌(S[b]\NP)/NP belong|come
+              └(S[b]\NP)/NP┤
+                           └(S\NP)\(S\NP) to?|from?
+
+Category 17: contains 4 (1.93%) questions with wh-words [Which (100.00%)]
+131 Which telecommunications organizations are located in Belgium?
+218 Which professional surfers were born in Australia?
+116 Which television shows were created by Walt Disney?
+76 Which professional surfers were born on the Philippines?
+Common Subtree:
+                ┌(S[dcl]\NP)/(S[pss]\NP) are|were
+      ┌S[dcl]\NP┤
+      │         └S[pss]\NP
+ S[wq]┤
+      │                 ┌(S[wq]/(S[dcl]\NP))/N Which
+      └S[wq]/(S[dcl]\NP)┤
+                        │ ┌N/N professional|telecommunications|television
+                        └N┤
+                          └N organizations|surfers|shows
+
+Category 18: contains 3 (1.45%) questions with wh-words [Give (100.00%)]
+55 Give me all cars that are produced in Germany.
+56 Give me all people that were born in Vienna and died in Berlin.
+163 Give me all cars that are produced in Netherlands.
+Common Subtree:
+         ┌(NP\NP)/(S[dcl]\NP) that
+   ┌NP\NP┤
+   │     └S[dcl]\NP
+ NP┤
+   └NP┐
+      │               ┌NP[nb]/N all
+      │        ┌NP[nb]┤
+      │        │      └N cars|people
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
+
+Category 19: contains 2 (0.97%) questions with wh-words [List (50.00%), In (50.00%)]
+117 In which films directed by Garry Marshall was Julia Roberts starring?
+139 List all episodes of the first season of the HBO television series The Sopranos!
+Common Subtree:
+       ┌S/S List|In
+ S[dcl]┤
+       │      ┌S[dcl]\NP┐
+       │      │         └(S[dcl]\NP)/NP series|was
+       └S[dcl]┤
+              │      ┌NP\NP
+              └NP[nb]┤
+                     │      ┌NP[nb]/N all|which
+                     └NP[nb]┤
+                            └N episodes|films
+
+Category 20: contains 2 (0.97%) questions with wh-words [Which (100.00%)]
+118 Which bridges are of the same type as the Manhattan Bridge?
+49 Which companies are in the computer software industry?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N companies|bridges
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/PP are
+      └S[dcl]\NP┤
+                │  ┌PP/NP in|of
+                └PP┤
+                   │      ┌NP\NP industry?|as the Manhattan Bridge?
+                   └NP[nb]┤
+                          │      ┌NP[nb]/N the
+                          └NP[nb]┤
+                                 │ ┌N/N computer|same
+                                 └N┤
+                                   └N type|software
+
+Category 21: contains 2 (0.97%) questions with wh-words [Give (100.00%)]
+83 Give me the Apollo 14 astronauts.
+151 Give me all Canadian Grunge record labels.
+Common Subtree:
+   ┌NP\NP labels.|astronauts.
+ NP┤
+   └NP┐
+      │               ┌NP[nb]/N the|all
+      │        ┌NP[nb]┤
+      │        │      └N
+      └S[ng]\NP┤
+               │             ┌((S[ng]\NP)/NP)/NP Give
+               └(S[ng]\NP)/NP┤
+                             └(S[X]\NP)\((S[X]\NP)/NP)┐
+                                                      └NP me
+
+Category 22: contains 2 (0.97%) questions with wh-words [How (100.00%)]
+180 How many people live in the capital of Togo?
+95 How many people live in the capital of Australia?
+Common Subtree:
+                        ┌N people
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 │                     ┌((S[wq]/(S[dcl]\NP))/N)/(NP/N) How
+      │                 └(S[wq]/(S[dcl]\NP))/N┤
+      │                                       └NP/N many
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/PP live
+      └S[dcl]\NP┤
+                │  ┌PP/NP in
+                └PP┤
+                   │             ┌NP[nb]/N the
+                   │      ┌NP[nb]┤
+                   │      │      └N capital
+                   └NP[nb]┤
+                          │     ┌(NP\NP)/NP of
+                          └NP\NP┤
+                                └NP┐
+                                   └N Togo?|Australia?
+
+Category 23: contains 2 (0.97%) questions with wh-words [Who (100.00%)]
+235 Who painted Unfinished portrait of General Bonaparte?
+153 Who produced films starring Natalie Portman?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/NP painted|produced
+      └S[dcl]\NP┤
+                │  ┌NP\NP
+                └NP┤
+                   └NP┐
+                      └N films|Unfinished portrait
+
+Category 24: contains 2 (0.97%) questions with wh-words [Which (100.00%)]
+212 Which instruments does Courtney Love play?
+119 Which awards did WikiLeaks win?
+Common Subtree:
+                      ┌(S[wq]/(S[q]/NP))/N Which
+      ┌S[wq]/(S[q]/NP)┤
+      │               └N instruments|awards
+ S[wq]┤
+      │       ┌(S[b]\NP)/NP win?|play?
+      └S[q]/NP┤
+              │              ┌(S[q]/(S[b]\NP))/NP does|did
+              └S[q]/(S[b]\NP)┤
+                             └NP┐
+                                └N WikiLeaks|Courtney Love
+
+Category 25: contains 2 (0.97%) questions with wh-words [Which (100.00%)]
+143 Which software has been developed by organizations founded in California?
+13 Which software has been published by Mean Hamster Software?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N software
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/(S[pt]\NP) has
+      └S[dcl]\NP┤
+                │        ┌(S[pt]\NP)/(S[pss]\NP) been
+                └S[pt]\NP┤
+                         │         ┌S[pss]\NP developed|published
+                         └S[pss]\NP┤
+                                   │             ┌((S\NP)\(S\NP))/NP by
+                                   └(S\NP)\(S\NP)┤
+                                                 └NP
+
+Category 26: contains 2 (0.97%) questions with wh-words [Give (100.00%)]
+161 Give me all Avant-garde jazz record labels.
+87 Give me all Argentine films.
+Common Subtree:
+           ┌(S/S)/NP Give
+       ┌S/S┤
+       │   └NP me
+ S[dcl]┤
+       │      ┌S[dcl]\NP labels.|films.
+       └S[dcl]┤
+              │      ┌NP[nb]/N all
+              └NP[nb]┤
+                     └N Argentine|Avant-garde jazz record
+
+Category 27: contains 2 (0.97%) questions with wh-words [Which (100.00%)]
+78 Which other weapons did the designer of the Uzi develop?
+148 Which music albums contain the song Last Christmas?
+Common Subtree:
+                ┌(S[dcl]\NP)/NP contain|did
+      ┌S[dcl]\NP┤
+      │         └NP[nb]
+ S[wq]┤
+      │                 ┌(S[wq]/(S[dcl]\NP))/N Which
+      └S[wq]/(S[dcl]\NP)┤
+                        │ ┌N/N music|other
+                        └N┤
+                          └N albums|weapons
+
+Category 28: contains 1 (0.48%) questions with wh-words [For (100.00%)]
+106 For which label did Elvis record his first album?
+Common Subtree:
+                 ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) For
+      ┌S[wq]/S[q]┤
+      │          │               ┌(S[wq]/(S[q]/NP))/N which
+      │          └S[wq]/(S[q]/NP)┤
+      │                          └N label
+ S[wq]┤
+      │                   ┌(S[q]/(S[b]\NP))/NP did
+      │    ┌S[q]/(S[b]\NP)┤
+      │    │              └NP┐
+      │    │                 └N Elvis
+      └S[q]┤
+           │       ┌(S[b]\NP)/NP record
+           └S[b]\NP┤
+                   │      ┌NP[nb]/N his
+                   └NP[nb]┤
+                          │ ┌N/N first
+                          └N┤
+                            └N album?
+
+Category 29: contains 1 (0.48%) questions with wh-words [Which (100.00%)]
+93 Which books by Kerouac were published by Viking Press?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N books
+ S[wq]┤
+      │                       ┌((S\NP)/(S\NP))/NP by
+      │         ┌(S\NP)/(S\NP)┤
+      │         │             └NP┐
+      │         │                └N Kerouac
+      └S[dcl]\NP┤
+                │         ┌(S[dcl]\NP)/(S[pss]\NP) were
+                └S[dcl]\NP┤
+                          │         ┌S[pss]\NP published
+                          └S[pss]\NP┤
+                                    │             ┌((S\NP)\(S\NP))/NP by
+                                    └(S\NP)\(S\NP)┤
+                                                  └NP┐
+                                                     │ ┌N/N Viking
+                                                     └N┤
+                                                       └N Press?
+
+Category 30: contains 1 (0.48%) questions with wh-words [When (100.00%)]
+90 When was Alberta admitted as province?
+Common Subtree:
+      ┌S[wq]/S[q] When
+ S[wq]┤
+      │                     ┌(S[q]/(S[pss]\NP))/NP was
+      │    ┌S[q]/(S[pss]\NP)┤
+      │    │                └NP┐
+      │    │                   └N Alberta
+      └S[q]┤
+           │         ┌(S[pss]\NP)/PP admitted
+           └S[pss]\NP┤
+                     │  ┌PP/NP as
+                     └PP┤
+                        └NP┐
+                           └N province?
+
+Category 31: contains 1 (0.48%) questions with wh-words [List (100.00%)]
+91 List the children of Margaret Thatcher.
+Common Subtree:
+     ┌NP┐
+     │  └N Thatcher.
+ S[q]┤
+     │       ┌(S[q]/NP)/NP List
+     └S[q]/NP┤
+             │             ┌NP[nb]/N the
+             │      ┌NP[nb]┤
+             │      │      └N children
+             └NP[nb]┤
+                    │     ┌(NP\NP)/NP of
+                    └NP\NP┤
+                          └NP┐
+                             └N Margaret
+
+Category 32: contains 1 (0.48%) questions with wh-words [In (100.00%)]
+185 In which country is Solaize located?
+Common Subtree:
+                 ┌(S[wq]/S[q])/(S[wq]/(S[q]/NP)) In
+      ┌S[wq]/S[q]┤
+      │          │               ┌(S[wq]/(S[q]/NP))/N which
+      │          └S[wq]/(S[q]/NP)┤
+      │                          └N country
+ S[wq]┤
+      │    ┌NP┐
+      │    │  └N located?
+      └S[q]┤
+           │       ┌(S[q]/NP)/NP is
+           └S[q]/NP┤
+                   └NP┐
+                      └N Solaize
+
+Category 33: contains 1 (0.48%) questions with wh-words [Which (100.00%)]
+111 Which museum exhibits The Scream by Munch?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N museum
+ S[wq]┤
+      │                       ┌((S\NP)\(S\NP))/NP by
+      │         ┌(S\NP)\(S\NP)┤
+      │         │             └NP┐
+      │         │                └N Munch?
+      └S[dcl]\NP┤
+                │         ┌(S[dcl]\NP)/NP exhibits
+                └S[dcl]\NP┤
+                          │      ┌NP[nb]/N The
+                          └NP[nb]┤
+                                 └N Scream
+
+Category 34: contains 1 (0.48%) questions with wh-words [Give (100.00%)]
+66 Give me all Australian nonprofit organizations.
+Common Subtree:
+       ┌S[dcl]/NP Give
+ S[dcl]┤
+       │      ┌NP/NP me
+       └NP[nb]┤
+              │      ┌NP[nb]/N all
+              └NP[nb]┤
+                     │ ┌N/N Australian
+                     └N┤
+                       │ ┌N/N nonprofit
+                       └N┤
+                         └N organizations.
+
+Category 35: contains 1 (0.48%) questions with wh-words [Who (100.00%)]
+156 Who wrote the book The pillars of the Earth?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who
+ S[wq]┤
+      │                        ┌((S[dcl]\NP)/NP)/NP wrote
+      │         ┌(S[dcl]\NP)/NP┤
+      │         │              │      ┌NP[nb]/N the
+      │         │              └NP[nb]┤
+      │         │                     └N book
+      └S[dcl]\NP┤
+                │             ┌NP[nb]/N The
+                │      ┌NP[nb]┤
+                │      │      └N pillars
+                └NP[nb]┤
+                       │     ┌(NP\NP)/NP of
+                       └NP\NP┤
+                             │      ┌NP[nb]/N the
+                             └NP[nb]┤
+                                    └N Earth?
+
+Category 36: contains 1 (0.48%) questions with wh-words [From (100.00%)]
+160 From which region is the Refosco dal Peduncolo Rosso?
+Common Subtree:
+                      ┌(S[wq]/(S[q]/PP))/(S[wq]/(S[q]/NP)) From
+      ┌S[wq]/(S[q]/PP)┤
+      │               │               ┌(S[wq]/(S[q]/NP))/N which
+      │               └S[wq]/(S[q]/NP)┤
+      │                               └N region
+ S[wq]┤
+      │       ┌(S[q]/PP)/NP is
+      └S[q]/PP┤
+              │      ┌NP[nb]/N the
+              └NP[nb]┤
+                     │ ┌N/N Refosco
+                     └N┤
+                       │ ┌N/N dal
+                       └N┤
+                         │ ┌N/N Peduncolo
+                         └N┤
+                           └N Rosso?
+
+Category 37: contains 1 (0.48%) questions with wh-words [Who (100.00%)]
+9 Who was Tom Hanks married to?
+Common Subtree:
+      ┌S[wq]/(S[q]/NP) Who
+ S[wq]┤
+      │       ┌(S[q]/NP)/NP was
+      └S[q]/NP┤
+              │  ┌NP┐
+              │  │  │ ┌N/N Tom
+              │  │  └N┤
+              │  │    └N Hanks
+              └NP┤
+                 └NP\NP┐
+                       │         ┌(S[pss]\NP)/NP married
+                       └S[pss]\NP┤
+                                 └NP┐
+                                    └N to?
+
+Category 38: contains 1 (0.48%) questions with wh-words [In (100.00%)]
+77 In which UK city are the headquarters of the MI6?
+Common Subtree:
+      ┌S/S In
+ S[wq]┤
+      │                       ┌(S[wq]/(S[dcl]\NP))/N which
+      │     ┌S[wq]/(S[dcl]\NP)┤
+      │     │                 │ ┌N/N UK
+      │     │                 └N┤
+      │     │                   └N city
+      └S[wq]┤
+            │         ┌(S[dcl]\NP)/NP are
+            └S[dcl]\NP┤
+                      │             ┌NP[nb]/N the
+                      │      ┌NP[nb]┤
+                      │      │      └N headquarters
+                      └NP[nb]┤
+                             │     ┌(NP\NP)/NP of
+                             └NP\NP┤
+                                   │      ┌NP[nb]/N the
+                                   └NP[nb]┤
+                                          └N MI6?
+
+Category 39: contains 1 (0.48%) questions with wh-words [How (100.00%)]
+182 How much did Vanilla Sky cost?
+Common Subtree:
+                 ┌(S[wq]/S[q])/(S[adj]\NP) How
+      ┌S[wq]/S[q]┤
+      │          └S[adj]\NP much
+ S[wq]┤
+      │    ┌S[b]\NP cost?
+      └S[q]┤
+           │              ┌(S[q]/(S[b]\NP))/NP did
+           └S[q]/(S[b]\NP)┤
+                          └NP┐
+                             │ ┌N/N Vanilla
+                             └N┤
+                               └N Sky
+
+Category 40: contains 1 (0.48%) questions with wh-words [Which (100.00%)]
+98 Which films starring Clint Eastwood did he direct himself?
+Common Subtree:
+                                      ┌((S[dcl]\NP)/(S[b]\NP))/NP did
+                ┌(S[dcl]\NP)/(S[b]\NP)┤
+                │                     └NP he
+      ┌S[dcl]\NP┤
+      │         │       ┌(S[b]\NP)/NP direct
+      │         └S[b]\NP┤
+      │                 └NP┐
+      │                    └N himself?
+ S[wq]┤
+      │                                   ┌(S[wq]/(S[dcl]\NP))/N Which
+      │                 ┌S[wq]/(S[dcl]\NP)┤
+      │                 │                 └N films
+      └S[wq]/(S[dcl]\NP)┤
+                        └S\S┐
+                            │        ┌(S[ng]\NP)/NP starring
+                            └S[ng]\NP┤
+                                     └NP┐
+                                        │ ┌N/N Clint
+                                        └N┤
+                                          └N Eastwood
+
+Category 41: contains 1 (0.48%) questions with wh-words [Who (100.00%)]
+15 Who is called Dana?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/(S[pss]\NP) is
+      └S[dcl]\NP┤
+                │         ┌(S[pss]\NP)/NP called
+                └S[pss]\NP┤
+                          └NP┐
+                             └N Dana?
+
+Category 42: contains 1 (0.48%) questions with wh-words [Give (100.00%)]
+28 Give me the official websites of actors of the television show Charmed.
+Common Subtree:
+   ┌NP┐
+   │  │                      ┌((S[ng]\NP)/NP)/NP Give
+   │  │        ┌(S[ng]\NP)/NP┤
+   │  │        │             └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │  │        │                                      └NP me
+   │  └S[ng]\NP┤
+   │           │      ┌NP[nb]/N the
+   │           └NP[nb]┤
+   │                  │ ┌N/N official
+   │                  └N┤
+   │                    └N websites
+ NP┤
+   │     ┌(NP\NP)/NP of
+   └NP\NP┤
+         │  ┌NP┐
+         │  │  └N actors
+         └NP┤
+            │     ┌(NP\NP)/NP of
+            └NP\NP┤
+                  │      ┌NP[nb]/N the
+                  └NP[nb]┤
+                         │ ┌N/N television
+                         └N┤
+                           │ ┌N/N show
+                           └N┤
+                             └N Charmed.
+
+Category 43: contains 1 (0.48%) questions with wh-words [Which (100.00%)]
+215 Which music albums contain the song Into Your Arms?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 │ ┌N/N music
+      │                 └N┤
+      │                   └N albums
+ S[wq]┤
+      │                   ┌(S[dcl]\NP)/NP contain
+      │         ┌S[dcl]\NP┤
+      │         │         │      ┌NP[nb]/N the
+      │         │         └NP[nb]┤
+      │         │                └N song
+      └S[dcl]\NP┤
+                │             ┌((S\NP)\(S\NP))/NP Into
+                └(S\NP)\(S\NP)┤
+                              │      ┌NP[nb]/N Your
+                              └NP[nb]┤
+                                     └N Arms?
+
+Category 44: contains 1 (0.48%) questions with wh-words [Which (100.00%)]
+4 Which people have as their given name Jimmy?
+Common Subtree:
+                        ┌(S[wq]/(S[dcl]\NP))/N Which
+      ┌S[wq]/(S[dcl]\NP)┤
+      │                 └N people
+ S[wq]┤
+      │         ┌NP┐
+      │         │  └N Jimmy?
+      └S[dcl]\NP┤
+                │              ┌((S[dcl]\NP)/PP)/NP have
+                └(S[dcl]\NP)/NP┤
+                               └(S[X]\NP)\((S[X]\NP)/PP)┐
+                                                        │  ┌PP/NP as
+                                                        └PP┤
+                                                           │      ┌NP[nb]/N their
+                                                           └NP[nb]┤
+                                                                  │ ┌N/N given
+                                                                  └N┤
+                                                                    └N name
+
+Category 45: contains 1 (0.48%) questions with wh-words [Show (100.00%)]
+189 Show me everyone who was born on Boxing Day.
+Common Subtree:
+             ┌(S[q]/NP)/NP Show
+     ┌S[q]/NP┤
+     │       └NP me
+ S[q]┤
+     │  ┌NP everyone
+     └NP┤
+        │     ┌(NP\NP)/(S[dcl]\NP) who
+        └NP\NP┤
+              │         ┌(S[dcl]\NP)/(S[pss]\NP) was
+              └S[dcl]\NP┤
+                        │         ┌S[pss]\NP born
+                        └S[pss]\NP┤
+                                  │             ┌((S\NP)\(S\NP))/NP on
+                                  └(S\NP)\(S\NP)┤
+                                                └NP┐
+                                                   │ ┌N/N Boxing
+                                                   └N┤
+                                                     └N Day.
+
+Category 46: contains 1 (0.48%) questions with wh-words [When (100.00%)]
+123 When did Finland join the EU?
+Common Subtree:
+      ┌S[wq]/S[q] When
+ S[wq]┤
+      │                   ┌(S[q]/(S[b]\NP))/NP did
+      │    ┌S[q]/(S[b]\NP)┤
+      │    │              └NP┐
+      │    │                 └N Finland
+      └S[q]┤
+           │       ┌(S[b]\NP)/NP join
+           └S[b]\NP┤
+                   │      ┌NP[nb]/N the
+                   └NP[nb]┤
+                          └N EU?
+
+Category 47: contains 1 (0.48%) questions with wh-words [List (100.00%)]
+71 List all boardgames by GMT.
+Common Subtree:
+       ┌NP┐
+       │  └N List
+ S[dcl]┤
+       │         ┌(S\NP)/(S\NP) all
+       └S[dcl]\NP┤
+                 │         ┌S[dcl]\NP boardgames
+                 └S[dcl]\NP┤
+                           │             ┌((S\NP)\(S\NP))/NP by
+                           └(S\NP)\(S\NP)┤
+                                         └NP┐
+                                            └N GMT.
+
+Category 48: contains 1 (0.48%) questions with wh-words [What (100.00%)]
+134 What did Bruce Carver die from?
+Common Subtree:
+      ┌S[wq]/(S[q]/NP) What
+ S[wq]┤
+      │                    ┌(S[b]\NP)/NP die
+      │       ┌(S[b]\NP)/NP┤
+      │       │            └(S\NP)\(S\NP) from?
+      └S[q]/NP┤
+              │              ┌(S[q]/(S[b]\NP))/NP did
+              └S[q]/(S[b]\NP)┤
+                             └NP┐
+                                │ ┌N/N Bruce
+                                └N┤
+                                  └N Carver
+
+Category 49: contains 1 (0.48%) questions with wh-words [Who (100.00%)]
+238 Who wrote the book Leave It to Psmith?
+Common Subtree:
+      ┌S[wq]/(S[dcl]\NP) Who
+ S[wq]┤
+      │         ┌(S[dcl]\NP)/S[dcl] wrote
+      └S[dcl]\NP┤
+                │             ┌NP[nb]/N the
+                │      ┌NP[nb]┤
+                │      │      └N book
+                └S[dcl]┤
+                       │                        ┌((S[dcl]\NP)/PP)/NP Leave
+                       │         ┌(S[dcl]\NP)/PP┤
+                       │         │              └NP It
+                       └S[dcl]\NP┤
+                                 │  ┌PP/NP to
+                                 └PP┤
+                                    └NP┐
+                                       └N Psmith?
+
+Category 50: contains 1 (0.48%) questions with wh-words [When (100.00%)]
+200 When is Gibraltar Diamond Jubilee Flotilla?
+Common Subtree:
+      ┌S[wq]/(S[q]/NP) When
+ S[wq]┤
+      │       ┌(S[q]/NP)/NP is
+      └S[q]/NP┤
+              └NP┐
+                 │ ┌N/N Gibraltar
+                 └N┤
+                   │ ┌N/N Diamond
+                   └N┤
+                     │ ┌N/N Jubilee
+                     └N┤
+                       └N Flotilla?
+
+Category 51: contains 1 (0.48%) questions with wh-words [Give (100.00%)]
+63 Give me all actors starring in movies directed by and starring William Shatner.
+Common Subtree:
+   ┌NP┐
+   │  │               ┌NP[nb]/N all
+   │  │        ┌NP[nb]┤
+   │  │        │      └N actors
+   │  └S[ng]\NP┤
+   │           │             ┌((S[ng]\NP)/NP)/NP Give
+   │           └(S[ng]\NP)/NP┤
+   │                         └(S[X]\NP)\((S[X]\NP)/NP)┐
+   │                                                  └NP me
+ NP┤
+   └NP\NP┐
+         │        ┌S[ng]\NP starring
+         └S[ng]\NP┤
+                  │             ┌((S\NP)\(S\NP))/NP in
+                  └(S\NP)\(S\NP)┤
+                                │     ┌NP┐
+                                │     │  └N movies
+                                │  ┌NP┤
+                                │  │  └NP\NP┐
+                                │  │        │         ┌S[pss]\NP directed
+                                │  │        └S[pss]\NP┤
+                                │  │                  └(S\NP)\(S\NP) by
+                                └NP┤
+                                   │     ┌conj and
+                                   └NP\NP┤
+                                         └NP┐
+                                            │ ┌N/N starring
+                                            └N┤
+                                              │ ┌N/N William
+                                              └N┤
+                                                └N Shatner.
+
