@@ -48,7 +48,7 @@ def label(text):
     with open(posix_path_sup_parser(tmp_file), "w") as tmpfile:
         tmpfile.write(text)
     # pass the temp file to easyccg and get output
-    with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE) as proc:
+    with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open("/dev/null")) as proc:
         return proc.stdout.read().decode("utf-8").split("\n")[1::2]
 
 def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
