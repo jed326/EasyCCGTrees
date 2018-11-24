@@ -1,5 +1,5 @@
 import subprocess
-import pathlib
+from pathlib import Path
 import argparse
 import itertools
 import os  # environ
@@ -16,7 +16,7 @@ _OUTPUT_TREE = 1
 _OUTPUT_BOTH = 2
 
 def load_easyccg_home():
-    home = pathlib.Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
+    home = Path(os.environ.get("EASYCCG_HOME", "./easyccg"))
     if "EASYCCG_HOME" not in os.environ:
         warnings.warn("Didn't find EASYCCG_HOME variable, looking for local copy in current directory.", Warning,
                       stacklevel=3)
@@ -27,7 +27,7 @@ def load_easyccg_home():
 Environment Setup
 '''
 EASYCCG_HOME = load_easyccg_home()
-OUT_PATH = pathlib.Path("/tmp/")
+OUT_PATH = Path("/tmp/")
 
 
 # returns a command arg list which will be used for subprocess
@@ -35,21 +35,22 @@ def easyccg_command(file_name=""):
     cmd = "java -jar %s -f %s --model %s" % (EASYCCG_HOME / "easyccg.jar", file_name, EASYCCG_HOME / "model_questions")
     return cmd.split()
 
-
-#TODO: suppress stderr
 def run_easyCCG(input_path):
     with open(posix_path_sup_parser(OUT_PATH / "ccgout.txt"), "w") as outfile:
         subprocess.run(easyccg_command(file_name=input_path), stdout=outfile)
 
-# input: question text
-# output: list of labels for the text
 def label(text):
+    '''
+    text - newline separated sentences to parse
+    return - list of string representing the parse of each line
+    '''
     # write the input to a temporary file
     tmp_file = OUT_PATH / "labeltmp"
     with open(posix_path_sup_parser(tmp_file), "w") as tmpfile:
         tmpfile.write(text)
     # pass the temp file to easyccg and get output
     with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open("/dev/null")) as proc:
+        #[1::2] - skip parse numbers
         return proc.stdout.read().decode("utf-8").split("\n")[1::2]
 
 def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
@@ -61,7 +62,10 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
     file_path - relative (or absolute) path to file containing newline
     separated questions to parse
     kwargs - optional args for eq_fn
+
+    return - a list of categories, where each category is a dict mapping parsed strings to their tree representation
     '''
+    
     # list of dicts {string : tree}
     # categories is a list of dictionaries where each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
@@ -88,9 +92,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
         else:
             categories.append({line: tree})
 
-    write_output(categories, labelled, out_path, output_switch, [file_path, kwargs['depth']])
-
-    return categories
+    return categories, labelled
 
 #Function to write the categories to a file
 def write_output(categories, labelled, out_path, output_switch, outParams):
@@ -131,7 +133,6 @@ def write_output(categories, labelled, out_path, output_switch, outParams):
             grouped_file.write("\n")
             n += 1
 
-    print(out_path)
     print("Created %d categories, written to %s" % (len(categories), out_path))
 
 def posix_path_sup_parser(posix_path):
@@ -177,12 +178,15 @@ if __name__ == "__main__":
     #Process default outfile
     if not args.outfile:
         infilename = args.path.split("/")[-1]
-        args.outfile = "./data/output/%s_grouped_out.txt" % (infilename[:-4])
+        name = Path(infilename).stem
+        args.outfile = "./data/output/%s_grouped_out.txt" % (name)
 
-    categories = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    categories, labelled = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    write_output(categories, labelled, args.outfile, args.output, [args.path, args.depth])
 
     #TODO: log this?
     # print("Ratio of Categories to Questions:", len(categories) / sum(len(category) for category in categories))
+
     if len(categories) / sum(len(category) for category in categories) > .5:
         warnings.warn(
             "Warning: Categories are very small. Consider using a smaller depth argument to group more questions together.",
