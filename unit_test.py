@@ -1,4 +1,4 @@
-from groupLines import *
+from categorize import *
 from to_tree import *
 
 test_cases = ["What presidents were born in 1945?",
