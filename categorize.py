@@ -9,6 +9,7 @@ import sys  # exit
 from functools import reduce
 from to_tree import to_tree, output_tree
 import POStagging
+import re
 
 # output options
 _OUTPUT_QUES = 0
@@ -65,7 +66,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
 
     return - a list of categories, where each category is a dict mapping parsed strings to their tree representation
     '''
-    
+
     # list of dicts {string : tree}
     # categories is a list of dictionaries where each index is a mapping between the parsed question and its tree representation
     # labelled is a dictionary that maps the parsed question to the original question
@@ -100,14 +101,14 @@ def write_output(categories, labelled, out_path, output_switch, outParams):
     with open(out_path, "w") as grouped_file:
         grouped_file.write("For input %s, %d categories were created from %s questions using depth = %d\n\n" % (outParams[0], len(categories), len(labelled), outParams[1]))
         for n, category in enumerate(categories, start=1):
-            questions = [str(labelled[parse]) for parse in category.keys()]
+            questions = (labelled[parse] for parse in category.keys())
             wh_words = {}
             for question in questions:
                 word = question.split()[1]
                 if word in wh_words.keys():
                     wh_words[word] += 1
                 else:
-                    wh_words.update({word: 1})
+                    wh_words[word] = 1
 
             wh_words_percentages = []
             for word in wh_words.keys():
@@ -131,7 +132,6 @@ def write_output(categories, labelled, out_path, output_switch, outParams):
                 output_tree(reduce(lambda x, y: x & y, category.values()), grouped_file)
 
             grouped_file.write("\n")
-            n += 1
 
     print("Created %d categories, written to %s" % (len(categories), out_path))
 
@@ -151,20 +151,50 @@ def assert_model():
         sys.exit(1)
 
 
+def to_pos_tree(text):
+    subbed = re.sub(r"POS POS .+?\b", lambda match: r"POS POS "+next(subs), l)
+    return to_tree(subbed)
+
+
 def _test():
-    from eq_fns import equals_with_application
+    from eq_fns import equals_with_application, _firstWord
+    import re
+    from POStagging import to_tags
 
-    t1 = to_tree(label("Which presidents were born in 1945")[0])
-    t2 = to_tree(label("Which presidents were not born in 1945")[0])
 
-    output_tree(t2)
+    # t1 = to_tree(label("Which presidents were born in 1945")[0])
+    # t2 = to_tree(label("Which presidents were not born in 1945")[0])
+
+    s1 = "Which presidents were born in 1945"
+    output_tree(to_pos_tree(s1))
+    '''l = label(s1)[0]
+    subs = iter(to_tags(s1).split())
+    print(l)
+    print()
+    subbed = re.sub(r"POS POS .+?\b", lambda match: r"POS POS "+next(subs), l)
+    print(subbed)
+    new_tree = to_tree(subbed)
+    output_tree(new_tree)
+    print(_firstWord(new_tree))
+    # print()
+    # print(to_tags(s1))
+
+# //TODO: figure out which part of the string to replace
+    output_tree(to_tree(l))
+    # for found in re.finditer(r"POS POS (.*\b)", s1):
+
+'''
+    # output_tree(t2)
 
     # print(t1)
     # print(t2)
 
-    equals_with_application(t1,t2)
+    # equals_with_application(t1,t2)
 
 if __name__ == "__main__":
+    # _test()
+    # exit(0)
+
     assert_model()
 
     # TODO: take in list of categories and build on that
