@@ -10,3 +10,4 @@ easyccg/model_questions
 out/
 __pycache__/
 _grouped_out.txt
+venv/
