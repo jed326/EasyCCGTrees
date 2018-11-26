@@ -11,9 +11,14 @@
 * [batch_categorize.sh](https://github.com/jed326/EasyCCGTrees#batch_categorizesh)
 
 ## About
-This repository can be used to categorize questions based upon their CCG parses from EasyCCG.
-This repository was created for the Honors Option for Computer Science 442 at The Pennsylvania State University.   
-Authors: Steven Fontanella, Jay Deng, ZhaoHong Lu, QiYi Shan
+This repository can be used to categorize questions based upon their CCG parses from EasyCCG.   
+This repository was created for the Honors Option for Computer Science 442 at The Pennsylvania State University, Fall 2018.
+This project was worked on from August, 2018 - November, 2018.   
+**Authors:**
+* [Jay Deng](mailto:jed326@psu.edu)
+* [Steven Fontanella](mailto:steven.fontanella@gmail.com)
+* [Zhaohong Lyu](mailto:zql5275@psu.edu)
+* [Qiyi Shan](mailto:qxs20@psu.edu)
 
 ## Setup Tutorial
 For instructions on cloning this repository along with it's submodule, reference [EasyCCG Submodule](https://github.com/jed326/EasyCCGTrees#EasyCCG-Submodule).   
@@ -106,12 +111,3 @@ convert.sh uses to_tree function to help batch converting questions to tree form
 ## batch_categorize.sh
 This is a helper script that exports all three types of categorized results to folder: `data/output`   
 The types are broken down here: [Output](https://github.com/jed326/EasyCCGTrees#output)
-
-
-## Authors
-
-* 8/2018 - 11/2018
-    * [Jay Deng](mailto:jed326@psu.edu)
-    * [Steven Fontanella](mailto:steven.fontanella@gmail.com)
-    * [Zhaohong Lyu](mailto:zql5275@psu.edu)
-    * [Qiyi Shan](mailto:qxs20@psu.edu)
