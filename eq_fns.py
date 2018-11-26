@@ -2,11 +2,12 @@ import functools
 from to_tree import Node, output_tree
 import functools
 import copy
+from POStagging import to_tags
 
 def _firstWord(tree):
 
     if tree.children:
-        return firstWord(tree.children[0])
+        return _firstWord(tree.children[0])
 
     else:
         return tree.name
@@ -25,23 +26,16 @@ def _tree_equals(tree1, tree2, tolerance = 0, limit = 2):
         return tree1.name == tree2.name and \
             all(_tree_equals(child1, child2, tolerance + 1, limit) for (child1, child2) in zip(tree1.children, tree2.children))
 
-'''
-function application:
-    find where the trees are unbalanced
-    look at the one with more nodes:
-        combine two (may expand on this later) children through function application
-    compare again, maybe starting from that subtree?
-'''
 def tree_equals(tree1, tree2, limit = 2):
     return _tree_equals(tree1, tree2, limit = limit)
 
 def strict_equals(tree1, tree2):
     return tree_equals(tree1, tree2, 0, float('inf'))
 
-'''
-number of nodes below a node
-'''
 def _tree_weight(tree):
+    '''
+    number of nodes below a node
+    '''
     if not tree.children:
         return 0
     else:
