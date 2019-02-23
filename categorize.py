@@ -52,7 +52,7 @@ def label(text):
     # pass the temp file to easyccg and get output
     with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open("/dev/null")) as proc:
         #[1::2] - skip parse numbers
-        return proc.stdout.read().decode("utf-8").split("\n")[1::2]
+        return proc.stdout.read().decode("utf-8").split(os.linesep)[1::2]
 
 def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
     '''
@@ -76,7 +76,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
         file_str = input_file.read()
 
     labelled_list = label(file_str)
-    labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, file_str.split("\n")))}
+    labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, file_str.split(os.linesep)))}
 
     trees = {l: to_tree(l) for l in labelled.keys()}
 
@@ -152,21 +152,25 @@ def assert_model():
 
 
 def to_pos_tree(text):
-    subbed = re.sub(r"POS POS .+?\b", lambda match: r"POS POS "+next(subs), l)
+    subbed = re.sub(r"POS POS .+?\b", lambda match: r"POS POS "+next(subs), label(text))
     return to_tree(subbed)
 
 
 def _test():
-    from eq_fns import equals_with_application, _firstWord
+    from eq_fns import equals_with_application, _firstWord, tree_equals
     import re
     from POStagging import to_tags
 
+    l = label("Which presidents were born in 1945")[0]
+    print(l)
+    t1 = to_tree(label("Which presidents were born in 1945")[0])
+    t2 = to_tree(label("Which prime minister was born in 1945")[0])
 
-    # t1 = to_tree(label("Which presidents were born in 1945")[0])
+    print(tree_equals(t1,t2, limit=1))
     # t2 = to_tree(label("Which presidents were not born in 1945")[0])
 
     s1 = "Which presidents were born in 1945"
-    output_tree(to_pos_tree(s1))
+    output_tree(to_tree(t1))
     '''l = label(s1)[0]
     subs = iter(to_tags(s1).split())
     print(l)
@@ -192,8 +196,8 @@ def _test():
     # equals_with_application(t1,t2)
 
 if __name__ == "__main__":
-    # _test()
-    # exit(0)
+    #_test()
+    #exit(0)
 
     assert_model()
 
