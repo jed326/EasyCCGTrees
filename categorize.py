@@ -53,7 +53,7 @@ def label(text):
     # pass the temp file to easyccg and get output
     with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open(os.devnull)) as proc:
         #[1::2] - skip parse numbers
-        return proc.stdout.read().decode("utf-8").split(os.linesep)[1::2]
+        return proc.stdout.read().decode("utf-8").split("\n")[1::2]
 
 def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
     '''
@@ -77,7 +77,7 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
         file_str = input_file.read()
 
     labelled_list = label(file_str)
-    labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, file_str.split(os.linesep)))}
+    labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, file_str.split("\n")))}
 
     trees = {l: to_tree(l) for l in labelled.keys()}
 
