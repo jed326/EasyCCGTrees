@@ -10,6 +10,7 @@ from functools import reduce
 from to_tree import to_tree, output_tree
 import POStagging
 import re
+from tempfile import gettempdir
 
 # output options
 _OUTPUT_QUES = 0
@@ -28,7 +29,7 @@ def load_easyccg_home():
 Environment Setup
 '''
 EASYCCG_HOME = load_easyccg_home()
-OUT_PATH = Path("/tmp/")
+OUT_PATH = Path(gettempdir())
 
 
 # returns a command arg list which will be used for subprocess
@@ -50,7 +51,7 @@ def label(text):
     with open(posix_path_sup_parser(tmp_file), "w") as tmpfile:
         tmpfile.write(text)
     # pass the temp file to easyccg and get output
-    with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open("/dev/null")) as proc:
+    with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open(os.devnull)) as proc:
         #[1::2] - skip parse numbers
         return proc.stdout.read().decode("utf-8").split(os.linesep)[1::2]
 
