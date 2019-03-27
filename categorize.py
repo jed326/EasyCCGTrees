@@ -41,21 +41,22 @@ def run_easyCCG(input_path):
     with open(posix_path_sup_parser(OUT_PATH / "ccgout.txt"), "w") as outfile:
         subprocess.run(easyccg_command(file_name=input_path), stdout=outfile)
 
-def label(text):
+def label(text, encoding="utf-8"):
     '''
     text - newline separated sentences to parse
     return - list of string representing the parse of each line
     '''
     # write the input to a temporary file
     tmp_file = OUT_PATH / "labeltmp"
-    with open(posix_path_sup_parser(tmp_file), "w") as tmpfile:
+    with open(posix_path_sup_parser(tmp_file), "w", encoding=encoding) as tmpfile:
         tmpfile.write(text)
     # pass the temp file to easyccg and get output
     with subprocess.Popen(easyccg_command(file_name=tmp_file), stdout=subprocess.PIPE, stderr=open(os.devnull)) as proc:
         #[1::2] - skip parse numbers
-        return proc.stdout.read().decode("utf-8").split("\n")[1::2]
+        return proc.stdout.read().decode(encoding).split("\n")[1::2]
 
-def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals, **kwargs):
+def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fns.tree_equals,
+            encoding="utf-8", **kwargs):
     '''
     file_path - path to input
     eq_fn - function taking two trees (and optional kwargs) as input,
@@ -73,10 +74,10 @@ def group(file_path, out_path="./_grouped_out.txt", output_switch=0, eq_fn=eq_fn
     # labelled is a dictionary that maps the parsed question to the original question
     categories = []
 
-    with open(file_path) as input_file:
+    with open(file_path, encoding=encoding) as input_file:
         file_str = input_file.read()
 
-    labelled_list = label(file_str)
+    labelled_list = label(file_str, encoding)
     labelled = {l: str(i) + " " + orig for i, (l, orig) in enumerate(zip(labelled_list, file_str.split("\n")))}
 
     trees = {l: to_tree(l) for l in labelled.keys()}
@@ -208,6 +209,7 @@ if __name__ == "__main__":
     parser.add_argument("--outfile", help="Optional path to output categories to")
     parser.add_argument("-d", "--depth", help="Maximum depth to compare trees at", default=2, type=int)
     parser.add_argument("-o", "--output", help="0:Questions / 1: Trees / 2: Both", default=0, type=int)
+    parser.add_argument("--encoding", default="utf-8", help="Encoding type to use for input file")
     args = parser.parse_args()
 
     #Process default outfile
@@ -216,7 +218,7 @@ if __name__ == "__main__":
         name = Path(infilename).stem
         args.outfile = "./data/output/%s_grouped_out.txt" % (name)
 
-    categories, labelled = group(args.path, args.outfile, depth=args.depth, output_switch=args.output)
+    categories, labelled = group(args.path, args.outfile, depth=args.depth, output_switch=args.output, encoding=args.encoding)
     write_output(categories, labelled, args.outfile, args.output, [args.path, args.depth])
 
     #TODO: log this?
